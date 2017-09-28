@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <Appenders>
+    <File name="L1" fileName="log/AbacusInterfaceExtender.log" append="true">
+    	<PatternLayout pattern="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/>
+    </File>
+    <Console name="STDOUT" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/>
+    </Console>
+  </Appenders>
+  <Loggers>
+    <Logger name="org.apache.log4j.xml" level="debug">
+      <AppenderRef ref="L1"/>
+    </Logger>
+    <Root level="debug">
+      <AppenderRef ref="STDOUT"/>
+      <AppenderRef ref="L1"/>
+    </Root>
+  </Loggers>
+</Configuration>

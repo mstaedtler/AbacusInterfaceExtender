@@ -1,0 +1,28 @@
+2017-09-28 22:26:49,578 INFO  [main] gui.MainFrame (MainFrame.java:11) - Anwendung gestartet
+2017-09-28 22:26:49,580 ERROR [main] gui.MainFrame (MainFrame.java:13) - Did it again!
+2017-09-28 22:29:49,708 INFO  [main] gui.MainFrame (MainFrame.java:11) - Anwendung gestartet
+2017-09-28 22:29:49,710 INFO  [main] gui.MainFrame (MainFrame.java:13) - Anwendung wird beendet
+2017-09-28 22:47:50,089 INFO  [main] gui.MainFrame (MainFrame.java:25) - Anwendung gestartet
+2017-09-28 22:47:50,119 INFO  [main] gui.MainFrame (MainFrame.java:89) - Anwendung wird beendet
+2017-09-28 22:48:11,487 INFO  [main] gui.MainFrame (MainFrame.java:25) - Anwendung gestartet
+2017-09-28 22:48:11,509 INFO  [main] gui.MainFrame (MainFrame.java:80) - File saved!
+2017-09-28 22:48:11,509 INFO  [main] gui.MainFrame (MainFrame.java:89) - Anwendung wird beendet
+2017-09-28 23:03:13,664 INFO  [main] gui.MainFrame (MainFrame.java:29) - Anwendung gestartet
+2017-09-28 23:03:13,678 INFO  [main] gui.MainFrame (MainFrame.java:41) - Anwendung wird beendet
+2017-09-28 23:08:43,391 INFO  [main] gui.MainFrame (MainFrame.java:30) - Anwendung gestartet
+2017-09-28 23:08:43,406 INFO  [main] gui.MainFrame (MainFrame.java:42) - Anwendung wird beendet
+2017-09-28 23:09:07,109 INFO  [main] gui.MainFrame (MainFrame.java:30) - Anwendung gestartet
+2017-09-28 23:09:07,123 INFO  [main] gui.MainFrame (MainFrame.java:42) - Anwendung wird beendet
+2017-09-28 23:20:30,162 INFO  [main] gui.MainFrame (MainFrame.java:28) - Anwendung gestartet
+2017-09-28 23:20:58,546 INFO  [main] gui.MainFrame (MainFrame.java:28) - Anwendung gestartet
+2017-09-28 23:21:46,315 INFO  [main] gui.MainFrame (MainFrame.java:28) - Anwendung gestartet
+2017-09-28 23:25:46,451 INFO  [main] gui.MainFrame (MainFrame.java:28) - Anwendung gestartet
+2017-09-28 23:26:31,748 INFO  [main] gui.MainFrame (MainFrame.java:28) - Anwendung gestartet
+2017-09-28 23:26:32,462 INFO  [main] gui.MainFrame (MainFrame.java:78) - Anwendung wird beendet
+2017-09-28 23:26:57,446 INFO  [main] gui.MainFrame (MainFrame.java:28) - Anwendung gestartet
+2017-09-28 23:26:57,737 INFO  [main] gui.MainFrame (MainFrame.java:78) - Anwendung wird beendet
+2017-09-28 23:28:29,502 INFO  [main] gui.MainFrame (MainFrame.java:28) - Anwendung gestartet
+2017-09-28 23:28:29,794 INFO  [main] gui.MainFrame (MainFrame.java:79) - Anwendung wird beendet
+2017-09-29 00:20:35,971 INFO  [main] gui.MainFrame (MainFrame.java:44) - Anwendung gestartet
+2017-09-29 00:21:32,133 INFO  [main] gui.MainFrame (MainFrame.java:44) - Anwendung gestartet
+2017-09-29 00:21:32,580 INFO  [main] gui.MainFrame (MainFrame.java:104) - Anwendung wird beendet
