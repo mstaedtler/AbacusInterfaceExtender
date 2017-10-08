@@ -18,5 +18,8 @@
 	<classpathentry kind="lib" path="lib/itext7-layout-7.0.4.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-api-1.5.6.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-jdk14-1.5.6.jar"/>
+	<classpathentry kind="lib" path="lib/jasperreports-6.4.1.jar"/>
+	<classpathentry kind="lib" path="lib/jasperreports-fonts-6.4.1.jar"/>
+	<classpathentry kind="lib" path="lib/jasperreports-javaflow-6.4.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
