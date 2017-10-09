@@ -21,5 +21,6 @@
 	<classpathentry kind="lib" path="lib/jasperreports-6.4.1.jar"/>
 	<classpathentry kind="lib" path="lib/jasperreports-fonts-6.4.1.jar"/>
 	<classpathentry kind="lib" path="lib/jasperreports-javaflow-6.4.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

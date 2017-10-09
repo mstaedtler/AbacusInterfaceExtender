@@ -23,23 +23,21 @@ public class Exporter {
 		
 		try {
             /* Output file location */
-            String outputFile = "output/JasperTableExample.pdf";
+            String outputFile = "output/JasperTableExample.pdf"; 
 
             /* List to hold Items */
             List<Debitorenadresse> listItems = new ArrayList<Debitorenadresse>();
 
             /* Create Items */
-            Debitorenadresse boe = new Debitorenadresse();
-            boe.setName("Gruner Böhringer AG");
-            boe.setAnschrift("Teststrasse 22");
+            Debitorenadresse gks = new Debitorenadresse();
+            gks.setName("Gruner Böhringer AG");
+            gks.setAnschrift("Teststrasse 22");
 
-            Debitorenadresse gwz = new Debitorenadresse();
-            gwz.setName("Gruner Wepf Zürich");
-            gwz.setAnschrift("Dingensstrasse 11");
+            
 
             /* Add Items to List */
-            listItems.add(boe);
-            listItems.add(gwz);
+            listItems.add(gks);
+   
 
             /* Convert List to JRBeanCollectionDataSource */
             JRBeanCollectionDataSource itemsJRBean = new JRBeanCollectionDataSource(listItems);
@@ -55,7 +53,6 @@ public class Exporter {
             OutputStream outputStream = new FileOutputStream(new File(outputFile));
             /* Write content to PDF file */
             JasperExportManager.exportReportToPdfStream(jasperPrint, outputStream);
-
             System.out.println("File Generated");
         } catch (JRException ex) {
             ex.printStackTrace();

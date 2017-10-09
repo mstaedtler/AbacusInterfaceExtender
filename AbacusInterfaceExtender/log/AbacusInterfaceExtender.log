@@ -26,3 +26,256 @@
 2017-09-29 00:20:35,971 INFO  [main] gui.MainFrame (MainFrame.java:44) - Anwendung gestartet
 2017-09-29 00:21:32,133 INFO  [main] gui.MainFrame (MainFrame.java:44) - Anwendung gestartet
 2017-09-29 00:21:32,580 INFO  [main] gui.MainFrame (MainFrame.java:104) - Anwendung wird beendet
+2017-10-09 21:36:08,663 INFO  [main] gui.MainFrame (MainFrame.java:48) - Anwendung gestartet
+2017-10-09 21:37:22,752 INFO  [main] gui.MainFrame (MainFrame.java:48) - Anwendung gestartet
+2017-10-09 21:38:04,547 INFO  [main] gui.MainFrame (MainFrame.java:48) - Anwendung gestartet
+2017-10-09 21:38:35,694 INFO  [main] gui.MainFrame (MainFrame.java:48) - Anwendung gestartet
+2017-10-09 21:40:07,334 INFO  [main] gui.MainFrame (MainFrame.java:48) - Anwendung gestartet
+2017-10-09 21:45:50,322 INFO  [main] gui.MainFrame (MainFrame.java:48) - Anwendung gestartet
+2017-10-09 21:45:50,331 INFO  [main] gui.MainFrame (MainFrame.java:64) - Anwendung wird beendet
+2017-10-09 21:49:12,233 INFO  [main] gui.MainFrame (MainFrame.java:48) - Anwendung gestartet
+2017-10-09 21:49:12,244 INFO  [main] gui.MainFrame (MainFrame.java:64) - Anwendung wird beendet
+2017-10-09 21:49:43,567 INFO  [main] gui.MainFrame (MainFrame.java:48) - Anwendung gestartet
+2017-10-09 21:49:43,577 INFO  [main] gui.MainFrame (MainFrame.java:64) - Anwendung wird beendet
+2017-10-09 21:58:56,417 INFO  [main] gui.MainFrame (MainFrame.java:48) - Anwendung gestartet
+2017-10-09 21:58:56,428 INFO  [main] gui.MainFrame (MainFrame.java:64) - Anwendung wird beendet
+2017-10-09 22:00:05,565 INFO  [main] gui.MainFrame (MainFrame.java:48) - Anwendung gestartet
+2017-10-09 22:00:05,577 INFO  [main] gui.MainFrame (MainFrame.java:64) - Anwendung wird beendet
+2017-10-09 22:20:05,317 INFO  [main] gui.MainFrame (MainFrame.java:48) - Anwendung gestartet
+2017-10-09 22:20:05,321 INFO  [main] actions.CSVReader (CSVReader.java:28) - Lese file: input/vmAccounting_20170930.csv
+2017-10-09 22:20:05,324 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110100: BS2W7VI4 / alw / Standard / 15.0
+2017-10-09 22:20:05,324 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110100: BS4W7V02 / apm / Standard / 15.0
+2017-10-09 22:20:05,324 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110100: BS-W7V06 / baal / Standard / 15.0
+2017-10-09 22:20:05,324 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110100: BS2W7VI7 / fca / Standard / 15.0
+2017-10-09 22:20:05,325 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110100: BS7W7V09 / ge / Standard / 15.0
+2017-10-09 22:20:05,325 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110100: BS-W7VC0 / ge / Standard / 15.0
+2017-10-09 22:20:05,325 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110100: ZH-W7V17 / hagr / Standard / 15.0
+2017-10-09 22:20:05,325 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110100: BS-W7V07 / mej / Standard / 15.0
+2017-10-09 22:20:05,325 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110100: BS2W7VI5 / mus / Standard / 15.0
+2017-10-09 22:20:05,325 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110100: BS-W7V08 / rau / Standard / 15.0
+2017-10-09 22:20:05,325 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110100: BE-W7V04 / wia / Standard / 15.0
+2017-10-09 22:20:05,325 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110100: ZH-W7V18 / wpf / Standard / 15.0
+2017-10-09 22:20:05,326 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110100: VD-W7V07 / dmg / Standard / 15.0
+2017-10-09 22:20:05,326 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110100: BS2W7VG2 / dmg / Standard / 15.0
+2017-10-09 22:20:05,326 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110200: BS2W7VG1 / mgg / Standard / 15.0
+2017-10-09 22:20:05,326 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110201: BS2W7VJ9 / aena / Standard / 15.0
+2017-10-09 22:20:05,326 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110201: BS2W7VF7 / jeta / Standard / 15.0
+2017-10-09 22:20:05,326 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110201: BS2W7VG0 / mks / Standard / 15.0
+2017-10-09 22:20:05,326 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110201: BS2W7VH6 / wr / Standard / 15.0
+2017-10-09 22:20:05,326 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110202: BS2W7VK5 / almo / Standard / 15.0
+2017-10-09 22:20:05,327 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110202: BS2W7VK4 / gai / Standard / 15.0
+2017-10-09 22:20:05,327 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110202: BS2W7VK3 / mimu / Standard / 15.0
+2017-10-09 22:20:05,327 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110202: BS2W7VH9 / reu / Standard / 15.0
+2017-10-09 22:20:05,327 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110204: BS2W7VL5 / e-kohler / Standard / 15.0
+2017-10-09 22:20:05,327 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110242: BS2W7VK1 / stut / RAM+ / 40.0
+2017-10-09 22:20:05,327 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110242: BS2W7VI6 / thm / RAM+ / 40.0
+2017-10-09 22:20:05,327 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110243: BS2W7V42 / BIMDevelopment / CAD Standard / 45.0
+2017-10-09 22:20:05,327 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110243: BS2W7V04 / molu / CAD Standard / 45.0
+2017-10-09 22:20:05,328 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110243: BS2W7V45 / zhhu / CAD Standard / 45.0
+2017-10-09 22:20:05,328 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110243: BS2W7VF4 / ms / RAM+ / 40.0
+2017-10-09 22:20:05,328 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110340: BS-W7V04 / stc / Standard / 15.0
+2017-10-09 22:20:05,328 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110350: BS-W7V19 / bsa / CAD Standard / 45.0
+2017-10-09 22:20:05,328 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110350: BS-W7V64 / lep / CAD Standard / 45.0
+2017-10-09 22:20:05,328 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110350: BS-W7V68 / bsv / Statik / 65.0
+2017-10-09 22:20:05,328 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110350: BS-W7V69 / dvo / Statik / 65.0
+2017-10-09 22:20:05,328 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110350: BS-W7V70 / rdl / Statik / 65.0
+2017-10-09 22:20:05,329 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110350: BS-W7V71 / ru / Statik / 65.0
+2017-10-09 22:20:05,329 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110350: BS-W7V72 / sim / Statik / 65.0
+2017-10-09 22:20:05,329 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110350: BS-W7V59 / sml / Statik / 65.0
+2017-10-09 22:20:05,329 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110350: BS-W7V40 / trc / Statik / 65.0
+2017-10-09 22:20:05,329 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110352: BS-W7V61 / rom / CAD Standard / 45.0
+2017-10-09 22:20:05,329 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110352: BS-W7V11 / stf / Standard / 15.0
+2017-10-09 22:20:05,329 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110352: BS-W7V10 / trt / Standard / 15.0
+2017-10-09 22:20:05,330 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110440: BS2W7VL6 / bom / Standard / 15.0
+2017-10-09 22:20:05,330 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110440: BS2W7VL7 / mim / Standard / 15.0
+2017-10-09 22:20:05,330 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110450: BS2W7VM3 / zae / CAD Standard / 45.0
+2017-10-09 22:20:05,330 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110450: BS2W7V22 / drmo / CAD Standard / 45.0
+2017-10-09 22:20:05,330 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110450: BS2W7VK8 / bse / Standard / 15.0
+2017-10-09 22:20:05,330 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110450: BS2W7VL1 / gd / Standard / 15.0
+2017-10-09 22:20:05,330 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110450: BS2W7VL4 / zhd / Standard / 15.0
+2017-10-09 22:20:05,331 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110452: BS2W7V33 / boa / CAD Standard / 45.0
+2017-10-09 22:20:05,331 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110452: BS2W7V27 / det / Standard / 15.0
+2017-10-09 22:20:05,331 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110452: ZH-W7V13 / knl / Standard / 15.0
+2017-10-09 22:20:05,331 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110452: BS2W7VJ6 / kpe / Standard / 15.0
+2017-10-09 22:20:05,331 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110452: BS2W7VI3 / lota / Standard / 15.0
+2017-10-09 22:20:05,331 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110454: BS2W7VI1 / brma / CAD Standard / 45.0
+2017-10-09 22:20:05,331 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110454: BS2W7V24 / GrunerWorkspace-Verkehrsprogramme / Special / 0.0
+2017-10-09 22:20:05,331 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110454: BS2W7V49 / laph GrunerWorkspace-Verkehrsprogramme / Special / 0.0
+2017-10-09 22:20:05,332 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110454: BS2W7VK6 / win / Standard / 15.0
+2017-10-09 22:20:05,332 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110458: BS2W7V13 / dde / CAD Standard / 45.0
+2017-10-09 22:20:05,332 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110458: BS2W7VL2 / amju / Standard / 15.0
+2017-10-09 22:20:05,332 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110458: BS2W7V25 / hera / Standard / 15.0
+2017-10-09 22:20:05,332 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110458: ZH2W7V08 / koma / Standard / 15.0
+2017-10-09 22:20:05,332 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110458: BS2W7VJ2 / sido / Standard / 15.0
+2017-10-09 22:20:05,332 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110458: BS2W7VF5 / umm / Standard / 15.0
+2017-10-09 22:20:05,332 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110458: BS2W7VF9 / Windows_7_Albau_Pool / Standard / 15.0
+2017-10-09 22:20:05,333 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7V54 / drl / CAD Standard / 45.0
+2017-10-09 22:20:05,333 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7V55 / eck / CAD Standard / 45.0
+2017-10-09 22:20:05,333 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7V56 / eim / CAD Standard / 45.0
+2017-10-09 22:20:05,333 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7V57 / ksj / CAD Standard / 45.0
+2017-10-09 22:20:05,333 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7V22 / masi / CAD Standard / 45.0
+2017-10-09 22:20:05,333 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7V74 / coe / CAD Standard / 45.0
+2017-10-09 22:20:05,333 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7V15 / hejh / CAD Standard / 45.0
+2017-10-09 22:20:05,333 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7V62 / rumo / CAD Standard / 45.0
+2017-10-09 22:20:05,334 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS7W7V16 / coe / CAD Standard / 45.0
+2017-10-09 22:20:05,334 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: ZH-W7V02 / rusv / CAD Standard / 45.0
+2017-10-09 22:20:05,334 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: ZH-W7V25 / sijo / CAD Standard / 45.0
+2017-10-09 22:20:05,334 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7V66 / stma GrunerWorkspace-Heissbemessung / Special / 80.0
+2017-10-09 22:20:05,334 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: ZH-W7V28 / bikr / Standard / 15.0
+2017-10-09 22:20:05,334 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7V17 / eam / Standard / 15.0
+2017-10-09 22:20:05,334 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7V53 / fast / Standard / 15.0
+2017-10-09 22:20:05,334 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7V37 / gama / Standard / 15.0
+2017-10-09 22:20:05,334 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7V51 / grph / Standard / 15.0
+2017-10-09 22:20:05,334 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7V45 / hifl / Standard / 15.0
+2017-10-09 22:20:05,335 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7V38 / kaal / Standard / 15.0
+2017-10-09 22:20:05,335 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7V80 / kaz / Standard / 15.0
+2017-10-09 22:20:05,335 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7V39 / kda / Standard / 15.0
+2017-10-09 22:20:05,335 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7V41 / kid / Standard / 15.0
+2017-10-09 22:20:05,335 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: ZH-W7V30 / krse / Standard / 15.0
+2017-10-09 22:20:05,335 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS2W7V53 / KST800350 / Standard / 15.0
+2017-10-09 22:20:05,335 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: ZH-W7V11 / ras / Standard / 15.0
+2017-10-09 22:20:05,335 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7V43 / rsi / Standard / 15.0
+2017-10-09 22:20:05,335 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7V44 / sho / Standard / 15.0
+2017-10-09 22:20:05,336 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS7W7V12 / siem / Standard / 15.0
+2017-10-09 22:20:05,336 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7VC1 / siem / Standard / 15.0
+2017-10-09 22:20:05,336 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: ZH-W7V34 / suan / Standard / 15.0
+2017-10-09 22:20:05,336 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: BS-W7V52 / wama / Standard / 15.0
+2017-10-09 22:20:05,336 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: ZH-W7V31 / wec / Standard / 15.0
+2017-10-09 22:20:05,336 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: ZH-W7V32 / weew / Standard / 15.0
+2017-10-09 22:20:05,336 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110552: ZH-W7V24 / wich / Standard / 15.0
+2017-10-09 22:20:05,336 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110555: BS-W7V35 / kir / CAD Standard / 45.0
+2017-10-09 22:20:05,336 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110555: BS-W7V18 / gst / Standard / 15.0
+2017-10-09 22:20:05,336 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110555: BS7W7V21 / lusc / Standard / 15.0
+2017-10-09 22:20:05,337 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110555: BS-W7VC3 / lusc / Standard / 15.0
+2017-10-09 22:20:05,337 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110650: BS-W7V21 / dzm / CAD Standard / 45.0
+2017-10-09 22:20:05,337 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110650: BS-W7V02 / krj / CAD Standard / 45.0
+2017-10-09 22:20:05,337 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110650: BS-W7V36 / bni / Standard / 15.0
+2017-10-09 22:20:05,337 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110650: BS-W7V14 / fito / Standard / 15.0
+2017-10-09 22:20:05,337 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110650: BS-W7V46 / kisu / Standard / 15.0
+2017-10-09 22:20:05,337 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110650: BS-W7V12 / rid / Standard / 15.0
+2017-10-09 22:20:05,337 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110650: BS-W7V05 / tb / Standard / 15.0
+2017-10-09 22:20:05,337 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110650: BS-W7V03 / tj / Standard / 15.0
+2017-10-09 22:20:05,337 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110650: BS-W7V42 / wolu / Standard / 15.0
+2017-10-09 22:20:05,338 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110660: AG-W7V04 / doma / Standard / 15.0
+2017-10-09 22:20:05,338 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110675: VD-W7V06 / waro / Standard / 15.0
+2017-10-09 22:20:05,338 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 11:110700: BS-W7V13 / bm / Special / 65.0
+2017-10-09 22:20:05,338 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 12:120200: BL2W7V08 / rsc / Standard / 15.0
+2017-10-09 22:20:05,338 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 12:120353: BL2W7V09 / dfl / CAD Standard / 45.0
+2017-10-09 22:20:05,338 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 12:120353: BL2W7V03 / dfl / Standard / 15.0
+2017-10-09 22:20:05,338 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 13:130350: BS3W7V05 / ebm / CAD Standard / 45.0
+2017-10-09 22:20:05,338 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 13:130350: BS3W7V07 / vosi / CAD Standard / 45.0
+2017-10-09 22:20:05,338 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 13:130350: BS3W7V06 / ksa / Standard / 15.0
+2017-10-09 22:20:05,339 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 13:130350: BS3W7V01 / diu / Standard / 15.0
+2017-10-09 22:20:05,339 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 13:130350: BS3W7V02 / dni / Standard / 15.0
+2017-10-09 22:20:05,339 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 13:130350: BS3W7V04 / egh / Standard / 15.0
+2017-10-09 22:20:05,339 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 13:130350: BS3W7V09 / fov / Standard / 15.0
+2017-10-09 22:20:05,339 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 13:130350: BS3W7V03 / lah / Standard / 15.0
+2017-10-09 22:20:05,339 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 13:130350: BS3W7V08 / wt / Standard / 15.0
+2017-10-09 22:20:05,339 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 15:150100: ZH-W7V26 / maur / Standard / 15.0
+2017-10-09 22:20:05,339 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 15:150200: ZH-W7V19 / dapa / Standard / 15.0
+2017-10-09 22:20:05,339 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 15:150350: ZH-W7V27 / chd / CAD Standard / 45.0
+2017-10-09 22:20:05,340 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 15:150350: ZH-W7V14 / joi / Standard / 15.0
+2017-10-09 22:20:05,340 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 15:150351: ZH-W7V38 / brk / CAD Standard / 45.0
+2017-10-09 22:20:05,340 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 15:150351: ZH-W7V37 / gdi / Standard / 15.0
+2017-10-09 22:20:05,340 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 15:150351: ZH-W7V39 / vot / Standard / 15.0
+2017-10-09 22:20:05,340 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 15:150351: ZH-W7V36 / wge / Standard / 15.0
+2017-10-09 22:20:05,340 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 15:150352: ZH-W7V33 / dad / CAD Standard / 45.0
+2017-10-09 22:20:05,340 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 15:150352: ZH-W7V20 / koo / Standard / 15.0
+2017-10-09 22:20:05,340 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 15:150354: ZH-W7V45 / brth / CAD Standard / 45.0
+2017-10-09 22:20:05,340 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 15:150354: ZH-W7V15 / nis / Standard / 15.0
+2017-10-09 22:20:05,340 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 20:200200: ZG-W7V03 / ast / Standard / 15.0
+2017-10-09 22:20:05,340 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 20:200200: ZG-W7V04 / gsa / Standard / 15.0
+2017-10-09 22:20:05,341 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 20:200350: ZG-W7V02 / kb / CAD Standard / 45.0
+2017-10-09 22:20:05,341 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 20:200350: ZG-W7V15 / bsl / Standard / 15.0
+2017-10-09 22:20:05,341 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 20:200351: ZG-W7V19 / gmr / CAD Standard / 45.0
+2017-10-09 22:20:05,341 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 20:200351: ZG-W7V14 / bes / CAD Standard / 45.0
+2017-10-09 22:20:05,341 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 20:200351: ZG-W7V24 / rbi / CAD Standard / 45.0
+2017-10-09 22:20:05,341 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 20:200351: ZG-W7V01 / hme / Standard / 15.0
+2017-10-09 22:20:05,341 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 20:200351: ZG-W7V13 / js / Standard / 15.0
+2017-10-09 22:20:05,341 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 22:220350: BE-W7V28 / mhb / CAD Standard / 45.0
+2017-10-09 22:20:05,341 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 22:220350: BE-W7V25 / bst / CAD Standard / 45.0
+2017-10-09 22:20:05,341 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 22:220350: BE-W7V27 / wmi / CAD Standard / 45.0
+2017-10-09 22:20:05,341 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 22:220350: BE-W7V16 / hemi / CAD Standard / 45.0
+2017-10-09 22:20:05,342 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 22:220350: BE-W7V07 / lob / CAD Standard / 45.0
+2017-10-09 22:20:05,342 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 22:220350: BE-W7V09 / frma GrunerWorkspace-BKL / Special / 80.0
+2017-10-09 22:20:05,342 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 22:220350: BE-W7V11 / loj GrunerWorkspace-BKL / Special / 80.0
+2017-10-09 22:20:05,342 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 22:220350: BE-W7V10 / zwm GrunerWorkspace-BKL / Special / 80.0
+2017-10-09 22:20:05,342 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 22:220350: BE-W7V08 / mfl / Standard / 15.0
+2017-10-09 22:20:05,342 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 22:220350: BE-W7V05 / wmr / Standard / 15.0
+2017-10-09 22:20:05,342 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 23:230100: SG-W7V01 / ho / Standard / 15.0
+2017-10-09 22:20:05,342 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 23:230100: SG-W7V03 / ho deda / Standard / 15.0
+2017-10-09 22:20:05,342 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 23:230350: BE-W7V26 / urs / CAD Standard / 45.0
+2017-10-09 22:20:05,342 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 23:230350: SG-W7V04 / schr / Standard / 15.0
+2017-10-09 22:20:05,342 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 23:230351: SG-W7V02 / gae / CAD Standard / 45.0
+2017-10-09 22:20:05,342 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240200: BS2W7V46 / Windows_7_Albau_Pool / Standard / 15.0
+2017-10-09 22:20:05,343 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240200: BS2W7V52 / Windows_7_Albau_Pool / Standard / 15.0
+2017-10-09 22:20:05,343 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240200: BS2W7V44 / Windows_7_Albau_Pool / Standard / 15.0
+2017-10-09 22:20:05,343 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240201: ZH2W7V41 / rai / Standard / 15.0
+2017-10-09 22:20:05,343 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240201: ZH2W7V16 / mire / Standard / 15.0
+2017-10-09 22:20:05,343 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240350: BS4W7V37 / ans / CAD Standard / 45.0
+2017-10-09 22:20:05,343 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240350: BS4W7V38 / auj / CAD Standard / 45.0
+2017-10-09 22:20:05,343 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240350: BS2W7V38 / bdl / CAD Standard / 45.0
+2017-10-09 22:20:05,343 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240350: BS4W7V33 / kube / CAD Standard / 45.0
+2017-10-09 22:20:05,343 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240350: BS4W7V39 / lpe / CAD Standard / 45.0
+2017-10-09 22:20:05,343 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240350: BS4W7V34 / remi / CAD Standard / 45.0
+2017-10-09 22:20:05,343 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240350: BS4W7V09 / wpe / CAD Standard / 45.0
+2017-10-09 22:20:05,343 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240350: BS4W7V06 / rof / Standard / 15.0
+2017-10-09 22:20:05,344 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240350: BS4W7V35 / rst / Standard / 15.0
+2017-10-09 22:20:05,344 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240350: BS4W7V03 / schl / Standard / 15.0
+2017-10-09 22:20:05,344 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240350: BS4W7V01 / sub / Standard / 15.0
+2017-10-09 22:20:05,344 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240351: BS4W7V21 / buma / CAD Standard / 45.0
+2017-10-09 22:20:05,344 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240351: BS4W7V08 / dlf / Standard / 15.0
+2017-10-09 22:20:05,344 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240351: BS4W7V28 / kdj / Standard / 15.0
+2017-10-09 22:20:05,344 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240351: BS4W7V05 / wipe / Standard / 15.0
+2017-10-09 22:20:05,344 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240353: BS4W7V04 / hmar / CAD Standard / 45.0
+2017-10-09 22:20:05,344 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240353: BS4W7V07 / kar / CAD Standard / 45.0
+2017-10-09 22:20:05,344 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240353: BS4W7V24 / hwo / Standard / 15.0
+2017-10-09 22:20:05,344 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240353: BS4W7V25 / kac / Standard / 15.0
+2017-10-09 22:20:05,345 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240353: BS4W7V26 / lo / Standard / 15.0
+2017-10-09 22:20:05,345 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240353: BS4W7V20 / toda / Standard / 15.0
+2017-10-09 22:20:05,345 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240450: ZH2W7V20 / bomi / CAD Standard / 45.0
+2017-10-09 22:20:05,345 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240450: ZH2W7V17 / rimi / Standard / 15.0
+2017-10-09 22:20:05,345 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240451: ZH2W7V34 / hule / CAD Standard / 45.0
+2017-10-09 22:20:05,345 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240451: ZH2W7V03 / mibu / Standard / 15.0
+2017-10-09 22:20:05,345 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240451: ZH2W7V18 / host / Standard / 15.0
+2017-10-09 22:20:05,345 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240451: ZH2W7V21 / huma / Standard / 15.0
+2017-10-09 22:20:05,345 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240451: ZH2W7V07 / maym / Standard / 15.0
+2017-10-09 22:20:05,345 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240451: ZH2W7V32 / uer / Standard / 15.0
+2017-10-09 22:20:05,345 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240452: ZH2W7V33 / scth / CAD Standard / 45.0
+2017-10-09 22:20:05,345 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240452: ZH2W7V31 / plma / Standard / 15.0
+2017-10-09 22:20:05,346 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 24:240452: ZH2W7V19 / scpe / Standard / 15.0
+2017-10-09 22:20:05,346 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 27:270200: VD-W7V03 / dsc / Standard / 15.0
+2017-10-09 22:20:05,346 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 27:270200: BS7W7V07 / paa / Standard / 15.0
+2017-10-09 22:20:05,346 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 80:800350: BS2W7V48 / fima KST800350 / CAD Standard / 45.0
+2017-10-09 22:20:05,346 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 80:800350: BS2W7V40 / KST800350 / CAD Standard / 45.0
+2017-10-09 22:20:05,346 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 80:800350: BS7W7V05 / hua / Standard / 15.0
+2017-10-09 22:20:05,346 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 80:800350: BS-W7V82 / hua / Standard / 15.0
+2017-10-09 22:20:05,346 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 80:800350: BS-W7V81 / lav / Standard / 15.0
+2017-10-09 22:20:05,346 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 80:800350: BS-W7VC4 / niwe / Standard / 15.0
+2017-10-09 22:20:05,346 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 83:830350: DE2W7V06 / mass / CAD Standard / 45.0
+2017-10-09 22:20:05,346 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 83:830350: BS-W7V67 / khmo GrunerWorkspace-Heissbemessung / Special / 80.0
+2017-10-09 22:20:05,347 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 83:830350: BS-W7V65 / pojo GrunerWorkspace-Heissbemessung / Special / 80.0
+2017-10-09 22:20:05,347 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 83:830350: DE2W7V09 / casc / Standard / 15.0
+2017-10-09 22:20:05,347 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 83:830350: DE2W7V08 / cwi / Standard / 15.0
+2017-10-09 22:20:05,347 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 83:830350: BS7W7V01 / dus / Standard / 15.0
+2017-10-09 22:20:05,347 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 83:830350: BS7W7V03 / lav / Standard / 15.0
+2017-10-09 22:20:05,347 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 83:830350: DE2W7V10 / psti / Standard / 15.0
+2017-10-09 22:20:05,348 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 92:920350: DE2W7V07 / mini / Standard / 15.0
+2017-10-09 22:20:05,348 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 93:930350: BS-W7V25 / maol / CAD Standard / 45.0
+2017-10-09 22:20:05,348 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 93:930350: BS-W7V58 / maol / CAD Standard / 45.0
+2017-10-09 22:20:05,348 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 93:930350: BS-W7V73 / KST920350 KST930350 / CAD Standard / 45.0
+2017-10-09 22:20:05,348 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 93:930350: BS7W7V18 / KST920350 KST930350 / CAD Standard / 45.0
+2017-10-09 22:20:05,348 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 93:930350: BS7W7V13 / bian / Standard / 15.0
+2017-10-09 22:20:05,348 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 93:930350: BS-W7VC2 / bian / Standard / 15.0
+2017-10-09 22:20:05,348 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 93:930350: BS7W7V11 / brbe / Standard / 15.0
+2017-10-09 22:20:05,348 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 93:930350: BS-W7V16 / dabe / Standard / 15.0
+2017-10-09 22:20:05,348 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 93:930350: BS-W7V78 / dus / Standard / 15.0
+2017-10-09 22:20:05,348 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 93:930350: BS7W7V17 / klsa / Standard / 15.0
+2017-10-09 22:20:05,349 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 93:930350: BS7W7V10 / maol / Standard / 15.0
+2017-10-09 22:20:05,349 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 93:930350: BS7W7V08 / sile / Standard / 15.0
+2017-10-09 22:20:05,349 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 93:930350: BS-W7VB9 / sile / Standard / 15.0
+2017-10-09 22:20:05,349 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 93:930350: BS7W7V02 / tima / Standard / 15.0
+2017-10-09 22:20:05,349 INFO  [main] actions.CSVReader (CSVReader.java:47) - Zeile gelesen: 93:930350: BS-W7VB8 / tima / Standard / 15.0
+2017-10-09 22:20:05,349 INFO  [main] actions.CSVReader (CSVReader.java:50) - Es wurden: 233 Zeilen gelesen und hinzugefügt.
+2017-10-09 22:20:05,349 INFO  [main] actions.CSVReader (CSVReader.java:52) - BufferedReader geschlossen
+2017-10-09 22:20:05,349 INFO  [main] gui.MainFrame (MainFrame.java:64) - Anwendung wird beendet
