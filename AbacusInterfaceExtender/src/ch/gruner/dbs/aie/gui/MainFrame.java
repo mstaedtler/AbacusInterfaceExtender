@@ -36,7 +36,7 @@ import com.itextpdf.layout.element.ListItem;
 import com.itextpdf.layout.element.Paragraph;
 
 import ch.gruner.dbs.aie.actions.CSVReader;
-import ch.gruner.dbs.aie.businessobjects.WVBooking;
+import ch.gruner.dbs.aie.businessobjects.WVImportBooking;
 
 
 
@@ -48,7 +48,7 @@ public class MainFrame {
 		LOG.info("Anwendung gestartet");
 		
 		CSVReader csvReader = new CSVReader();
-		java.util.List<WVBooking> list = csvReader.readMietCSV("input/vmAccounting_20170930.csv");
+		java.util.List<WVImportBooking> list = csvReader.readMietCSV("input/vmAccounting_20170930.csv");
 		
 //		for (WVBooking wvBooking : list) {
 //			System.out.println(wvBooking);

@@ -9,20 +9,20 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import ch.gruner.dbs.aie.businessobjects.WVBooking;
+import ch.gruner.dbs.aie.businessobjects.WVImportBooking;
 
 public class CSVReader {
 
 	private static Logger LOG = LogManager.getLogger(CSVReader.class);
     
-	public List<WVBooking> readMietCSV(String inputFilepath) {
+	public List<WVImportBooking> readMietCSV(String inputFilepath) {
 
         String csvFile = inputFilepath;
         String line = "";
         String cvsSplitBy = ";";
-        List <WVBooking> list = new ArrayList<WVBooking>();
+        List <WVImportBooking> list = new ArrayList<WVImportBooking>();
 
-        WVBooking wvBooking;
+        WVImportBooking wvBooking;
          
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
         	LOG.info("Lese file: " + csvFile);
@@ -33,7 +33,7 @@ public class CSVReader {
                 Double cost = Double.parseDouble(vmLine[8]);
                 Integer costCenter = Integer.parseInt(vmLine[9]);
            
-                wvBooking = new WVBooking();
+                wvBooking = new WVImportBooking();
                 wvBooking.setPeriod(vmLine[0]);
                 wvBooking.setName(vmLine[1]);
                 wvBooking.setType(vmLine[2]);

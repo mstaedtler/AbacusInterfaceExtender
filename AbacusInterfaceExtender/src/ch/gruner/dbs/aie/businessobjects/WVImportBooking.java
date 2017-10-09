@@ -4,9 +4,9 @@ import java.util.Calendar;
 
 import org.apache.commons.lang3.StringUtils;
 
-public class WVBooking {
+public class WVImportBooking {
 	
-	public WVBooking() {
+	public WVImportBooking() {
 		
 	}
 		
