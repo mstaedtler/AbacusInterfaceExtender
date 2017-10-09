@@ -1,23 +1,18 @@
 package ch.gruner.dbs.aie.gui;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.poi.hssf.usermodel.HSSFSheet;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -57,6 +52,7 @@ public class MainFrame {
 		for (WVImportBooking wvBooking : list) {
 			Integer gb = wvBooking.getGb();
 			java.util.List<WVImportBooking> innerList;
+			//Testen ob innerList null und neue anlegen. Sonst innerList holen.
 			if(bookingByGb.get(gb) == null) {
 				innerList = new ArrayList<>();
 			}else {
