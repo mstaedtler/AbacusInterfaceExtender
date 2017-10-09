@@ -6,6 +6,7 @@ import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
@@ -36,6 +37,7 @@ import com.itextpdf.layout.element.ListItem;
 import com.itextpdf.layout.element.Paragraph;
 
 import ch.gruner.dbs.aie.actions.CSVReader;
+import ch.gruner.dbs.aie.businessobjects.InvoiceWV;
 import ch.gruner.dbs.aie.businessobjects.WVImportBooking;
 
 
@@ -50,9 +52,30 @@ public class MainFrame {
 		CSVReader csvReader = new CSVReader();
 		java.util.List<WVImportBooking> list = csvReader.readMietCSV("input/vmAccounting_20170930.csv");
 		
-//		for (WVBooking wvBooking : list) {
-//			System.out.println(wvBooking);
-//		}	
+		//Aufteilen GB's nach GB Nummer
+		HashMap<Integer, java.util.List<WVImportBooking>> bookingByGb = new HashMap<>();
+		for (WVImportBooking wvBooking : list) {
+			Integer gb = wvBooking.getGb();
+			java.util.List<WVImportBooking> innerList;
+			if(bookingByGb.get(gb) == null) {
+				innerList = new ArrayList<>();
+			}else {
+				innerList = bookingByGb.get(gb);
+			}
+			innerList.add(wvBooking);
+			bookingByGb.put(gb, innerList);
+		}
+		LOG.info("Anzahl GB's: " + bookingByGb.size());
+		//One invoice per GB
+		int test = 0;
+		for (Integer gbNo : bookingByGb.keySet()) {
+			InvoiceWV invoice = new InvoiceWV(bookingByGb.get(gbNo));
+			LOG.info("Datensätze in GB: " + gbNo + " sind: " + bookingByGb.get(gbNo).size());
+			test = test + bookingByGb.get(gbNo).size();
+		}
+		LOG.info("Total: " + test);
+		
+		
 		
 //		try {
 //			createPdf("output/pdfexport.pdf");
