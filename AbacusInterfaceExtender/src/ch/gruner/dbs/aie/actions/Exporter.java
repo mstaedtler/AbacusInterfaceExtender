@@ -30,10 +30,9 @@ public class Exporter {
 
             /* Create Items */
             Debitorenadresse gks = new Debitorenadresse();
-            gks.setName("Gruner Böhringer AG");
-            gks.setAnschrift("Teststrasse 22");
-
-            
+            gks.setName("Gruner Gruneko AG");
+            gks.setAnschrift("St. Jakobs-Strasse 199");     
+            gks.setOrt("4020 Basel");
 
             /* Add Items to List */
             listItems.add(gks);
