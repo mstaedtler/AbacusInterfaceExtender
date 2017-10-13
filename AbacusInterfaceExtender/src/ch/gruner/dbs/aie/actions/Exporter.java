@@ -4,12 +4,13 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import ch.gruner.dbs.aie.businessobjects.Debitorenadresse;
+import ch.gruner.dbs.aie.businessobjects.DetailsByProfile;
+import ch.gruner.dbs.aie.businessobjects.InvoiceWV;
 import net.sf.jasperreports.engine.JREmptyDataSource;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperExportManager;
@@ -19,14 +20,15 @@ import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 
 public class Exporter {
 
-	public void createMietWVPdf() {
+
+	public void createMietWVPdf(InvoiceWV invoice) {
 		
 		try {
             /* Output file location */
             String outputFile = "output/JasperTableExample.pdf"; 
 
             /* List to hold Items */
-            List<Debitorenadresse> listItems = new ArrayList<Debitorenadresse>();
+            List<DetailsByProfile> listItemsProfile = invoice.getBookingDetailsByProfile();
 
             /* Create Items */
             Debitorenadresse gks = new Debitorenadresse();
@@ -35,18 +37,19 @@ public class Exporter {
             gks.setOrt("4020 Basel");
 
             /* Add Items to List */
-            listItems.add(gks);
+            
    
 
             /* Convert List to JRBeanCollectionDataSource */
-            JRBeanCollectionDataSource itemsJRBean = new JRBeanCollectionDataSource(listItems);
-
+            JRBeanCollectionDataSource itemsJRBean = new JRBeanCollectionDataSource(listItemsProfile);         
+         
             /* Map to hold Jasper report Parameters */
             Map<String, Object> parameters = new HashMap<String, Object>();
-            parameters.put("ItemDataSource", itemsJRBean);
+            parameters.put("profileItemDataSource", itemsJRBean);
+            //parameters.put("adressDataSource", gks);
 
             /* Using compiled version(.jasper) of Jasper report to generate PDF */
-            JasperPrint jasperPrint = JasperFillManager.fillReport("config/template_mieteWV.jasper", parameters, new JREmptyDataSource());
+            JasperPrint jasperPrint = JasperFillManager.fillReport("ressources/template_mieteWV_GKS.jasper", parameters, new JREmptyDataSource());
 
             /* outputStream to create PDF */
             OutputStream outputStream = new FileOutputStream(new File(outputFile));

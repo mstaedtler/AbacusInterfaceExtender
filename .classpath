@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="AbacusInterfaceExtender/src"/>
+	<classpathentry kind="lib" path="AbacusInterfaceExtender/lib/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="AbacusInterfaceExtender/lib/commons-io-1.4.jar"/>
+	<classpathentry kind="lib" path="AbacusInterfaceExtender/lib/commons-lang3-3.6.jar"/>
+	<classpathentry kind="lib" path="AbacusInterfaceExtender/lib/dom4j-2.1.0.jar"/>
+	<classpathentry kind="lib" path="AbacusInterfaceExtender/lib/itext7-forms-7.0.4.jar"/>
+	<classpathentry kind="lib" path="AbacusInterfaceExtender/lib/itext7-io-7.0.4.jar"/>
+	<classpathentry kind="lib" path="AbacusInterfaceExtender/lib/itext7-kernel-7.0.4.jar"/>
+	<classpathentry kind="lib" path="AbacusInterfaceExtender/lib/itext7-layout-7.0.4.jar"/>
+	<classpathentry kind="lib" path="AbacusInterfaceExtender/lib/jasperreports-6.4.1.jar"/>
+	<classpathentry kind="lib" path="AbacusInterfaceExtender/lib/jasperreports-fonts-6.4.1.jar"/>
+	<classpathentry kind="lib" path="AbacusInterfaceExtender/lib/jasperreports-javaflow-6.4.1.jar"/>
+	<classpathentry kind="lib" path="AbacusInterfaceExtender/lib/log4j-api-2.9.1.jar"/>
+	<classpathentry kind="lib" path="AbacusInterfaceExtender/lib/log4j-core-2.9.1.jar"/>
+	<classpathentry kind="lib" path="AbacusInterfaceExtender/lib/poi-3.17.jar"/>
+	<classpathentry kind="lib" path="AbacusInterfaceExtender/lib/poi-ooxml-3.17.jar"/>
+	<classpathentry kind="lib" path="AbacusInterfaceExtender/lib/poi-ooxml-schemas-3.17.jar"/>
+	<classpathentry kind="lib" path="AbacusInterfaceExtender/lib/slf4j-api-1.5.6.jar"/>
+	<classpathentry kind="lib" path="AbacusInterfaceExtender/lib/slf4j-jdk14-1.5.6.jar"/>
+	<classpathentry kind="lib" path="AbacusInterfaceExtender/lib/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="AbacusInterfaceExtender/bin"/>
+</classpath>

@@ -19,14 +19,6 @@ public class DetailsByCostCenter {
 		this.amount = amount;
 	}
 	
-	public void addAmount(Double newAmount) {
-		if(amount == null) {
-			amount = 0.0d;
-		}else {
-			amount = amount + newAmount;
-		}
-	}
-	
 	@Override
 	public String toString() {
 		return getCostCenter() + ": " + getAmount();

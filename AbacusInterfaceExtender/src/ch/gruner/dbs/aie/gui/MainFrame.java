@@ -32,6 +32,7 @@ import com.itextpdf.layout.element.ListItem;
 import com.itextpdf.layout.element.Paragraph;
 
 import ch.gruner.dbs.aie.actions.CSVReader;
+import ch.gruner.dbs.aie.actions.Exporter;
 import ch.gruner.dbs.aie.businessobjects.DetailsByCostCenter;
 import ch.gruner.dbs.aie.businessobjects.DetailsByProfile;
 import ch.gruner.dbs.aie.businessobjects.InvoiceWV;
@@ -63,7 +64,7 @@ public class MainFrame {
 		}
 		LOG.info("Anzahl GB's: " + bookingByGb.size());
 
-		InvoiceWV invoice = new InvoiceWV(bookingByGb.get(24));
+		InvoiceWV invoice = new InvoiceWV(bookingByGb.get(11));
 		for (DetailsByCostCenter detByCC : invoice.getBookingDetailsByCostCenter()) {
 			LOG.info(detByCC);
 		}
@@ -77,6 +78,11 @@ public class MainFrame {
 		LOG.info("Total Betrag ohne Mwst.: " + invoice.getTotalInvoiceAmount());
 		LOG.info("Total Betrag Mwst.: " + invoice.getMwstBetrag());
 		LOG.info("Total Betrag inkl Mwst.: " + invoice.getTotalInvoiceAmountInclMwst());
+		
+		Exporter exporter = new Exporter();
+		exporter.createMietWVPdf(invoice);
+		
+		
 		
 //		HashMap<Integer, HashMap<String, Double>> lineItems = invoice.getLineItems();
 //		if (lineItems != null) {
