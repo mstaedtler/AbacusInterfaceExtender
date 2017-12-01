@@ -1,14 +1,26 @@
 package ch.gruner.dbs.aie.gui;
 
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
+
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTabbedPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+import javax.swing.ListSelectionModel;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -31,86 +43,132 @@ import com.itextpdf.layout.element.List;
 import com.itextpdf.layout.element.ListItem;
 import com.itextpdf.layout.element.Paragraph;
 
-import ch.gruner.dbs.aie.actions.CSVReader;
-import ch.gruner.dbs.aie.actions.Exporter;
-import ch.gruner.dbs.aie.businessobjects.DetailsByCostCenter;
-import ch.gruner.dbs.aie.businessobjects.DetailsByProfile;
-import ch.gruner.dbs.aie.businessobjects.InvoiceWV;
-import ch.gruner.dbs.aie.businessobjects.WVImportBooking;
+import ch.gruner.dbs.aie.actions.ButtonActions;
+import ch.gruner.dbs.aie.model.TableModelInvoicesWV;
 
-public class MainFrame {
+public class MainFrame extends JPanel{
 
+	public enum ActionCommands {
+		SELECT_PATH, EXPORT, CLOSE, INFO
+	}
+
+	private static final long serialVersionUID = 3886715116607550812L;
 	private static Logger LOG = LogManager.getLogger(MainFrame.class);
+	
+	private JTabbedPane tabedPane;
+	private JTable table;
+	private static JTextField jTextFieldPath;
+	private JButton jButFileSelection;
+	private JButton jButExport;
+	private JButton jButClose;
+	private JButton jButInfo;
+	private static TableModelInvoicesWV model;
+	
+	public static JFrame frame;
+	private ButtonActions buttonActions;
+	
+	public MainFrame() {
+		super(new BorderLayout());
+//		setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+		model = new TableModelInvoicesWV();
+		buttonActions = new ButtonActions(model);
+		table = new JTable(model);
+		table.setPreferredScrollableViewportSize(new Dimension(1200, 500));
+		table.setFillsViewportHeight(true);
+		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+		
+		// JPanel northPanel = new JPanel(new BorderLayout());
+
+		JPanel fileSelectionPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+		jButFileSelection = new JButton("Pfad auswählen");
+		jButFileSelection.addActionListener(buttonActions);
+        jButFileSelection.setActionCommand(ActionCommands.SELECT_PATH.toString());
+		JLabel pathLabel = new JLabel("Importdatei wählen");
+
+		fileSelectionPanel.add(pathLabel);
+		fileSelectionPanel.add(getjTextFieldPath());
+		fileSelectionPanel.add(jButFileSelection);
+		fileSelectionPanel.setBorder(BorderFactory.createTitledBorder("Importdatei für Mietweiterverrechnung wählen"));
+							
+		setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
+		add(fileSelectionPanel, BorderLayout.NORTH);
+
+		
+		// Add scrollpane with table
+		JScrollPane scrollPaneMWV = new JScrollPane(table);
+		JPanel tablePanelMWV = new JPanel(new BorderLayout());
+		tablePanelMWV.add(scrollPaneMWV);
+		tablePanelMWV.add(PanelFactory.createAllNonePanel(model), BorderLayout.AFTER_LAST_LINE);
+		
+		JScrollPane scrollPaneDATEV_FIBU = new JScrollPane(table);
+		JPanel tablePanelDATEV_FIBU = new JPanel(new BorderLayout());
+		tablePanelMWV.add(scrollPaneDATEV_FIBU);
+		
+		JScrollPane scrollPaneDATEV_DEBI = new JScrollPane(table);
+		JPanel tablePanelDATEV_DEBI = new JPanel(new BorderLayout());
+		tablePanelMWV.add(scrollPaneDATEV_DEBI);
+		
+		JScrollPane scrollPaneIT = new JScrollPane(table);
+		JPanel tablePanelIT = new JPanel(new BorderLayout());
+		tablePanelMWV.add(scrollPaneIT);
+		
+		JScrollPane scrollPaneProjekte = new JScrollPane(table);
+		JPanel tablePanelProjekte = new JPanel(new BorderLayout());
+		tablePanelMWV.add(scrollPaneProjekte);
+		
+		
+		getTabedPane().add("Miete Weiterverrechnung", tablePanelMWV);
+		getTabedPane().add("Weiterverrechnung IT Kosten", tablePanelIT);
+		getTabedPane().add("Weiterverrechnung Projekte CS/DE", tablePanelProjekte);
+		
+		getTabedPane().add("DATEV FIBU", tablePanelDATEV_FIBU);
+		getTabedPane().add("DATEV DEBI", tablePanelDATEV_DEBI);
+		
+		getTabedPane().add("Logging", new JPanel()); //TODO ersetzen mit getErrorTabPanel()
+//		getTabedPane().setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
+		add(getTabedPane(), BorderLayout.CENTER);
+	}
 
 	public static void main(String[] args) {
 		LOG.info("Anwendung gestartet");
+		
+		// Create and set up the window.
+		frame = new JFrame("DBS Abacus Extender - Handling Interfaces easy");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		CSVReader csvReader = new CSVReader();
-		java.util.List<WVImportBooking> list = csvReader.readMietCSV("input/vmAccounting_20170930.csv");
+		// Create and set up the content pane.
+		MainFrame newContentPane = new MainFrame();
+		newContentPane.setOpaque(true); // content panes must be opaque
+		frame.setContentPane(newContentPane);
 
-		// Aufteilen GB's nach GB Nummer
-		HashMap<Integer, java.util.List<WVImportBooking>> bookingByGb = new HashMap<>();
-		for (WVImportBooking wvBooking : list) {
-			Integer gb = wvBooking.getGb();
-			java.util.List<WVImportBooking> innerList;
-			// Testen ob innerList null und neue anlegen. Sonst innerList holen.
-			if (bookingByGb.get(gb) == null) {
-				innerList = new ArrayList<>();
-			} else {
-				innerList = bookingByGb.get(gb);
-			}
-			innerList.add(wvBooking);
-			bookingByGb.put(gb, innerList);
-		}
-		LOG.info("Anzahl GB's: " + bookingByGb.size());
+		// Display the window.
+		frame.pack();
+		frame.setVisible(true);
 
-		InvoiceWV invoice = new InvoiceWV(bookingByGb.get(11));
-		for (DetailsByCostCenter detByCC : invoice.getBookingDetailsByCostCenter()) {
-			LOG.info(detByCC);
-		}
-		LOG.info("Anzahl Kostenstellen: " + invoice.getBookingDetailsByCostCenter().size());
-		
-		for (DetailsByProfile detByProfile : invoice.getBookingDetailsByProfile()) {
-			LOG.info(detByProfile);
-		}
-		LOG.info("Anzahl Profile: " + invoice.getBookingDetailsByProfile().size());
-		
-		LOG.info("Total Betrag ohne Mwst.: " + invoice.getTotalInvoiceAmount());
-		LOG.info("Total Betrag Mwst.: " + invoice.getMwstBetrag());
-		LOG.info("Total Betrag inkl Mwst.: " + invoice.getTotalInvoiceAmountInclMwst());
-		
-		Exporter exporter = new Exporter();
-		exporter.createMietWVPdf(invoice);
 		
 		
-		
-//		HashMap<Integer, HashMap<String, Double>> lineItems = invoice.getLineItems();
-//		if (lineItems != null) {
-//			TreeMap<Integer, HashMap<String, Double>> map = new TreeMap<>(lineItems);
-//			for (Integer cc : map.keySet()) {
-//				LOG.info("Kostenstelle: " + cc);
-//				for (String profile : map.get(cc).keySet()) {
-//					LOG.info("Profile: " + profile + " ; Gesamtbetrag: " + map.get(cc).get(profile));
-//				}
-//			}
+//		LOG.info("Anzahl GB's: " + bookingByGb.size());
+
+//		InvoiceWV invoice = new InvoiceWV(bookingByGb.get(11));
+//		for (DetailsByCostCenter detByCC : invoice.getBookingDetailsByCostCenter()) {
+//			LOG.info(detByCC);
 //		}
+//		LOG.info("Anzahl Kostenstellen: " + invoice.getBookingDetailsByCostCenter().size());
+//		
+//		for (DetailsByProfile detByProfile : invoice.getBookingDetailsByProfile()) {
+//			LOG.info(detByProfile);
+//		}
+//		LOG.info("Anzahl Profile: " + invoice.getBookingDetailsByProfile().size());
+		
+		
+		
+		
+//		Exporter exporter = new Exporter();
+//		exporter.createMietWVPdf(invoice);
+		
+		
+		
 
-		// TEST: One invoice per GB
-		// int test = 0;
-		// for (Integer gbNo : bookingByGb.keySet()) {
-		// InvoiceWV invoice = new InvoiceWV(bookingByGb.get(gbNo));
-		// LOG.info("Datensätze in GB: " + gbNo + " sind: " +
-		// bookingByGb.get(gbNo).size());
-		// test = test + bookingByGb.get(gbNo).size();
-		// }
-		// LOG.info("Total: " + test);
-
-		// try {
-		// createPdf("output/pdfexport.pdf");
-		// } catch (IOException e) {
-		// // TODO Auto-generated catch block
-		// e.printStackTrace();
-		// }
 
 		LOG.info("Anwendung wird beendet");
 	}
@@ -211,6 +269,23 @@ public class MainFrame {
 				.addText("Bob McWhirter");
 
 		return document;
+	}
+	
+	/**
+	 * @return the tabedPane
+	 */
+	public JTabbedPane getTabedPane() {
+		if (tabedPane == null) {
+			tabedPane = new JTabbedPane();
+		}
+		return tabedPane;
+	}
+	
+	public static JTextField getjTextFieldPath() {
+		if (jTextFieldPath == null) {
+			jTextFieldPath = new JTextField(30);
+		}
+		return jTextFieldPath;
 	}
 
 }

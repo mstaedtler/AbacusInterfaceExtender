@@ -6,9 +6,15 @@ import java.util.List;
 
 public class InvoiceWV {
 
-	public InvoiceWV(List<WVImportBooking> importBookings) {
+	public enum Währung{
+		CHF, EUR
+	}
+	
+	public InvoiceWV(List<WVImportBooking> importBookings, Integer gbNummer) {
 		this.importBookings = importBookings;
+		this.gbNummer = gbNummer;
 		init();
+		initStammdaten();
 	}
 
 	private List<WVImportBooking> importBookings;
@@ -22,7 +28,104 @@ public class InvoiceWV {
 	private Double mwstSatz = 8.0d;
 	private Double mwstBetrag;
 	private Double totalInvoiceAmountInclMwst;
-
+	private Währung währung;
+	private Double umrechnungskurs;
+	
+	private Integer gbNummer;
+	private Integer invoiceNumber;
+	private boolean isExport = false;
+	
+	private String mwstNummer;
+	private String zahlungskonditionen;
+	private String postkontoNr;
+	private String bankname;
+	private String iban;
+	
+	private Integer kontoNrSoll;
+	private Integer kontoNrHaben;
+	
+	
+	private void initStammdaten() {
+		
+		//Gemeinsamkeiten setzen
+		projektNummer 			= 195903001; //TODO aus Properties holen
+		projektReferenz 		= "DBS"; //TODO aus Properties holen
+		mwstNummer 				= "CHE-105.934.399 MWST";
+		zahlungskonditionen 	= "Zahlungskonditionen: 30 Tage netto";
+		postkontoNr 			= "PC 40-16339-7";
+		bankname 				= "Basler Kantonalbank, 4002 Basel";
+		iban 					= "CH83 0077 0016 0509 2614 1";
+		umrechnungskurs 		= 1.0d;
+		währung 				= Währung.CHF;
+		
+		
+		
+		//Adressnummer und Währung Abhängig vom GB setzen
+		//TODO Währung und Kurs hinzufügen und bei Betragsberechnungen berücksichtigen
+		//TODO Mwst. dynamisch setzen
+		switch (gbNummer) {
+		case 11:
+			adresse = new Debitorenadresse("Gruner AG", "Gellertstrasse 55", "4020 Basel");
+			break;
+		case 12:
+			adresse = new Debitorenadresse("Gruner Böhringer AG", "Mühlegasse 10", "4104 Oberwil");
+			break;
+		case 13:
+			adresse = new Debitorenadresse("Gruner Lüem AG", "St. Jakobs-Strasse 199", "4020 Basel");
+			break;
+		case 15:
+			adresse = new Debitorenadresse("Gruner Wepf AG, Zürich", "Thurgauerstrasse 56", "8050 Zürich");
+			break;
+		case 20:
+			adresse = new Debitorenadresse("Gruner Berchtold Eicher AG", "Chamerstrasse 170", "6300 Zug");
+			break;
+		case 22:
+			adresse = new Debitorenadresse("Gruner Roschi AG", "Sägestrasse 73", "3098 Köniz");
+			break;
+		case 23:
+			adresse = new Debitorenadresse("Gruner Wepf AG, St. Gallen", "Oberstrasse 153", "9000 St. Gallen");
+			break;
+		case 24:
+			adresse = new Debitorenadresse("Gruner Gruneko AG", "St. Jakobs-Strasse 199", "4020 Basel");
+			break;
+		case 27:
+			adresse = new Debitorenadresse("Stucky SA", "Rue du Lac 33", "1020 Renens");	
+			break;
+		case 80:
+			adresse = new Debitorenadresse("Gruner GmbH, Wien", "Otto-Bauer-Gasse 6/10", "AT-1060 Wien");
+			währung = Währung.EUR;
+			umrechnungskurs = 1.15d;
+			mwstNummer = "DE180945107";
+			break;
+		case 81:
+			adresse = new Debitorenadresse("Gruner GmbH", "Dufourstrasse 28", "DE-04107 Leipzig");
+			währung = Währung.EUR;
+			umrechnungskurs = 1.15d;
+			mwstNummer = "DE180945107";
+			break;
+		case 83:
+			adresse = new Debitorenadresse("Gruner GmbH, Stuttgart", "Zettachring 8", "DE-70567 Stuttgart");
+			währung = Währung.EUR;
+			umrechnungskurs = 1.15d;
+			mwstNummer = "DE180945107";
+			break;
+		case 92:
+			adresse = new Debitorenadresse("Gruner GmbH, Köln", "Kaiser-Wilhelm-Ring 27-29", "DE-50672 Köln");
+			währung = Währung.EUR;
+			umrechnungskurs = 1.15d;
+			mwstNummer = "DE180945107";
+			break;
+		case 93:
+			adresse = new Debitorenadresse("Gruner GmbH, Hamburg", "Raboisen 16", "DE-20095 Hamburg");
+			währung = Währung.EUR;
+			umrechnungskurs = 1.15d;
+			mwstNummer = "DE180945107";
+			break;
+		default:
+			break;
+		}
+	}
+	
 	private void init() {
 		
 		if (lineItems == null) {
@@ -158,6 +261,33 @@ public class InvoiceWV {
 		totalInvoiceAmountInclMwst = getTotalInvoiceAmount()+((getTotalInvoiceAmount() * getMwstSatz())/100);
 		return totalInvoiceAmountInclMwst;
 	}
+
+	public boolean isExport() {
+		return isExport;
+	}
+
+	public void setExport(boolean isExport) {
+		this.isExport = isExport;
+		
+	}
+
+	public Integer getGbNummer() {
+		return gbNummer;
+	}
+
+	public void setGbNummer(Integer gbNummer) {
+		this.gbNummer = gbNummer;
+	}
+
+	public Integer getInvoiceNumber() {
+		return invoiceNumber;
+	}
+
+	public void setInvoiceNumber(Integer invoiceNumber) {
+		this.invoiceNumber = invoiceNumber;
+	}
+	
+	
 
 	
 

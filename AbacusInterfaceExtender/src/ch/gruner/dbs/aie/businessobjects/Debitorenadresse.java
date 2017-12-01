@@ -2,44 +2,55 @@ package ch.gruner.dbs.aie.businessobjects;
 
 public class Debitorenadresse {
 	
-	private String Name;
-	private String Anschrift;
-	private String Ort;
+	private String name;
+	private String anschrift;
+	private String ort;
+	
+	public Debitorenadresse() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Debitorenadresse(String name, String anschrift, String ort) {
+		this.ort = ort;
+		this.name = name;
+		this.anschrift = anschrift;
+	}
+	
 	/**
 	 * @return the name
 	 */
 	public String getName() {
-		return Name;
+		return name;
 	}
 	/**
 	 * @param name the name to set
 	 */
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
 	/**
 	 * @return the anschrift
 	 */
 	public String getAnschrift() {
-		return Anschrift;
+		return anschrift;
 	}
 	/**
 	 * @param anschrift the anschrift to set
 	 */
 	public void setAnschrift(String anschrift) {
-		Anschrift = anschrift;
+		this.anschrift = anschrift;
 	}
 	/**
 	 * @return the ort
 	 */
 	public String getOrt() {
-		return Ort;
+		return ort;
 	}
 	/**
 	 * @param ort the ort to set
 	 */
 	public void setOrt(String ort) {
-		Ort = ort;
+		this.ort = ort;
 	}
 	
 	@Override
