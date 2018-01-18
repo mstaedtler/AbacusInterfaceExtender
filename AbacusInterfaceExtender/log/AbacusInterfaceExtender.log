@@ -15940,3 +15940,873 @@
 2017-11-29 15:55:15,890 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 345.0
 2017-11-29 15:55:15,890 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 27.6
 2017-11-29 15:55:15,890 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 372.6
+2017-12-06 10:33:54,280 INFO  [main] gui.MainFrame (MainFrame.java:133) - Anwendung gestartet
+2017-12-06 10:33:55,475 INFO  [main] gui.MainFrame (MainFrame.java:173) - Anwendung wird beendet
+2017-12-06 10:34:00,514 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:28) - Lese file: input/vmAccounting_20170930.csv
+2017-12-06 10:34:00,548 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS2W7VI4 / alw / Standard / 15.0
+2017-12-06 10:34:00,548 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS4W7V02 / apm / Standard / 15.0
+2017-12-06 10:34:00,549 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS-W7V06 / baal / Standard / 15.0
+2017-12-06 10:34:00,549 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS2W7VI7 / fca / Standard / 15.0
+2017-12-06 10:34:00,550 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS7W7V09 / ge / Standard / 15.0
+2017-12-06 10:34:00,550 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS-W7VC0 / ge / Standard / 15.0
+2017-12-06 10:34:00,550 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: ZH-W7V17 / hagr / Standard / 15.0
+2017-12-06 10:34:00,551 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS-W7V07 / mej / Standard / 15.0
+2017-12-06 10:34:00,551 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS2W7VI5 / mus / Standard / 15.0
+2017-12-06 10:34:00,551 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS-W7V08 / rau / Standard / 15.0
+2017-12-06 10:34:00,551 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BE-W7V04 / wia / Standard / 15.0
+2017-12-06 10:34:00,552 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: ZH-W7V18 / wpf / Standard / 15.0
+2017-12-06 10:34:00,552 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: VD-W7V07 / dmg / Standard / 15.0
+2017-12-06 10:34:00,552 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS2W7VG2 / dmg / Standard / 15.0
+2017-12-06 10:34:00,553 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110200: BS2W7VG1 / mgg / Standard / 15.0
+2017-12-06 10:34:00,553 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110201: BS2W7VJ9 / aena / Standard / 15.0
+2017-12-06 10:34:00,553 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110201: BS2W7VF7 / jeta / Standard / 15.0
+2017-12-06 10:34:00,554 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110201: BS2W7VG0 / mks / Standard / 15.0
+2017-12-06 10:34:00,554 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110201: BS2W7VH6 / wr / Standard / 15.0
+2017-12-06 10:34:00,554 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110202: BS2W7VK5 / almo / Standard / 15.0
+2017-12-06 10:34:00,555 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110202: BS2W7VK4 / gai / Standard / 15.0
+2017-12-06 10:34:00,555 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110202: BS2W7VK3 / mimu / Standard / 15.0
+2017-12-06 10:34:00,555 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110202: BS2W7VH9 / reu / Standard / 15.0
+2017-12-06 10:34:00,556 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110204: BS2W7VL5 / e-kohler / Standard / 15.0
+2017-12-06 10:34:00,556 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110242: BS2W7VK1 / stut / RAM+ / 40.0
+2017-12-06 10:34:00,556 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110242: BS2W7VI6 / thm / RAM+ / 40.0
+2017-12-06 10:34:00,557 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110243: BS2W7V42 / BIMDevelopment / CAD Standard / 45.0
+2017-12-06 10:34:00,557 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110243: BS2W7V04 / molu / CAD Standard / 45.0
+2017-12-06 10:34:00,557 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110243: BS2W7V45 / zhhu / CAD Standard / 45.0
+2017-12-06 10:34:00,558 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110243: BS2W7VF4 / ms / RAM+ / 40.0
+2017-12-06 10:34:00,558 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110340: BS-W7V04 / stc / Standard / 15.0
+2017-12-06 10:34:00,559 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V19 / bsa / CAD Standard / 45.0
+2017-12-06 10:34:00,559 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V64 / lep / CAD Standard / 45.0
+2017-12-06 10:34:00,559 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V68 / bsv / Statik / 65.0
+2017-12-06 10:34:00,560 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V69 / dvo / Statik / 65.0
+2017-12-06 10:34:00,560 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V70 / rdl / Statik / 65.0
+2017-12-06 10:34:00,560 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V71 / ru / Statik / 65.0
+2017-12-06 10:34:00,561 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V72 / sim / Statik / 65.0
+2017-12-06 10:34:00,561 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V59 / sml / Statik / 65.0
+2017-12-06 10:34:00,561 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V40 / trc / Statik / 65.0
+2017-12-06 10:34:00,562 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110352: BS-W7V61 / rom / CAD Standard / 45.0
+2017-12-06 10:34:00,562 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110352: BS-W7V11 / stf / Standard / 15.0
+2017-12-06 10:34:00,562 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110352: BS-W7V10 / trt / Standard / 15.0
+2017-12-06 10:34:00,562 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110440: BS2W7VL6 / bom / Standard / 15.0
+2017-12-06 10:34:00,563 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110440: BS2W7VL7 / mim / Standard / 15.0
+2017-12-06 10:34:00,563 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110450: BS2W7VM3 / zae / CAD Standard / 45.0
+2017-12-06 10:34:00,563 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110450: BS2W7V22 / drmo / CAD Standard / 45.0
+2017-12-06 10:34:00,564 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110450: BS2W7VK8 / bse / Standard / 15.0
+2017-12-06 10:34:00,564 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110450: BS2W7VL1 / gd / Standard / 15.0
+2017-12-06 10:34:00,564 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110450: BS2W7VL4 / zhd / Standard / 15.0
+2017-12-06 10:34:00,565 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110452: BS2W7V33 / boa / CAD Standard / 45.0
+2017-12-06 10:34:00,565 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110452: BS2W7V27 / det / Standard / 15.0
+2017-12-06 10:34:00,565 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110452: ZH-W7V13 / knl / Standard / 15.0
+2017-12-06 10:34:00,566 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110452: BS2W7VJ6 / kpe / Standard / 15.0
+2017-12-06 10:34:00,566 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110452: BS2W7VI3 / lota / Standard / 15.0
+2017-12-06 10:34:00,566 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110454: BS2W7VI1 / brma / CAD Standard / 45.0
+2017-12-06 10:34:00,567 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110454: BS2W7V24 / GrunerWorkspace-Verkehrsprogramme / Special / 0.0
+2017-12-06 10:34:00,570 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110454: BS2W7V49 / laph GrunerWorkspace-Verkehrsprogramme / Special / 0.0
+2017-12-06 10:34:00,570 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110454: BS2W7VK6 / win / Standard / 15.0
+2017-12-06 10:34:00,570 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110458: BS2W7V13 / dde / CAD Standard / 45.0
+2017-12-06 10:34:00,571 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110458: BS2W7VL2 / amju / Standard / 15.0
+2017-12-06 10:34:00,571 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110458: BS2W7V25 / hera / Standard / 15.0
+2017-12-06 10:34:00,571 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110458: ZH2W7V08 / koma / Standard / 15.0
+2017-12-06 10:34:00,572 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110458: BS2W7VJ2 / sido / Standard / 15.0
+2017-12-06 10:34:00,572 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110458: BS2W7VF5 / umm / Standard / 15.0
+2017-12-06 10:34:00,572 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110458: BS2W7VF9 / Windows_7_Albau_Pool / Standard / 15.0
+2017-12-06 10:34:00,572 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V54 / drl / CAD Standard / 45.0
+2017-12-06 10:34:00,573 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V55 / eck / CAD Standard / 45.0
+2017-12-06 10:34:00,573 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V56 / eim / CAD Standard / 45.0
+2017-12-06 10:34:00,573 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V57 / ksj / CAD Standard / 45.0
+2017-12-06 10:34:00,573 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V22 / masi / CAD Standard / 45.0
+2017-12-06 10:34:00,573 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V74 / coe / CAD Standard / 45.0
+2017-12-06 10:34:00,574 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V15 / hejh / CAD Standard / 45.0
+2017-12-06 10:34:00,574 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V62 / rumo / CAD Standard / 45.0
+2017-12-06 10:34:00,574 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS7W7V16 / coe / CAD Standard / 45.0
+2017-12-06 10:34:00,574 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V02 / rusv / CAD Standard / 45.0
+2017-12-06 10:34:00,575 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V25 / sijo / CAD Standard / 45.0
+2017-12-06 10:34:00,575 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V66 / stma GrunerWorkspace-Heissbemessung / Special / 80.0
+2017-12-06 10:34:00,575 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V28 / bikr / Standard / 15.0
+2017-12-06 10:34:00,575 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V17 / eam / Standard / 15.0
+2017-12-06 10:34:00,576 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V53 / fast / Standard / 15.0
+2017-12-06 10:34:00,576 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V37 / gama / Standard / 15.0
+2017-12-06 10:34:00,576 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V51 / grph / Standard / 15.0
+2017-12-06 10:34:00,576 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V45 / hifl / Standard / 15.0
+2017-12-06 10:34:00,577 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V38 / kaal / Standard / 15.0
+2017-12-06 10:34:00,577 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V80 / kaz / Standard / 15.0
+2017-12-06 10:34:00,578 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V39 / kda / Standard / 15.0
+2017-12-06 10:34:00,578 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V41 / kid / Standard / 15.0
+2017-12-06 10:34:00,578 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V30 / krse / Standard / 15.0
+2017-12-06 10:34:00,578 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS2W7V53 / KST800350 / Standard / 15.0
+2017-12-06 10:34:00,579 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V11 / ras / Standard / 15.0
+2017-12-06 10:34:00,579 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V43 / rsi / Standard / 15.0
+2017-12-06 10:34:00,579 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V44 / sho / Standard / 15.0
+2017-12-06 10:34:00,579 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS7W7V12 / siem / Standard / 15.0
+2017-12-06 10:34:00,580 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7VC1 / siem / Standard / 15.0
+2017-12-06 10:34:00,580 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V34 / suan / Standard / 15.0
+2017-12-06 10:34:00,580 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V52 / wama / Standard / 15.0
+2017-12-06 10:34:00,580 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V31 / wec / Standard / 15.0
+2017-12-06 10:34:00,581 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V32 / weew / Standard / 15.0
+2017-12-06 10:34:00,581 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V24 / wich / Standard / 15.0
+2017-12-06 10:34:00,581 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110555: BS-W7V35 / kir / CAD Standard / 45.0
+2017-12-06 10:34:00,581 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110555: BS-W7V18 / gst / Standard / 15.0
+2017-12-06 10:34:00,582 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110555: BS7W7V21 / lusc / Standard / 15.0
+2017-12-06 10:34:00,582 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110555: BS-W7VC3 / lusc / Standard / 15.0
+2017-12-06 10:34:00,582 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V21 / dzm / CAD Standard / 45.0
+2017-12-06 10:34:00,582 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V02 / krj / CAD Standard / 45.0
+2017-12-06 10:34:00,583 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V36 / bni / Standard / 15.0
+2017-12-06 10:34:00,583 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V14 / fito / Standard / 15.0
+2017-12-06 10:34:00,583 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V46 / kisu / Standard / 15.0
+2017-12-06 10:34:00,584 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V12 / rid / Standard / 15.0
+2017-12-06 10:34:00,584 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V05 / tb / Standard / 15.0
+2017-12-06 10:34:00,584 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V03 / tj / Standard / 15.0
+2017-12-06 10:34:00,585 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V42 / wolu / Standard / 15.0
+2017-12-06 10:34:00,585 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110660: AG-W7V04 / doma / Standard / 15.0
+2017-12-06 10:34:00,585 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110675: VD-W7V06 / waro / Standard / 15.0
+2017-12-06 10:34:00,585 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110700: BS-W7V13 / bm / Special / 65.0
+2017-12-06 10:34:00,586 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 12:120200: BL2W7V08 / rsc / Standard / 15.0
+2017-12-06 10:34:00,586 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 12:120353: BL2W7V09 / dfl / CAD Standard / 45.0
+2017-12-06 10:34:00,586 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 12:120353: BL2W7V03 / dfl / Standard / 15.0
+2017-12-06 10:34:00,586 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V05 / ebm / CAD Standard / 45.0
+2017-12-06 10:34:00,587 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V07 / vosi / CAD Standard / 45.0
+2017-12-06 10:34:00,587 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V06 / ksa / Standard / 15.0
+2017-12-06 10:34:00,588 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V01 / diu / Standard / 15.0
+2017-12-06 10:34:00,588 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V02 / dni / Standard / 15.0
+2017-12-06 10:34:00,588 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V04 / egh / Standard / 15.0
+2017-12-06 10:34:00,589 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V09 / fov / Standard / 15.0
+2017-12-06 10:34:00,589 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V03 / lah / Standard / 15.0
+2017-12-06 10:34:00,590 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V08 / wt / Standard / 15.0
+2017-12-06 10:34:00,590 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150100: ZH-W7V26 / maur / Standard / 15.0
+2017-12-06 10:34:00,590 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150200: ZH-W7V19 / dapa / Standard / 15.0
+2017-12-06 10:34:00,591 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150350: ZH-W7V27 / chd / CAD Standard / 45.0
+2017-12-06 10:34:00,591 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150350: ZH-W7V14 / joi / Standard / 15.0
+2017-12-06 10:34:00,591 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150351: ZH-W7V38 / brk / CAD Standard / 45.0
+2017-12-06 10:34:00,592 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150351: ZH-W7V37 / gdi / Standard / 15.0
+2017-12-06 10:34:00,592 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150351: ZH-W7V39 / vot / Standard / 15.0
+2017-12-06 10:34:00,592 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150351: ZH-W7V36 / wge / Standard / 15.0
+2017-12-06 10:34:00,592 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150352: ZH-W7V33 / dad / CAD Standard / 45.0
+2017-12-06 10:34:00,593 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150352: ZH-W7V20 / koo / Standard / 15.0
+2017-12-06 10:34:00,593 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150354: ZH-W7V45 / brth / CAD Standard / 45.0
+2017-12-06 10:34:00,593 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150354: ZH-W7V15 / nis / Standard / 15.0
+2017-12-06 10:34:00,593 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200200: ZG-W7V03 / ast / Standard / 15.0
+2017-12-06 10:34:00,593 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200200: ZG-W7V04 / gsa / Standard / 15.0
+2017-12-06 10:34:00,594 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200350: ZG-W7V02 / kb / CAD Standard / 45.0
+2017-12-06 10:34:00,594 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200350: ZG-W7V15 / bsl / Standard / 15.0
+2017-12-06 10:34:00,594 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200351: ZG-W7V19 / gmr / CAD Standard / 45.0
+2017-12-06 10:34:00,594 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200351: ZG-W7V14 / bes / CAD Standard / 45.0
+2017-12-06 10:34:00,595 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200351: ZG-W7V24 / rbi / CAD Standard / 45.0
+2017-12-06 10:34:00,595 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200351: ZG-W7V01 / hme / Standard / 15.0
+2017-12-06 10:34:00,595 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200351: ZG-W7V13 / js / Standard / 15.0
+2017-12-06 10:34:00,595 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V28 / mhb / CAD Standard / 45.0
+2017-12-06 10:34:00,595 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V25 / bst / CAD Standard / 45.0
+2017-12-06 10:34:00,596 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V27 / wmi / CAD Standard / 45.0
+2017-12-06 10:34:00,596 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V16 / hemi / CAD Standard / 45.0
+2017-12-06 10:34:00,598 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V07 / lob / CAD Standard / 45.0
+2017-12-06 10:34:00,598 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V09 / frma GrunerWorkspace-BKL / Special / 80.0
+2017-12-06 10:34:00,598 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V11 / loj GrunerWorkspace-BKL / Special / 80.0
+2017-12-06 10:34:00,599 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V10 / zwm GrunerWorkspace-BKL / Special / 80.0
+2017-12-06 10:34:00,599 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V08 / mfl / Standard / 15.0
+2017-12-06 10:34:00,599 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V05 / wmr / Standard / 15.0
+2017-12-06 10:34:00,599 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 23:230100: SG-W7V01 / ho / Standard / 15.0
+2017-12-06 10:34:00,599 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 23:230100: SG-W7V03 / ho deda / Standard / 15.0
+2017-12-06 10:34:00,600 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 23:230350: BE-W7V26 / urs / CAD Standard / 45.0
+2017-12-06 10:34:00,600 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 23:230350: SG-W7V04 / schr / Standard / 15.0
+2017-12-06 10:34:00,600 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 23:230351: SG-W7V02 / gae / CAD Standard / 45.0
+2017-12-06 10:34:00,600 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240200: BS2W7V46 / Windows_7_Albau_Pool / Standard / 15.0
+2017-12-06 10:34:00,601 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240200: BS2W7V52 / Windows_7_Albau_Pool / Standard / 15.0
+2017-12-06 10:34:00,601 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240200: BS2W7V44 / Windows_7_Albau_Pool / Standard / 15.0
+2017-12-06 10:34:00,601 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240201: ZH2W7V41 / rai / Standard / 15.0
+2017-12-06 10:34:00,601 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240201: ZH2W7V16 / mire / Standard / 15.0
+2017-12-06 10:34:00,602 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V37 / ans / CAD Standard / 45.0
+2017-12-06 10:34:00,602 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V38 / auj / CAD Standard / 45.0
+2017-12-06 10:34:00,602 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS2W7V38 / bdl / CAD Standard / 45.0
+2017-12-06 10:34:00,602 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V33 / kube / CAD Standard / 45.0
+2017-12-06 10:34:00,602 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V39 / lpe / CAD Standard / 45.0
+2017-12-06 10:34:00,603 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V34 / remi / CAD Standard / 45.0
+2017-12-06 10:34:00,603 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V09 / wpe / CAD Standard / 45.0
+2017-12-06 10:34:00,603 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V06 / rof / Standard / 15.0
+2017-12-06 10:34:00,603 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V35 / rst / Standard / 15.0
+2017-12-06 10:34:00,603 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V03 / schl / Standard / 15.0
+2017-12-06 10:34:00,604 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V01 / sub / Standard / 15.0
+2017-12-06 10:34:00,604 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240351: BS4W7V21 / buma / CAD Standard / 45.0
+2017-12-06 10:34:00,605 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240351: BS4W7V08 / dlf / Standard / 15.0
+2017-12-06 10:34:00,605 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240351: BS4W7V28 / kdj / Standard / 15.0
+2017-12-06 10:34:00,605 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240351: BS4W7V05 / wipe / Standard / 15.0
+2017-12-06 10:34:00,605 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240353: BS4W7V04 / hmar / CAD Standard / 45.0
+2017-12-06 10:34:00,605 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240353: BS4W7V07 / kar / CAD Standard / 45.0
+2017-12-06 10:34:00,605 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240353: BS4W7V24 / hwo / Standard / 15.0
+2017-12-06 10:34:00,606 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240353: BS4W7V25 / kac / Standard / 15.0
+2017-12-06 10:34:00,606 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240353: BS4W7V26 / lo / Standard / 15.0
+2017-12-06 10:34:00,606 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240353: BS4W7V20 / toda / Standard / 15.0
+2017-12-06 10:34:00,607 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240450: ZH2W7V20 / bomi / CAD Standard / 45.0
+2017-12-06 10:34:00,607 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240450: ZH2W7V17 / rimi / Standard / 15.0
+2017-12-06 10:34:00,607 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240451: ZH2W7V34 / hule / CAD Standard / 45.0
+2017-12-06 10:34:00,607 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240451: ZH2W7V03 / mibu / Standard / 15.0
+2017-12-06 10:34:00,608 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240451: ZH2W7V18 / host / Standard / 15.0
+2017-12-06 10:34:00,608 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240451: ZH2W7V21 / huma / Standard / 15.0
+2017-12-06 10:34:00,608 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240451: ZH2W7V07 / maym / Standard / 15.0
+2017-12-06 10:34:00,608 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240451: ZH2W7V32 / uer / Standard / 15.0
+2017-12-06 10:34:00,609 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240452: ZH2W7V33 / scth / CAD Standard / 45.0
+2017-12-06 10:34:00,609 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240452: ZH2W7V31 / plma / Standard / 15.0
+2017-12-06 10:34:00,609 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240452: ZH2W7V19 / scpe / Standard / 15.0
+2017-12-06 10:34:00,609 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 27:270200: VD-W7V03 / dsc / Standard / 15.0
+2017-12-06 10:34:00,610 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 27:270200: BS7W7V07 / paa / Standard / 15.0
+2017-12-06 10:34:00,610 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 80:800350: BS2W7V48 / fima KST800350 / CAD Standard / 45.0
+2017-12-06 10:34:00,611 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 80:800350: BS2W7V40 / KST800350 / CAD Standard / 45.0
+2017-12-06 10:34:00,612 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 80:800350: BS7W7V05 / hua / Standard / 15.0
+2017-12-06 10:34:00,612 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 80:800350: BS-W7V82 / hua / Standard / 15.0
+2017-12-06 10:34:00,612 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 80:800350: BS-W7V81 / lav / Standard / 15.0
+2017-12-06 10:34:00,683 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 80:800350: BS-W7VC4 / niwe / Standard / 15.0
+2017-12-06 10:34:00,683 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: DE2W7V06 / mass / CAD Standard / 45.0
+2017-12-06 10:34:00,683 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: BS-W7V67 / khmo GrunerWorkspace-Heissbemessung / Special / 80.0
+2017-12-06 10:34:00,683 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: BS-W7V65 / pojo GrunerWorkspace-Heissbemessung / Special / 80.0
+2017-12-06 10:34:00,684 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: DE2W7V09 / casc / Standard / 15.0
+2017-12-06 10:34:00,684 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: DE2W7V08 / cwi / Standard / 15.0
+2017-12-06 10:34:00,684 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: BS7W7V01 / dus / Standard / 15.0
+2017-12-06 10:34:00,684 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: BS7W7V03 / lav / Standard / 15.0
+2017-12-06 10:34:00,684 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: DE2W7V10 / psti / Standard / 15.0
+2017-12-06 10:34:00,685 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 92:920350: DE2W7V07 / mini / Standard / 15.0
+2017-12-06 10:34:00,685 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7V25 / maol / CAD Standard / 45.0
+2017-12-06 10:34:00,685 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7V58 / maol / CAD Standard / 45.0
+2017-12-06 10:34:00,686 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7V73 / KST920350 KST930350 / CAD Standard / 45.0
+2017-12-06 10:34:00,686 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS7W7V18 / KST920350 KST930350 / CAD Standard / 45.0
+2017-12-06 10:34:00,686 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS7W7V13 / bian / Standard / 15.0
+2017-12-06 10:34:00,686 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7VC2 / bian / Standard / 15.0
+2017-12-06 10:34:00,687 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS7W7V11 / brbe / Standard / 15.0
+2017-12-06 10:34:00,687 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7V16 / dabe / Standard / 15.0
+2017-12-06 10:34:00,687 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7V78 / dus / Standard / 15.0
+2017-12-06 10:34:00,688 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS7W7V17 / klsa / Standard / 15.0
+2017-12-06 10:34:00,688 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS7W7V10 / maol / Standard / 15.0
+2017-12-06 10:34:00,688 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS7W7V08 / sile / Standard / 15.0
+2017-12-06 10:34:00,688 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7VB9 / sile / Standard / 15.0
+2017-12-06 10:34:00,689 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS7W7V02 / tima / Standard / 15.0
+2017-12-06 10:34:00,689 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7VB8 / tima / Standard / 15.0
+2017-12-06 10:34:00,689 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:51) - Es wurden: 233 Zeilen gelesen und hinzugefügt.
+2017-12-06 10:34:00,689 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:53) - BufferedReader geschlossen
+2017-12-06 10:34:00,794 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@20a42944
+2017-12-06 10:34:00,808 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 3000.0
+2017-12-06 10:34:00,808 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 240.0
+2017-12-06 10:34:00,808 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 3240.0
+2017-12-06 10:34:00,808 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@1adc54a1
+2017-12-06 10:34:00,809 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 75.0
+2017-12-06 10:34:00,809 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 6.0
+2017-12-06 10:34:00,809 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 81.0
+2017-12-06 10:34:00,810 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@4587c673
+2017-12-06 10:34:00,810 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 195.0
+2017-12-06 10:34:00,810 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 15.6
+2017-12-06 10:34:00,810 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 210.6
+2017-12-06 10:34:00,811 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@32d96ea9
+2017-12-06 10:34:00,811 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 300.0
+2017-12-06 10:34:00,811 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 24.0
+2017-12-06 10:34:00,811 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 324.0
+2017-12-06 10:34:00,812 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@33369fbf
+2017-12-06 10:34:00,812 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 150.0
+2017-12-06 10:34:00,812 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 12.0
+2017-12-06 10:34:00,813 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 162.0
+2017-12-06 10:34:00,813 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@4bb7ac24
+2017-12-06 10:34:00,813 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 280.0
+2017-12-06 10:34:00,813 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 22.4
+2017-12-06 10:34:00,814 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 302.4
+2017-12-06 10:34:00,814 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@30784f7f
+2017-12-06 10:34:00,814 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 255.0
+2017-12-06 10:34:00,814 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 20.4
+2017-12-06 10:34:00,815 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 275.4
+2017-12-06 10:34:00,815 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@49adc3ff
+2017-12-06 10:34:00,815 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 495.0
+2017-12-06 10:34:00,879 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 39.6
+2017-12-06 10:34:00,879 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 534.6
+2017-12-06 10:34:00,880 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@4e616612
+2017-12-06 10:34:00,880 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 135.0
+2017-12-06 10:34:00,880 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 10.8
+2017-12-06 10:34:00,881 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 145.8
+2017-12-06 10:34:00,881 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@38413576
+2017-12-06 10:34:00,882 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 945.0
+2017-12-06 10:34:00,882 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 75.6
+2017-12-06 10:34:00,882 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 1020.6
+2017-12-06 10:34:00,883 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@4ab096b6
+2017-12-06 10:34:00,883 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 30.0
+2017-12-06 10:34:00,883 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 2.4
+2017-12-06 10:34:00,883 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 32.4
+2017-12-06 10:34:00,884 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@6d251624
+2017-12-06 10:34:00,884 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 15.0
+2017-12-06 10:34:00,884 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 1.2
+2017-12-06 10:34:00,884 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 16.2
+2017-12-06 10:34:00,884 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@2831bc64
+2017-12-06 10:34:00,885 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 345.0
+2017-12-06 10:34:00,885 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 27.6
+2017-12-06 10:34:00,885 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 372.6
+2017-12-11 09:30:25,441 INFO  [main] gui.MainFrame (MainFrame.java:133) - Anwendung gestartet
+2017-12-11 09:30:25,735 INFO  [main] gui.MainFrame (MainFrame.java:173) - Anwendung wird beendet
+2017-12-11 09:30:28,644 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:28) - Lese file: input/vmAccounting_20170930.csv
+2017-12-11 09:30:28,679 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS2W7VI4 / alw / Standard / 15.0
+2017-12-11 09:30:28,679 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS4W7V02 / apm / Standard / 15.0
+2017-12-11 09:30:28,679 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS-W7V06 / baal / Standard / 15.0
+2017-12-11 09:30:28,680 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS2W7VI7 / fca / Standard / 15.0
+2017-12-11 09:30:28,680 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS7W7V09 / ge / Standard / 15.0
+2017-12-11 09:30:28,680 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS-W7VC0 / ge / Standard / 15.0
+2017-12-11 09:30:28,681 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: ZH-W7V17 / hagr / Standard / 15.0
+2017-12-11 09:30:28,681 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS-W7V07 / mej / Standard / 15.0
+2017-12-11 09:30:28,681 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS2W7VI5 / mus / Standard / 15.0
+2017-12-11 09:30:28,681 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS-W7V08 / rau / Standard / 15.0
+2017-12-11 09:30:28,682 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BE-W7V04 / wia / Standard / 15.0
+2017-12-11 09:30:28,682 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: ZH-W7V18 / wpf / Standard / 15.0
+2017-12-11 09:30:28,683 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: VD-W7V07 / dmg / Standard / 15.0
+2017-12-11 09:30:28,683 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS2W7VG2 / dmg / Standard / 15.0
+2017-12-11 09:30:28,683 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110200: BS2W7VG1 / mgg / Standard / 15.0
+2017-12-11 09:30:28,683 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110201: BS2W7VJ9 / aena / Standard / 15.0
+2017-12-11 09:30:28,684 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110201: BS2W7VF7 / jeta / Standard / 15.0
+2017-12-11 09:30:28,684 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110201: BS2W7VG0 / mks / Standard / 15.0
+2017-12-11 09:30:28,684 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110201: BS2W7VH6 / wr / Standard / 15.0
+2017-12-11 09:30:28,685 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110202: BS2W7VK5 / almo / Standard / 15.0
+2017-12-11 09:30:28,685 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110202: BS2W7VK4 / gai / Standard / 15.0
+2017-12-11 09:30:28,685 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110202: BS2W7VK3 / mimu / Standard / 15.0
+2017-12-11 09:30:28,686 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110202: BS2W7VH9 / reu / Standard / 15.0
+2017-12-11 09:30:28,686 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110204: BS2W7VL5 / e-kohler / Standard / 15.0
+2017-12-11 09:30:28,686 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110242: BS2W7VK1 / stut / RAM+ / 40.0
+2017-12-11 09:30:28,686 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110242: BS2W7VI6 / thm / RAM+ / 40.0
+2017-12-11 09:30:28,687 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110243: BS2W7V42 / BIMDevelopment / CAD Standard / 45.0
+2017-12-11 09:30:28,687 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110243: BS2W7V04 / molu / CAD Standard / 45.0
+2017-12-11 09:30:28,687 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110243: BS2W7V45 / zhhu / CAD Standard / 45.0
+2017-12-11 09:30:28,687 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110243: BS2W7VF4 / ms / RAM+ / 40.0
+2017-12-11 09:30:28,688 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110340: BS-W7V04 / stc / Standard / 15.0
+2017-12-11 09:30:28,688 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V19 / bsa / CAD Standard / 45.0
+2017-12-11 09:30:28,688 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V64 / lep / CAD Standard / 45.0
+2017-12-11 09:30:28,689 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V68 / bsv / Statik / 65.0
+2017-12-11 09:30:28,689 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V69 / dvo / Statik / 65.0
+2017-12-11 09:30:28,689 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V70 / rdl / Statik / 65.0
+2017-12-11 09:30:28,690 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V71 / ru / Statik / 65.0
+2017-12-11 09:30:28,690 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V72 / sim / Statik / 65.0
+2017-12-11 09:30:28,690 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V59 / sml / Statik / 65.0
+2017-12-11 09:30:28,690 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V40 / trc / Statik / 65.0
+2017-12-11 09:30:28,691 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110352: BS-W7V61 / rom / CAD Standard / 45.0
+2017-12-11 09:30:28,691 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110352: BS-W7V11 / stf / Standard / 15.0
+2017-12-11 09:30:28,691 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110352: BS-W7V10 / trt / Standard / 15.0
+2017-12-11 09:30:28,692 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110440: BS2W7VL6 / bom / Standard / 15.0
+2017-12-11 09:30:28,692 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110440: BS2W7VL7 / mim / Standard / 15.0
+2017-12-11 09:30:28,692 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110450: BS2W7VM3 / zae / CAD Standard / 45.0
+2017-12-11 09:30:28,692 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110450: BS2W7V22 / drmo / CAD Standard / 45.0
+2017-12-11 09:30:28,693 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110450: BS2W7VK8 / bse / Standard / 15.0
+2017-12-11 09:30:28,693 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110450: BS2W7VL1 / gd / Standard / 15.0
+2017-12-11 09:30:28,693 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110450: BS2W7VL4 / zhd / Standard / 15.0
+2017-12-11 09:30:28,693 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110452: BS2W7V33 / boa / CAD Standard / 45.0
+2017-12-11 09:30:28,694 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110452: BS2W7V27 / det / Standard / 15.0
+2017-12-11 09:30:28,694 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110452: ZH-W7V13 / knl / Standard / 15.0
+2017-12-11 09:30:28,694 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110452: BS2W7VJ6 / kpe / Standard / 15.0
+2017-12-11 09:30:28,695 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110452: BS2W7VI3 / lota / Standard / 15.0
+2017-12-11 09:30:28,695 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110454: BS2W7VI1 / brma / CAD Standard / 45.0
+2017-12-11 09:30:28,696 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110454: BS2W7V24 / GrunerWorkspace-Verkehrsprogramme / Special / 0.0
+2017-12-11 09:30:28,696 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110454: BS2W7V49 / laph GrunerWorkspace-Verkehrsprogramme / Special / 0.0
+2017-12-11 09:30:28,696 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110454: BS2W7VK6 / win / Standard / 15.0
+2017-12-11 09:30:28,697 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110458: BS2W7V13 / dde / CAD Standard / 45.0
+2017-12-11 09:30:28,697 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110458: BS2W7VL2 / amju / Standard / 15.0
+2017-12-11 09:30:28,697 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110458: BS2W7V25 / hera / Standard / 15.0
+2017-12-11 09:30:28,698 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110458: ZH2W7V08 / koma / Standard / 15.0
+2017-12-11 09:30:28,698 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110458: BS2W7VJ2 / sido / Standard / 15.0
+2017-12-11 09:30:28,698 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110458: BS2W7VF5 / umm / Standard / 15.0
+2017-12-11 09:30:28,698 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110458: BS2W7VF9 / Windows_7_Albau_Pool / Standard / 15.0
+2017-12-11 09:30:28,698 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V54 / drl / CAD Standard / 45.0
+2017-12-11 09:30:28,699 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V55 / eck / CAD Standard / 45.0
+2017-12-11 09:30:28,699 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V56 / eim / CAD Standard / 45.0
+2017-12-11 09:30:28,699 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V57 / ksj / CAD Standard / 45.0
+2017-12-11 09:30:28,699 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V22 / masi / CAD Standard / 45.0
+2017-12-11 09:30:28,699 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V74 / coe / CAD Standard / 45.0
+2017-12-11 09:30:28,700 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V15 / hejh / CAD Standard / 45.0
+2017-12-11 09:30:28,700 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V62 / rumo / CAD Standard / 45.0
+2017-12-11 09:30:28,700 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS7W7V16 / coe / CAD Standard / 45.0
+2017-12-11 09:30:28,700 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V02 / rusv / CAD Standard / 45.0
+2017-12-11 09:30:28,701 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V25 / sijo / CAD Standard / 45.0
+2017-12-11 09:30:28,701 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V66 / stma GrunerWorkspace-Heissbemessung / Special / 80.0
+2017-12-11 09:30:28,701 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V28 / bikr / Standard / 15.0
+2017-12-11 09:30:28,701 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V17 / eam / Standard / 15.0
+2017-12-11 09:30:28,702 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V53 / fast / Standard / 15.0
+2017-12-11 09:30:28,702 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V37 / gama / Standard / 15.0
+2017-12-11 09:30:28,702 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V51 / grph / Standard / 15.0
+2017-12-11 09:30:28,702 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V45 / hifl / Standard / 15.0
+2017-12-11 09:30:28,703 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V38 / kaal / Standard / 15.0
+2017-12-11 09:30:28,703 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V80 / kaz / Standard / 15.0
+2017-12-11 09:30:28,703 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V39 / kda / Standard / 15.0
+2017-12-11 09:30:28,704 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V41 / kid / Standard / 15.0
+2017-12-11 09:30:28,704 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V30 / krse / Standard / 15.0
+2017-12-11 09:30:28,704 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS2W7V53 / KST800350 / Standard / 15.0
+2017-12-11 09:30:28,704 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V11 / ras / Standard / 15.0
+2017-12-11 09:30:28,705 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V43 / rsi / Standard / 15.0
+2017-12-11 09:30:28,705 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V44 / sho / Standard / 15.0
+2017-12-11 09:30:28,705 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS7W7V12 / siem / Standard / 15.0
+2017-12-11 09:30:28,705 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7VC1 / siem / Standard / 15.0
+2017-12-11 09:30:28,705 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V34 / suan / Standard / 15.0
+2017-12-11 09:30:28,706 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V52 / wama / Standard / 15.0
+2017-12-11 09:30:28,706 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V31 / wec / Standard / 15.0
+2017-12-11 09:30:28,706 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V32 / weew / Standard / 15.0
+2017-12-11 09:30:28,706 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V24 / wich / Standard / 15.0
+2017-12-11 09:30:28,707 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110555: BS-W7V35 / kir / CAD Standard / 45.0
+2017-12-11 09:30:28,707 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110555: BS-W7V18 / gst / Standard / 15.0
+2017-12-11 09:30:28,707 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110555: BS7W7V21 / lusc / Standard / 15.0
+2017-12-11 09:30:28,707 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110555: BS-W7VC3 / lusc / Standard / 15.0
+2017-12-11 09:30:28,708 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V21 / dzm / CAD Standard / 45.0
+2017-12-11 09:30:28,708 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V02 / krj / CAD Standard / 45.0
+2017-12-11 09:30:28,708 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V36 / bni / Standard / 15.0
+2017-12-11 09:30:28,708 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V14 / fito / Standard / 15.0
+2017-12-11 09:30:28,709 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V46 / kisu / Standard / 15.0
+2017-12-11 09:30:28,709 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V12 / rid / Standard / 15.0
+2017-12-11 09:30:28,709 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V05 / tb / Standard / 15.0
+2017-12-11 09:30:28,709 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V03 / tj / Standard / 15.0
+2017-12-11 09:30:28,710 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V42 / wolu / Standard / 15.0
+2017-12-11 09:30:28,710 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110660: AG-W7V04 / doma / Standard / 15.0
+2017-12-11 09:30:28,710 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110675: VD-W7V06 / waro / Standard / 15.0
+2017-12-11 09:30:28,711 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110700: BS-W7V13 / bm / Special / 65.0
+2017-12-11 09:30:28,711 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 12:120200: BL2W7V08 / rsc / Standard / 15.0
+2017-12-11 09:30:28,711 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 12:120353: BL2W7V09 / dfl / CAD Standard / 45.0
+2017-12-11 09:30:28,711 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 12:120353: BL2W7V03 / dfl / Standard / 15.0
+2017-12-11 09:30:28,712 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V05 / ebm / CAD Standard / 45.0
+2017-12-11 09:30:28,712 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V07 / vosi / CAD Standard / 45.0
+2017-12-11 09:30:28,712 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V06 / ksa / Standard / 15.0
+2017-12-11 09:30:28,713 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V01 / diu / Standard / 15.0
+2017-12-11 09:30:28,713 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V02 / dni / Standard / 15.0
+2017-12-11 09:30:28,714 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V04 / egh / Standard / 15.0
+2017-12-11 09:30:28,714 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V09 / fov / Standard / 15.0
+2017-12-11 09:30:28,714 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V03 / lah / Standard / 15.0
+2017-12-11 09:30:28,715 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V08 / wt / Standard / 15.0
+2017-12-11 09:30:28,715 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150100: ZH-W7V26 / maur / Standard / 15.0
+2017-12-11 09:30:28,715 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150200: ZH-W7V19 / dapa / Standard / 15.0
+2017-12-11 09:30:28,716 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150350: ZH-W7V27 / chd / CAD Standard / 45.0
+2017-12-11 09:30:28,716 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150350: ZH-W7V14 / joi / Standard / 15.0
+2017-12-11 09:30:28,716 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150351: ZH-W7V38 / brk / CAD Standard / 45.0
+2017-12-11 09:30:28,716 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150351: ZH-W7V37 / gdi / Standard / 15.0
+2017-12-11 09:30:28,717 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150351: ZH-W7V39 / vot / Standard / 15.0
+2017-12-11 09:30:28,717 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150351: ZH-W7V36 / wge / Standard / 15.0
+2017-12-11 09:30:28,717 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150352: ZH-W7V33 / dad / CAD Standard / 45.0
+2017-12-11 09:30:28,717 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150352: ZH-W7V20 / koo / Standard / 15.0
+2017-12-11 09:30:28,718 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150354: ZH-W7V45 / brth / CAD Standard / 45.0
+2017-12-11 09:30:28,718 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150354: ZH-W7V15 / nis / Standard / 15.0
+2017-12-11 09:30:28,718 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200200: ZG-W7V03 / ast / Standard / 15.0
+2017-12-11 09:30:28,719 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200200: ZG-W7V04 / gsa / Standard / 15.0
+2017-12-11 09:30:28,719 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200350: ZG-W7V02 / kb / CAD Standard / 45.0
+2017-12-11 09:30:28,719 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200350: ZG-W7V15 / bsl / Standard / 15.0
+2017-12-11 09:30:28,719 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200351: ZG-W7V19 / gmr / CAD Standard / 45.0
+2017-12-11 09:30:28,720 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200351: ZG-W7V14 / bes / CAD Standard / 45.0
+2017-12-11 09:30:28,720 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200351: ZG-W7V24 / rbi / CAD Standard / 45.0
+2017-12-11 09:30:28,720 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200351: ZG-W7V01 / hme / Standard / 15.0
+2017-12-11 09:30:28,720 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200351: ZG-W7V13 / js / Standard / 15.0
+2017-12-11 09:30:28,721 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V28 / mhb / CAD Standard / 45.0
+2017-12-11 09:30:28,721 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V25 / bst / CAD Standard / 45.0
+2017-12-11 09:30:28,721 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V27 / wmi / CAD Standard / 45.0
+2017-12-11 09:30:28,721 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V16 / hemi / CAD Standard / 45.0
+2017-12-11 09:30:28,722 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V07 / lob / CAD Standard / 45.0
+2017-12-11 09:30:28,722 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V09 / frma GrunerWorkspace-BKL / Special / 80.0
+2017-12-11 09:30:28,722 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V11 / loj GrunerWorkspace-BKL / Special / 80.0
+2017-12-11 09:30:28,722 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V10 / zwm GrunerWorkspace-BKL / Special / 80.0
+2017-12-11 09:30:28,722 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V08 / mfl / Standard / 15.0
+2017-12-11 09:30:28,722 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V05 / wmr / Standard / 15.0
+2017-12-11 09:30:28,723 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 23:230100: SG-W7V01 / ho / Standard / 15.0
+2017-12-11 09:30:28,723 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 23:230100: SG-W7V03 / ho deda / Standard / 15.0
+2017-12-11 09:30:28,723 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 23:230350: BE-W7V26 / urs / CAD Standard / 45.0
+2017-12-11 09:30:28,723 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 23:230350: SG-W7V04 / schr / Standard / 15.0
+2017-12-11 09:30:28,723 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 23:230351: SG-W7V02 / gae / CAD Standard / 45.0
+2017-12-11 09:30:28,723 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240200: BS2W7V46 / Windows_7_Albau_Pool / Standard / 15.0
+2017-12-11 09:30:28,724 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240200: BS2W7V52 / Windows_7_Albau_Pool / Standard / 15.0
+2017-12-11 09:30:28,724 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240200: BS2W7V44 / Windows_7_Albau_Pool / Standard / 15.0
+2017-12-11 09:30:28,724 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240201: ZH2W7V41 / rai / Standard / 15.0
+2017-12-11 09:30:28,724 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240201: ZH2W7V16 / mire / Standard / 15.0
+2017-12-11 09:30:28,724 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V37 / ans / CAD Standard / 45.0
+2017-12-11 09:30:28,724 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V38 / auj / CAD Standard / 45.0
+2017-12-11 09:30:28,725 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS2W7V38 / bdl / CAD Standard / 45.0
+2017-12-11 09:30:28,725 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V33 / kube / CAD Standard / 45.0
+2017-12-11 09:30:28,725 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V39 / lpe / CAD Standard / 45.0
+2017-12-11 09:30:28,725 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V34 / remi / CAD Standard / 45.0
+2017-12-11 09:30:28,725 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V09 / wpe / CAD Standard / 45.0
+2017-12-11 09:30:28,726 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V06 / rof / Standard / 15.0
+2017-12-11 09:30:28,726 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V35 / rst / Standard / 15.0
+2017-12-11 09:30:28,726 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V03 / schl / Standard / 15.0
+2017-12-11 09:30:28,726 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V01 / sub / Standard / 15.0
+2017-12-11 09:30:28,726 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240351: BS4W7V21 / buma / CAD Standard / 45.0
+2017-12-11 09:30:28,726 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240351: BS4W7V08 / dlf / Standard / 15.0
+2017-12-11 09:30:28,727 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240351: BS4W7V28 / kdj / Standard / 15.0
+2017-12-11 09:30:28,727 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240351: BS4W7V05 / wipe / Standard / 15.0
+2017-12-11 09:30:28,727 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240353: BS4W7V04 / hmar / CAD Standard / 45.0
+2017-12-11 09:30:28,727 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240353: BS4W7V07 / kar / CAD Standard / 45.0
+2017-12-11 09:30:28,727 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240353: BS4W7V24 / hwo / Standard / 15.0
+2017-12-11 09:30:28,728 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240353: BS4W7V25 / kac / Standard / 15.0
+2017-12-11 09:30:28,728 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240353: BS4W7V26 / lo / Standard / 15.0
+2017-12-11 09:30:28,728 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240353: BS4W7V20 / toda / Standard / 15.0
+2017-12-11 09:30:28,728 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240450: ZH2W7V20 / bomi / CAD Standard / 45.0
+2017-12-11 09:30:28,728 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240450: ZH2W7V17 / rimi / Standard / 15.0
+2017-12-11 09:30:28,729 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240451: ZH2W7V34 / hule / CAD Standard / 45.0
+2017-12-11 09:30:28,729 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240451: ZH2W7V03 / mibu / Standard / 15.0
+2017-12-11 09:30:28,729 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240451: ZH2W7V18 / host / Standard / 15.0
+2017-12-11 09:30:28,729 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240451: ZH2W7V21 / huma / Standard / 15.0
+2017-12-11 09:30:28,729 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240451: ZH2W7V07 / maym / Standard / 15.0
+2017-12-11 09:30:28,730 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240451: ZH2W7V32 / uer / Standard / 15.0
+2017-12-11 09:30:28,730 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240452: ZH2W7V33 / scth / CAD Standard / 45.0
+2017-12-11 09:30:28,730 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240452: ZH2W7V31 / plma / Standard / 15.0
+2017-12-11 09:30:28,730 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240452: ZH2W7V19 / scpe / Standard / 15.0
+2017-12-11 09:30:28,730 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 27:270200: VD-W7V03 / dsc / Standard / 15.0
+2017-12-11 09:30:28,730 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 27:270200: BS7W7V07 / paa / Standard / 15.0
+2017-12-11 09:30:28,731 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 80:800350: BS2W7V48 / fima KST800350 / CAD Standard / 45.0
+2017-12-11 09:30:28,732 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 80:800350: BS2W7V40 / KST800350 / CAD Standard / 45.0
+2017-12-11 09:30:28,732 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 80:800350: BS7W7V05 / hua / Standard / 15.0
+2017-12-11 09:30:28,732 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 80:800350: BS-W7V82 / hua / Standard / 15.0
+2017-12-11 09:30:28,732 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 80:800350: BS-W7V81 / lav / Standard / 15.0
+2017-12-11 09:30:28,733 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 80:800350: BS-W7VC4 / niwe / Standard / 15.0
+2017-12-11 09:30:28,733 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: DE2W7V06 / mass / CAD Standard / 45.0
+2017-12-11 09:30:28,733 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: BS-W7V67 / khmo GrunerWorkspace-Heissbemessung / Special / 80.0
+2017-12-11 09:30:28,733 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: BS-W7V65 / pojo GrunerWorkspace-Heissbemessung / Special / 80.0
+2017-12-11 09:30:28,733 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: DE2W7V09 / casc / Standard / 15.0
+2017-12-11 09:30:28,733 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: DE2W7V08 / cwi / Standard / 15.0
+2017-12-11 09:30:28,734 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: BS7W7V01 / dus / Standard / 15.0
+2017-12-11 09:30:28,734 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: BS7W7V03 / lav / Standard / 15.0
+2017-12-11 09:30:28,734 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: DE2W7V10 / psti / Standard / 15.0
+2017-12-11 09:30:28,734 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 92:920350: DE2W7V07 / mini / Standard / 15.0
+2017-12-11 09:30:28,734 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7V25 / maol / CAD Standard / 45.0
+2017-12-11 09:30:28,734 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7V58 / maol / CAD Standard / 45.0
+2017-12-11 09:30:28,734 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7V73 / KST920350 KST930350 / CAD Standard / 45.0
+2017-12-11 09:30:28,735 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS7W7V18 / KST920350 KST930350 / CAD Standard / 45.0
+2017-12-11 09:30:28,735 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS7W7V13 / bian / Standard / 15.0
+2017-12-11 09:30:28,735 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7VC2 / bian / Standard / 15.0
+2017-12-11 09:30:28,735 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS7W7V11 / brbe / Standard / 15.0
+2017-12-11 09:30:28,736 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7V16 / dabe / Standard / 15.0
+2017-12-11 09:30:28,736 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7V78 / dus / Standard / 15.0
+2017-12-11 09:30:28,736 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS7W7V17 / klsa / Standard / 15.0
+2017-12-11 09:30:28,736 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS7W7V10 / maol / Standard / 15.0
+2017-12-11 09:30:28,737 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS7W7V08 / sile / Standard / 15.0
+2017-12-11 09:30:28,737 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7VB9 / sile / Standard / 15.0
+2017-12-11 09:30:28,737 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS7W7V02 / tima / Standard / 15.0
+2017-12-11 09:30:28,737 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7VB8 / tima / Standard / 15.0
+2017-12-11 09:30:28,738 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:51) - Es wurden: 233 Zeilen gelesen und hinzugefügt.
+2017-12-11 09:30:28,738 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:53) - BufferedReader geschlossen
+2017-12-11 09:30:28,791 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@6eefe601
+2017-12-11 09:30:28,792 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 3000.0
+2017-12-11 09:30:28,792 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 240.0
+2017-12-11 09:30:28,792 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 3240.0
+2017-12-11 09:30:28,792 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@6f9c1c20
+2017-12-11 09:30:28,792 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 75.0
+2017-12-11 09:30:28,793 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 6.0
+2017-12-11 09:30:28,793 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 81.0
+2017-12-11 09:30:28,793 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@1cf76796
+2017-12-11 09:30:28,793 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 195.0
+2017-12-11 09:30:28,794 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 15.6
+2017-12-11 09:30:28,794 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 210.6
+2017-12-11 09:30:28,794 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@75a0fb2b
+2017-12-11 09:30:28,795 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 300.0
+2017-12-11 09:30:28,795 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 24.0
+2017-12-11 09:30:28,795 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 324.0
+2017-12-11 09:30:28,796 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@646ed470
+2017-12-11 09:30:28,796 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 150.0
+2017-12-11 09:30:28,797 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 12.0
+2017-12-11 09:30:28,797 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 162.0
+2017-12-11 09:30:28,797 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@6b9ca9c1
+2017-12-11 09:30:28,798 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 280.0
+2017-12-11 09:30:28,798 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 22.4
+2017-12-11 09:30:28,798 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 302.4
+2017-12-11 09:30:28,798 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@4cf0b8f3
+2017-12-11 09:30:28,799 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 255.0
+2017-12-11 09:30:28,799 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 20.4
+2017-12-11 09:30:28,799 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 275.4
+2017-12-11 09:30:28,799 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@3e7b7be5
+2017-12-11 09:30:28,800 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 495.0
+2017-12-11 09:30:28,800 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 39.6
+2017-12-11 09:30:28,800 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 534.6
+2017-12-11 09:30:28,801 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@2c24e50e
+2017-12-11 09:30:28,801 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 135.0
+2017-12-11 09:30:28,801 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 10.8
+2017-12-11 09:30:28,801 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 145.8
+2017-12-11 09:30:28,802 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@227883ea
+2017-12-11 09:30:28,802 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 945.0
+2017-12-11 09:30:28,802 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 75.6
+2017-12-11 09:30:28,802 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 1020.6
+2017-12-11 09:30:28,803 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@6b069076
+2017-12-11 09:30:28,803 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 30.0
+2017-12-11 09:30:28,803 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 2.4
+2017-12-11 09:30:28,803 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 32.4
+2017-12-11 09:30:28,804 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@e476aa0
+2017-12-11 09:30:28,804 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 15.0
+2017-12-11 09:30:28,804 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 1.2
+2017-12-11 09:30:28,805 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 16.2
+2017-12-11 09:30:28,805 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@5c0e2f3
+2017-12-11 09:30:28,805 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 345.0
+2017-12-11 09:30:28,805 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 27.6
+2017-12-11 09:30:28,805 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 372.6
+2017-12-13 14:33:16,181 INFO  [main] gui.MainFrame (MainFrame.java:133) - Anwendung gestartet
+2017-12-13 14:33:17,020 INFO  [main] gui.MainFrame (MainFrame.java:173) - Anwendung wird beendet
+2017-12-13 14:33:23,466 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:28) - Lese file: input/vmAccounting_20170930.csv
+2017-12-13 14:33:23,509 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS2W7VI4 / alw / Standard / 15.0
+2017-12-13 14:33:23,510 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS4W7V02 / apm / Standard / 15.0
+2017-12-13 14:33:23,511 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS-W7V06 / baal / Standard / 15.0
+2017-12-13 14:33:23,511 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS2W7VI7 / fca / Standard / 15.0
+2017-12-13 14:33:23,512 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS7W7V09 / ge / Standard / 15.0
+2017-12-13 14:33:23,512 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS-W7VC0 / ge / Standard / 15.0
+2017-12-13 14:33:23,513 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: ZH-W7V17 / hagr / Standard / 15.0
+2017-12-13 14:33:23,513 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS-W7V07 / mej / Standard / 15.0
+2017-12-13 14:33:23,514 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS2W7VI5 / mus / Standard / 15.0
+2017-12-13 14:33:23,514 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS-W7V08 / rau / Standard / 15.0
+2017-12-13 14:33:23,515 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BE-W7V04 / wia / Standard / 15.0
+2017-12-13 14:33:23,515 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: ZH-W7V18 / wpf / Standard / 15.0
+2017-12-13 14:33:23,516 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: VD-W7V07 / dmg / Standard / 15.0
+2017-12-13 14:33:23,516 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110100: BS2W7VG2 / dmg / Standard / 15.0
+2017-12-13 14:33:23,517 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110200: BS2W7VG1 / mgg / Standard / 15.0
+2017-12-13 14:33:23,517 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110201: BS2W7VJ9 / aena / Standard / 15.0
+2017-12-13 14:33:23,518 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110201: BS2W7VF7 / jeta / Standard / 15.0
+2017-12-13 14:33:23,518 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110201: BS2W7VG0 / mks / Standard / 15.0
+2017-12-13 14:33:23,519 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110201: BS2W7VH6 / wr / Standard / 15.0
+2017-12-13 14:33:23,519 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110202: BS2W7VK5 / almo / Standard / 15.0
+2017-12-13 14:33:23,520 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110202: BS2W7VK4 / gai / Standard / 15.0
+2017-12-13 14:33:23,520 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110202: BS2W7VK3 / mimu / Standard / 15.0
+2017-12-13 14:33:23,521 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110202: BS2W7VH9 / reu / Standard / 15.0
+2017-12-13 14:33:23,522 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110204: BS2W7VL5 / e-kohler / Standard / 15.0
+2017-12-13 14:33:23,522 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110242: BS2W7VK1 / stut / RAM+ / 40.0
+2017-12-13 14:33:23,523 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110242: BS2W7VI6 / thm / RAM+ / 40.0
+2017-12-13 14:33:23,523 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110243: BS2W7V42 / BIMDevelopment / CAD Standard / 45.0
+2017-12-13 14:33:23,525 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110243: BS2W7V04 / molu / CAD Standard / 45.0
+2017-12-13 14:33:23,526 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110243: BS2W7V45 / zhhu / CAD Standard / 45.0
+2017-12-13 14:33:23,526 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110243: BS2W7VF4 / ms / RAM+ / 40.0
+2017-12-13 14:33:23,528 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110340: BS-W7V04 / stc / Standard / 15.0
+2017-12-13 14:33:23,528 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V19 / bsa / CAD Standard / 45.0
+2017-12-13 14:33:23,529 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V64 / lep / CAD Standard / 45.0
+2017-12-13 14:33:23,529 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V68 / bsv / Statik / 65.0
+2017-12-13 14:33:23,529 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V69 / dvo / Statik / 65.0
+2017-12-13 14:33:23,530 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V70 / rdl / Statik / 65.0
+2017-12-13 14:33:23,530 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V71 / ru / Statik / 65.0
+2017-12-13 14:33:23,530 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V72 / sim / Statik / 65.0
+2017-12-13 14:33:23,531 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V59 / sml / Statik / 65.0
+2017-12-13 14:33:23,531 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110350: BS-W7V40 / trc / Statik / 65.0
+2017-12-13 14:33:23,532 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110352: BS-W7V61 / rom / CAD Standard / 45.0
+2017-12-13 14:33:23,532 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110352: BS-W7V11 / stf / Standard / 15.0
+2017-12-13 14:33:23,534 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110352: BS-W7V10 / trt / Standard / 15.0
+2017-12-13 14:33:23,534 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110440: BS2W7VL6 / bom / Standard / 15.0
+2017-12-13 14:33:23,535 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110440: BS2W7VL7 / mim / Standard / 15.0
+2017-12-13 14:33:23,535 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110450: BS2W7VM3 / zae / CAD Standard / 45.0
+2017-12-13 14:33:23,535 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110450: BS2W7V22 / drmo / CAD Standard / 45.0
+2017-12-13 14:33:23,536 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110450: BS2W7VK8 / bse / Standard / 15.0
+2017-12-13 14:33:23,536 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110450: BS2W7VL1 / gd / Standard / 15.0
+2017-12-13 14:33:23,537 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110450: BS2W7VL4 / zhd / Standard / 15.0
+2017-12-13 14:33:23,537 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110452: BS2W7V33 / boa / CAD Standard / 45.0
+2017-12-13 14:33:23,538 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110452: BS2W7V27 / det / Standard / 15.0
+2017-12-13 14:33:23,538 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110452: ZH-W7V13 / knl / Standard / 15.0
+2017-12-13 14:33:23,538 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110452: BS2W7VJ6 / kpe / Standard / 15.0
+2017-12-13 14:33:23,539 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110452: BS2W7VI3 / lota / Standard / 15.0
+2017-12-13 14:33:23,539 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110454: BS2W7VI1 / brma / CAD Standard / 45.0
+2017-12-13 14:33:23,539 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110454: BS2W7V24 / GrunerWorkspace-Verkehrsprogramme / Special / 0.0
+2017-12-13 14:33:23,540 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110454: BS2W7V49 / laph GrunerWorkspace-Verkehrsprogramme / Special / 0.0
+2017-12-13 14:33:23,540 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110454: BS2W7VK6 / win / Standard / 15.0
+2017-12-13 14:33:23,541 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110458: BS2W7V13 / dde / CAD Standard / 45.0
+2017-12-13 14:33:23,541 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110458: BS2W7VL2 / amju / Standard / 15.0
+2017-12-13 14:33:23,541 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110458: BS2W7V25 / hera / Standard / 15.0
+2017-12-13 14:33:23,542 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110458: ZH2W7V08 / koma / Standard / 15.0
+2017-12-13 14:33:23,542 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110458: BS2W7VJ2 / sido / Standard / 15.0
+2017-12-13 14:33:23,542 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110458: BS2W7VF5 / umm / Standard / 15.0
+2017-12-13 14:33:23,543 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110458: BS2W7VF9 / Windows_7_Albau_Pool / Standard / 15.0
+2017-12-13 14:33:23,543 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V54 / drl / CAD Standard / 45.0
+2017-12-13 14:33:23,543 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V55 / eck / CAD Standard / 45.0
+2017-12-13 14:33:23,544 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V56 / eim / CAD Standard / 45.0
+2017-12-13 14:33:23,544 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V57 / ksj / CAD Standard / 45.0
+2017-12-13 14:33:23,544 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V22 / masi / CAD Standard / 45.0
+2017-12-13 14:33:23,545 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V74 / coe / CAD Standard / 45.0
+2017-12-13 14:33:23,545 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V15 / hejh / CAD Standard / 45.0
+2017-12-13 14:33:23,545 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V62 / rumo / CAD Standard / 45.0
+2017-12-13 14:33:23,546 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS7W7V16 / coe / CAD Standard / 45.0
+2017-12-13 14:33:23,547 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V02 / rusv / CAD Standard / 45.0
+2017-12-13 14:33:23,547 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V25 / sijo / CAD Standard / 45.0
+2017-12-13 14:33:23,548 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V66 / stma GrunerWorkspace-Heissbemessung / Special / 80.0
+2017-12-13 14:33:23,548 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V28 / bikr / Standard / 15.0
+2017-12-13 14:33:23,548 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V17 / eam / Standard / 15.0
+2017-12-13 14:33:23,548 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V53 / fast / Standard / 15.0
+2017-12-13 14:33:23,549 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V37 / gama / Standard / 15.0
+2017-12-13 14:33:23,549 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V51 / grph / Standard / 15.0
+2017-12-13 14:33:23,549 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V45 / hifl / Standard / 15.0
+2017-12-13 14:33:23,549 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V38 / kaal / Standard / 15.0
+2017-12-13 14:33:23,550 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V80 / kaz / Standard / 15.0
+2017-12-13 14:33:23,550 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V39 / kda / Standard / 15.0
+2017-12-13 14:33:23,550 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V41 / kid / Standard / 15.0
+2017-12-13 14:33:23,551 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V30 / krse / Standard / 15.0
+2017-12-13 14:33:23,551 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS2W7V53 / KST800350 / Standard / 15.0
+2017-12-13 14:33:23,551 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V11 / ras / Standard / 15.0
+2017-12-13 14:33:23,552 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V43 / rsi / Standard / 15.0
+2017-12-13 14:33:23,552 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V44 / sho / Standard / 15.0
+2017-12-13 14:33:23,552 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS7W7V12 / siem / Standard / 15.0
+2017-12-13 14:33:23,552 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7VC1 / siem / Standard / 15.0
+2017-12-13 14:33:23,553 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V34 / suan / Standard / 15.0
+2017-12-13 14:33:23,553 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: BS-W7V52 / wama / Standard / 15.0
+2017-12-13 14:33:23,553 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V31 / wec / Standard / 15.0
+2017-12-13 14:33:23,554 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V32 / weew / Standard / 15.0
+2017-12-13 14:33:23,554 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110552: ZH-W7V24 / wich / Standard / 15.0
+2017-12-13 14:33:23,554 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110555: BS-W7V35 / kir / CAD Standard / 45.0
+2017-12-13 14:33:23,554 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110555: BS-W7V18 / gst / Standard / 15.0
+2017-12-13 14:33:23,555 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110555: BS7W7V21 / lusc / Standard / 15.0
+2017-12-13 14:33:23,555 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110555: BS-W7VC3 / lusc / Standard / 15.0
+2017-12-13 14:33:23,555 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V21 / dzm / CAD Standard / 45.0
+2017-12-13 14:33:23,556 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V02 / krj / CAD Standard / 45.0
+2017-12-13 14:33:23,556 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V36 / bni / Standard / 15.0
+2017-12-13 14:33:23,557 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V14 / fito / Standard / 15.0
+2017-12-13 14:33:23,557 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V46 / kisu / Standard / 15.0
+2017-12-13 14:33:23,558 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V12 / rid / Standard / 15.0
+2017-12-13 14:33:23,560 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V05 / tb / Standard / 15.0
+2017-12-13 14:33:23,561 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V03 / tj / Standard / 15.0
+2017-12-13 14:33:23,562 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110650: BS-W7V42 / wolu / Standard / 15.0
+2017-12-13 14:33:23,562 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110660: AG-W7V04 / doma / Standard / 15.0
+2017-12-13 14:33:23,563 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110675: VD-W7V06 / waro / Standard / 15.0
+2017-12-13 14:33:23,563 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 11:110700: BS-W7V13 / bm / Special / 65.0
+2017-12-13 14:33:23,563 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 12:120200: BL2W7V08 / rsc / Standard / 15.0
+2017-12-13 14:33:23,564 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 12:120353: BL2W7V09 / dfl / CAD Standard / 45.0
+2017-12-13 14:33:23,564 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 12:120353: BL2W7V03 / dfl / Standard / 15.0
+2017-12-13 14:33:23,564 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V05 / ebm / CAD Standard / 45.0
+2017-12-13 14:33:23,565 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V07 / vosi / CAD Standard / 45.0
+2017-12-13 14:33:23,566 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V06 / ksa / Standard / 15.0
+2017-12-13 14:33:23,567 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V01 / diu / Standard / 15.0
+2017-12-13 14:33:23,567 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V02 / dni / Standard / 15.0
+2017-12-13 14:33:23,569 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V04 / egh / Standard / 15.0
+2017-12-13 14:33:23,570 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V09 / fov / Standard / 15.0
+2017-12-13 14:33:23,571 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V03 / lah / Standard / 15.0
+2017-12-13 14:33:23,571 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 13:130350: BS3W7V08 / wt / Standard / 15.0
+2017-12-13 14:33:23,571 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150100: ZH-W7V26 / maur / Standard / 15.0
+2017-12-13 14:33:23,571 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150200: ZH-W7V19 / dapa / Standard / 15.0
+2017-12-13 14:33:23,572 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150350: ZH-W7V27 / chd / CAD Standard / 45.0
+2017-12-13 14:33:23,572 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150350: ZH-W7V14 / joi / Standard / 15.0
+2017-12-13 14:33:23,572 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150351: ZH-W7V38 / brk / CAD Standard / 45.0
+2017-12-13 14:33:23,573 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150351: ZH-W7V37 / gdi / Standard / 15.0
+2017-12-13 14:33:23,573 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150351: ZH-W7V39 / vot / Standard / 15.0
+2017-12-13 14:33:23,573 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150351: ZH-W7V36 / wge / Standard / 15.0
+2017-12-13 14:33:23,573 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150352: ZH-W7V33 / dad / CAD Standard / 45.0
+2017-12-13 14:33:23,574 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150352: ZH-W7V20 / koo / Standard / 15.0
+2017-12-13 14:33:23,574 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150354: ZH-W7V45 / brth / CAD Standard / 45.0
+2017-12-13 14:33:23,574 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 15:150354: ZH-W7V15 / nis / Standard / 15.0
+2017-12-13 14:33:23,575 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200200: ZG-W7V03 / ast / Standard / 15.0
+2017-12-13 14:33:23,575 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200200: ZG-W7V04 / gsa / Standard / 15.0
+2017-12-13 14:33:23,575 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200350: ZG-W7V02 / kb / CAD Standard / 45.0
+2017-12-13 14:33:23,575 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200350: ZG-W7V15 / bsl / Standard / 15.0
+2017-12-13 14:33:23,575 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200351: ZG-W7V19 / gmr / CAD Standard / 45.0
+2017-12-13 14:33:23,576 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200351: ZG-W7V14 / bes / CAD Standard / 45.0
+2017-12-13 14:33:23,576 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200351: ZG-W7V24 / rbi / CAD Standard / 45.0
+2017-12-13 14:33:23,576 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200351: ZG-W7V01 / hme / Standard / 15.0
+2017-12-13 14:33:23,576 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 20:200351: ZG-W7V13 / js / Standard / 15.0
+2017-12-13 14:33:23,577 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V28 / mhb / CAD Standard / 45.0
+2017-12-13 14:33:23,577 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V25 / bst / CAD Standard / 45.0
+2017-12-13 14:33:23,577 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V27 / wmi / CAD Standard / 45.0
+2017-12-13 14:33:23,578 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V16 / hemi / CAD Standard / 45.0
+2017-12-13 14:33:23,578 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V07 / lob / CAD Standard / 45.0
+2017-12-13 14:33:23,578 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V09 / frma GrunerWorkspace-BKL / Special / 80.0
+2017-12-13 14:33:23,578 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V11 / loj GrunerWorkspace-BKL / Special / 80.0
+2017-12-13 14:33:23,579 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V10 / zwm GrunerWorkspace-BKL / Special / 80.0
+2017-12-13 14:33:23,579 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V08 / mfl / Standard / 15.0
+2017-12-13 14:33:23,579 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 22:220350: BE-W7V05 / wmr / Standard / 15.0
+2017-12-13 14:33:23,579 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 23:230100: SG-W7V01 / ho / Standard / 15.0
+2017-12-13 14:33:23,580 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 23:230100: SG-W7V03 / ho deda / Standard / 15.0
+2017-12-13 14:33:23,580 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 23:230350: BE-W7V26 / urs / CAD Standard / 45.0
+2017-12-13 14:33:23,580 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 23:230350: SG-W7V04 / schr / Standard / 15.0
+2017-12-13 14:33:23,581 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 23:230351: SG-W7V02 / gae / CAD Standard / 45.0
+2017-12-13 14:33:23,581 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240200: BS2W7V46 / Windows_7_Albau_Pool / Standard / 15.0
+2017-12-13 14:33:23,581 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240200: BS2W7V52 / Windows_7_Albau_Pool / Standard / 15.0
+2017-12-13 14:33:23,581 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240200: BS2W7V44 / Windows_7_Albau_Pool / Standard / 15.0
+2017-12-13 14:33:23,582 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240201: ZH2W7V41 / rai / Standard / 15.0
+2017-12-13 14:33:23,582 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240201: ZH2W7V16 / mire / Standard / 15.0
+2017-12-13 14:33:23,582 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V37 / ans / CAD Standard / 45.0
+2017-12-13 14:33:23,582 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V38 / auj / CAD Standard / 45.0
+2017-12-13 14:33:23,582 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS2W7V38 / bdl / CAD Standard / 45.0
+2017-12-13 14:33:23,583 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V33 / kube / CAD Standard / 45.0
+2017-12-13 14:33:23,583 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V39 / lpe / CAD Standard / 45.0
+2017-12-13 14:33:23,583 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V34 / remi / CAD Standard / 45.0
+2017-12-13 14:33:23,583 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V09 / wpe / CAD Standard / 45.0
+2017-12-13 14:33:23,584 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V06 / rof / Standard / 15.0
+2017-12-13 14:33:23,584 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V35 / rst / Standard / 15.0
+2017-12-13 14:33:23,584 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V03 / schl / Standard / 15.0
+2017-12-13 14:33:23,584 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240350: BS4W7V01 / sub / Standard / 15.0
+2017-12-13 14:33:23,584 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240351: BS4W7V21 / buma / CAD Standard / 45.0
+2017-12-13 14:33:23,585 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240351: BS4W7V08 / dlf / Standard / 15.0
+2017-12-13 14:33:23,585 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240351: BS4W7V28 / kdj / Standard / 15.0
+2017-12-13 14:33:23,585 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240351: BS4W7V05 / wipe / Standard / 15.0
+2017-12-13 14:33:23,585 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240353: BS4W7V04 / hmar / CAD Standard / 45.0
+2017-12-13 14:33:23,585 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240353: BS4W7V07 / kar / CAD Standard / 45.0
+2017-12-13 14:33:23,585 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240353: BS4W7V24 / hwo / Standard / 15.0
+2017-12-13 14:33:23,586 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240353: BS4W7V25 / kac / Standard / 15.0
+2017-12-13 14:33:23,586 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240353: BS4W7V26 / lo / Standard / 15.0
+2017-12-13 14:33:23,586 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240353: BS4W7V20 / toda / Standard / 15.0
+2017-12-13 14:33:23,586 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240450: ZH2W7V20 / bomi / CAD Standard / 45.0
+2017-12-13 14:33:23,587 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240450: ZH2W7V17 / rimi / Standard / 15.0
+2017-12-13 14:33:23,587 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240451: ZH2W7V34 / hule / CAD Standard / 45.0
+2017-12-13 14:33:23,587 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240451: ZH2W7V03 / mibu / Standard / 15.0
+2017-12-13 14:33:23,587 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240451: ZH2W7V18 / host / Standard / 15.0
+2017-12-13 14:33:23,588 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240451: ZH2W7V21 / huma / Standard / 15.0
+2017-12-13 14:33:23,588 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240451: ZH2W7V07 / maym / Standard / 15.0
+2017-12-13 14:33:23,588 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240451: ZH2W7V32 / uer / Standard / 15.0
+2017-12-13 14:33:23,588 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240452: ZH2W7V33 / scth / CAD Standard / 45.0
+2017-12-13 14:33:23,589 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240452: ZH2W7V31 / plma / Standard / 15.0
+2017-12-13 14:33:23,589 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 24:240452: ZH2W7V19 / scpe / Standard / 15.0
+2017-12-13 14:33:23,589 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 27:270200: VD-W7V03 / dsc / Standard / 15.0
+2017-12-13 14:33:23,590 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 27:270200: BS7W7V07 / paa / Standard / 15.0
+2017-12-13 14:33:23,590 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 80:800350: BS2W7V48 / fima KST800350 / CAD Standard / 45.0
+2017-12-13 14:33:23,592 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 80:800350: BS2W7V40 / KST800350 / CAD Standard / 45.0
+2017-12-13 14:33:23,592 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 80:800350: BS7W7V05 / hua / Standard / 15.0
+2017-12-13 14:33:23,593 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 80:800350: BS-W7V82 / hua / Standard / 15.0
+2017-12-13 14:33:23,597 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 80:800350: BS-W7V81 / lav / Standard / 15.0
+2017-12-13 14:33:23,598 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 80:800350: BS-W7VC4 / niwe / Standard / 15.0
+2017-12-13 14:33:23,599 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: DE2W7V06 / mass / CAD Standard / 45.0
+2017-12-13 14:33:23,599 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: BS-W7V67 / khmo GrunerWorkspace-Heissbemessung / Special / 80.0
+2017-12-13 14:33:23,599 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: BS-W7V65 / pojo GrunerWorkspace-Heissbemessung / Special / 80.0
+2017-12-13 14:33:23,607 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: DE2W7V09 / casc / Standard / 15.0
+2017-12-13 14:33:23,608 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: DE2W7V08 / cwi / Standard / 15.0
+2017-12-13 14:33:23,608 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: BS7W7V01 / dus / Standard / 15.0
+2017-12-13 14:33:23,609 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: BS7W7V03 / lav / Standard / 15.0
+2017-12-13 14:33:23,609 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 83:830350: DE2W7V10 / psti / Standard / 15.0
+2017-12-13 14:33:23,610 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 92:920350: DE2W7V07 / mini / Standard / 15.0
+2017-12-13 14:33:23,610 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7V25 / maol / CAD Standard / 45.0
+2017-12-13 14:33:23,610 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7V58 / maol / CAD Standard / 45.0
+2017-12-13 14:33:23,611 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7V73 / KST920350 KST930350 / CAD Standard / 45.0
+2017-12-13 14:33:23,611 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS7W7V18 / KST920350 KST930350 / CAD Standard / 45.0
+2017-12-13 14:33:23,612 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS7W7V13 / bian / Standard / 15.0
+2017-12-13 14:33:23,613 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7VC2 / bian / Standard / 15.0
+2017-12-13 14:33:23,613 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS7W7V11 / brbe / Standard / 15.0
+2017-12-13 14:33:23,614 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7V16 / dabe / Standard / 15.0
+2017-12-13 14:33:23,614 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7V78 / dus / Standard / 15.0
+2017-12-13 14:33:23,615 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS7W7V17 / klsa / Standard / 15.0
+2017-12-13 14:33:23,615 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS7W7V10 / maol / Standard / 15.0
+2017-12-13 14:33:23,615 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS7W7V08 / sile / Standard / 15.0
+2017-12-13 14:33:23,616 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7VB9 / sile / Standard / 15.0
+2017-12-13 14:33:23,616 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS7W7V02 / tima / Standard / 15.0
+2017-12-13 14:33:23,616 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:48) - Zeile gelesen: 93:930350: BS-W7VB8 / tima / Standard / 15.0
+2017-12-13 14:33:23,617 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:51) - Es wurden: 233 Zeilen gelesen und hinzugefügt.
+2017-12-13 14:33:23,617 INFO  [AWT-EventQueue-0] actions.CSVReader (CSVReader.java:53) - BufferedReader geschlossen
+2017-12-13 14:33:23,665 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@63415672
+2017-12-13 14:33:23,666 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 3000.0
+2017-12-13 14:33:23,666 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 240.0
+2017-12-13 14:33:23,667 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 3240.0
+2017-12-13 14:33:23,667 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@3c9bef4c
+2017-12-13 14:33:23,667 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 75.0
+2017-12-13 14:33:23,668 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 6.0
+2017-12-13 14:33:23,668 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 81.0
+2017-12-13 14:33:23,668 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@93c8015
+2017-12-13 14:33:23,669 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 195.0
+2017-12-13 14:33:23,669 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 15.6
+2017-12-13 14:33:23,669 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 210.6
+2017-12-13 14:33:23,670 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@be92cbb
+2017-12-13 14:33:23,670 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 300.0
+2017-12-13 14:33:23,671 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 24.0
+2017-12-13 14:33:23,671 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 324.0
+2017-12-13 14:33:23,671 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@62f21972
+2017-12-13 14:33:23,672 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 150.0
+2017-12-13 14:33:23,672 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 12.0
+2017-12-13 14:33:23,673 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 162.0
+2017-12-13 14:33:23,673 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@1706bef
+2017-12-13 14:33:23,674 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 280.0
+2017-12-13 14:33:23,674 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 22.4
+2017-12-13 14:33:23,674 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 302.4
+2017-12-13 14:33:23,674 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@6ca16ffc
+2017-12-13 14:33:23,675 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 255.0
+2017-12-13 14:33:23,675 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 20.4
+2017-12-13 14:33:23,676 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 275.4
+2017-12-13 14:33:23,676 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@2e6f1a27
+2017-12-13 14:33:23,677 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 495.0
+2017-12-13 14:33:23,677 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 39.6
+2017-12-13 14:33:23,677 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 534.6
+2017-12-13 14:33:23,678 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@5c24af11
+2017-12-13 14:33:23,678 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 135.0
+2017-12-13 14:33:23,678 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 10.8
+2017-12-13 14:33:23,679 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 145.8
+2017-12-13 14:33:23,679 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@5e099869
+2017-12-13 14:33:23,680 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 945.0
+2017-12-13 14:33:23,680 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 75.6
+2017-12-13 14:33:23,680 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 1020.6
+2017-12-13 14:33:23,681 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@39b0c2db
+2017-12-13 14:33:23,681 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 30.0
+2017-12-13 14:33:23,682 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 2.4
+2017-12-13 14:33:23,682 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 32.4
+2017-12-13 14:33:23,682 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@6f5859e8
+2017-12-13 14:33:23,682 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 15.0
+2017-12-13 14:33:23,683 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 1.2
+2017-12-13 14:33:23,683 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 16.2
+2017-12-13 14:33:23,683 INFO  [AWT-EventQueue-0] model.TableModelInvoicesWV (TableModelInvoicesWV.java:170) - Die hinzugefügte Invoice ist : ch.gruner.dbs.aie.businessobjects.InvoiceWV@167d2f35
+2017-12-13 14:33:23,684 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:50) - Total Betrag ohne Mwst.: 345.0
+2017-12-13 14:33:23,684 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:51) - Total Betrag Mwst.: 27.6
+2017-12-13 14:33:23,684 INFO  [AWT-EventQueue-0] actions.ButtonActions (ButtonActions.java:52) - Total Betrag inkl Mwst.: 372.6
