@@ -83,11 +83,7 @@ public class ButtonActions implements ActionListener{
 		for (Integer gbNummer : bookingByGb.keySet()) {
 			InvoiceWV invoice = new InvoiceWV(bookingByGb.get(gbNummer), gbNummer);
 			tableModelInvoiceWV.addObjectToTable(invoice);
-//			LOG.info("Total Betrag ohne Mwst.: " 	+ 	invoice.getTotalInvoiceAmount());
-//			LOG.info("Total Betrag Mwst.: " 		+ 	invoice.getMwstBetrag());
-//			LOG.info("Total Betrag inkl Mwst.: " 	+ 	invoice.getTotalInvoiceAmountInclMwst());
 		}
-//		return tableModelInvoiceWV;
 	}
 
 }

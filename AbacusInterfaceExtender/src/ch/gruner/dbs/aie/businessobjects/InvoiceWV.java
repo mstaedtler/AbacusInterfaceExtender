@@ -292,6 +292,46 @@ public class InvoiceWV {
 		return "Adressse: " + adresse + " Betrag: "+ totalInvoiceAmount + " Mwst: " + getMwstBetrag() + " TotalBetrag: " + getTotalInvoiceAmountInclMwst();
 	}
 
+	public String getMwstNummer() {
+		return mwstNummer;
+	}
+
+	public String getZahlungskonditionen() {
+		return zahlungskonditionen;
+	}
+
+	public String getPostkontoNr() {
+		return postkontoNr;
+	}
+
+	public String getBankname() {
+		return bankname;
+	}
+
+	public String getIban() {
+		return iban;
+	}
+
+	public Integer getKontoNrSoll() {
+		return kontoNrSoll;
+	}
+
+	public Integer getKontoNrHaben() {
+		return kontoNrHaben;
+	}
+
+	public Double getUmrechnungskurs() {
+		return umrechnungskurs;
+	}
+
+	public void setUmrechnungskurs(Double umrechnungskurs) {
+		this.umrechnungskurs = umrechnungskurs;
+	}
+
+	public Währung getWährung() {
+		return währung;
+	}
+
 	
 
 }

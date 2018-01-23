@@ -5,7 +5,6 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Map;
 import java.util.Set;
@@ -28,11 +27,6 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.dom4j.Document;
-import org.dom4j.DocumentHelper;
-import org.dom4j.Element;
-import org.dom4j.io.OutputFormat;
-import org.dom4j.io.XMLWriter;
 
 import com.itextpdf.io.font.FontConstants;
 import com.itextpdf.kernel.font.PdfFont;
@@ -264,33 +258,7 @@ public class MainFrame extends JPanel{
 		document.close();
 	}
 
-	public static void writeDocument() {
-		/* Write XML File from Document */
 
-		try {
-			OutputFormat format = OutputFormat.createPrettyPrint();
-			FileWriter fileWriter = new FileWriter("output/output.xml");
-			XMLWriter writer = new XMLWriter(fileWriter, format);
-			writer.write(createXMLDocument());
-			writer.close();
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-
-	}
-
-	public static Document createXMLDocument() {
-		Document document = DocumentHelper.createDocument();
-		Element root = document.addElement("root");
-
-		Element author1 = root.addElement("author").addAttribute("name", "James").addAttribute("location", "UK")
-				.addText("James Strachan");
-
-		Element author2 = root.addElement("author").addAttribute("name", "Bob").addAttribute("location", "US")
-				.addText("Bob McWhirter");
-
-		return document;
-	}
 	
 	/**
 	 * @return the tabedPane
