@@ -248,8 +248,8 @@ public class InvoiceWV {
 		return mwstSatz;
 	}
 
-	public void setMwstSatz(Double mwst) {
-		this.mwstSatz = mwst;
+	public void setMwstSatz(Double mwstSatz) {
+		this.mwstSatz = mwstSatz;
 	}
 	
 	public Double getMwstBetrag() {
@@ -287,7 +287,10 @@ public class InvoiceWV {
 		this.invoiceNumber = invoiceNumber;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Adressse: " + adresse + " Betrag: "+ totalInvoiceAmount + " Mwst: " + getMwstBetrag() + " TotalBetrag: " + getTotalInvoiceAmountInclMwst();
+	}
 
 	
 
