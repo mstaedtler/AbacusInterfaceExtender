@@ -84,21 +84,42 @@ public class MainFrame extends JPanel{
 		jButFileSelection.addActionListener(buttonActions);
         jButFileSelection.setActionCommand(ActionCommands.SELECT_PATH.toString());
 		JLabel pathLabel = new JLabel("Importdatei wählen");
+		
+		jButExport = new JButton("Exportieren");
+		jButExport.addActionListener(buttonActions);
+		jButExport.setActionCommand(ActionCommands.EXPORT.toString());
 
 		fileSelectionPanel.add(pathLabel);
 		fileSelectionPanel.add(getjTextFieldPath());
 		fileSelectionPanel.add(jButFileSelection);
 		fileSelectionPanel.setBorder(BorderFactory.createTitledBorder("Importdatei für Mietweiterverrechnung wählen"));
-							
-		setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
-		add(fileSelectionPanel, BorderLayout.NORTH);
+		fileSelectionPanel.add(jButExport);
+			
+		//setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
+		//add(fileSelectionPanel, BorderLayout.NORTH);
 
+		//SOUTH Panel (Info & Closebutton für alles)
+		jButInfo= new JButton("Info");
+		jButInfo.addActionListener(buttonActions);
+		jButInfo.setActionCommand(ActionCommands.INFO.toString());
 		
+		jButClose = new JButton("Schliessen");
+		jButClose.addActionListener(buttonActions);
+		jButClose.setActionCommand(ActionCommands.CLOSE.toString());
+		
+		JPanel jSouthPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+		jSouthPanel.add(jButInfo);
+		jSouthPanel.add(jButClose);
+		add(jSouthPanel, BorderLayout.SOUTH);
 		// Add scrollpane with table
+		
+		
 		JScrollPane scrollPaneMWV = new JScrollPane(table);
 		JPanel tablePanelMWV = new JPanel(new BorderLayout());
-		tablePanelMWV.add(scrollPaneMWV);
+		tablePanelMWV.add(fileSelectionPanel, BorderLayout.NORTH);
+		tablePanelMWV.add(scrollPaneMWV, BorderLayout.CENTER);
 		tablePanelMWV.add(PanelFactory.createAllNonePanel(model), BorderLayout.AFTER_LAST_LINE);
+		
 		
 		JScrollPane scrollPaneDATEV_FIBU = new JScrollPane(table);
 		JPanel tablePanelDATEV_FIBU = new JPanel(new BorderLayout());
