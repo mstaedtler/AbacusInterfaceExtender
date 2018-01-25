@@ -75,6 +75,14 @@
 	<parameter name="pMWVDetailsByCostCenter" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
 	<parameter name="pMWVAdresseStrasse" class="java.lang.String"/>
 	<parameter name="pMWVAdresseOrt" class="java.lang.String"/>
+	<parameter name="Parameter1" class="java.lang.String"/>
+	<parameter name="pMWVIban" class="java.lang.String"/>
+	<parameter name="pMWVBankname" class="java.lang.String"/>
+	<parameter name="pMWVPostkontoNr" class="java.lang.String"/>
+	<parameter name="pMWVZahlungskonditionen" class="java.lang.String"/>
+	<parameter name="pMWVMwstNummer" class="java.lang.String"/>
+	<parameter name="pMWVProjektReferenz" class="java.lang.String"/>
+	<parameter name="pMWVProjektNummer" class="java.lang.Integer"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -87,7 +95,7 @@
 	<detail>
 		<band height="400" splitType="Stretch">
 			<componentElement>
-				<reportElement x="0" y="190" width="380" height="40" uuid="4267f1fd-40f7-49d3-81a7-d8e0fd83699c">
+				<reportElement x="40" y="271" width="380" height="40" uuid="4267f1fd-40f7-49d3-81a7-d8e0fd83699c">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
 					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
@@ -103,7 +111,7 @@
 							<staticText>
 								<reportElement x="0" y="0" width="190" height="20" uuid="33e52065-4b7f-41f4-9855-fcbc5a5207de"/>
 								<textElement>
-									<font isBold="true"/>
+									<font fontName="SansSerif" size="8" isBold="true"/>
 								</textElement>
 								<text><![CDATA[Profile]]></text>
 							</staticText>
@@ -111,6 +119,9 @@
 						<jr:detailCell style="Table_TD" height="15">
 							<textField>
 								<reportElement x="0" y="0" width="190" height="15" uuid="3e5f0e30-990f-4cd0-a779-8ff5046243da"/>
+								<textElement>
+									<font fontName="SansSerif" size="8"/>
+								</textElement>
 								<textFieldExpression><![CDATA[$F{profile}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
@@ -121,7 +132,7 @@
 							<staticText>
 								<reportElement x="0" y="0" width="121" height="20" uuid="bca35c6e-4573-45da-8b08-d48e2ba961f2"/>
 								<textElement textAlignment="Right">
-									<font isBold="true"/>
+									<font fontName="SansSerif" size="8" isBold="true"/>
 								</textElement>
 								<text><![CDATA[Betrag]]></text>
 							</staticText>
@@ -129,7 +140,9 @@
 						<jr:detailCell style="Table_TD" height="15">
 							<textField>
 								<reportElement x="0" y="0" width="121" height="15" uuid="5f4ec679-01cc-4532-96c9-f8ec42ae362c"/>
-								<textElement textAlignment="Right"/>
+								<textElement textAlignment="Right">
+									<font fontName="SansSerif" size="8"/>
+								</textElement>
 								<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
@@ -137,11 +150,14 @@
 				</jr:table>
 			</componentElement>
 			<textField>
-				<reportElement x="0" y="0" width="280" height="15" uuid="ac4dadc4-99bd-4809-96ea-6d16141b7bc7"/>
+				<reportElement x="40" y="60" width="280" height="10" uuid="ac4dadc4-99bd-4809-96ea-6d16141b7bc7"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$P{pMWVAdresseName}]]></textFieldExpression>
 			</textField>
 			<componentElement>
-				<reportElement positionType="Float" x="0" y="290" width="380" height="110" uuid="9142934c-3b79-43d8-a748-67268cbf53b0">
+				<reportElement positionType="Float" x="40" y="335" width="310" height="60" uuid="9142934c-3b79-43d8-a748-67268cbf53b0">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 1_TH"/>
 					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 1_CH"/>
@@ -157,7 +173,7 @@
 							<staticText>
 								<reportElement x="0" y="0" width="120" height="20" uuid="e9821dda-fd09-4865-9895-995e3c41e44a"/>
 								<textElement>
-									<font isBold="true"/>
+									<font fontName="SansSerif" size="8" isBold="true"/>
 								</textElement>
 								<text><![CDATA[Kostenstelle]]></text>
 							</staticText>
@@ -165,6 +181,9 @@
 						<jr:detailCell style="Table 1_TD" height="15">
 							<textField>
 								<reportElement x="0" y="0" width="120" height="15" uuid="b95ab91b-b5e5-400f-b0f6-26a990854b14"/>
+								<textElement>
+									<font fontName="SansSerif" size="8"/>
+								</textElement>
 								<textFieldExpression><![CDATA[$F{costCenter}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
@@ -175,7 +194,7 @@
 							<staticText>
 								<reportElement x="0" y="0" width="120" height="20" uuid="87a672a0-db69-4dac-b05e-0a773bb3283c"/>
 								<textElement textAlignment="Right">
-									<font isBold="true"/>
+									<font fontName="SansSerif" size="8" isBold="true"/>
 								</textElement>
 								<text><![CDATA[Betrag]]></text>
 							</staticText>
@@ -183,7 +202,9 @@
 						<jr:detailCell style="Table 1_TD" height="15">
 							<textField>
 								<reportElement x="0" y="0" width="120" height="15" uuid="895d3df3-a1a7-4f12-a1fa-f8759d60965d"/>
-								<textElement textAlignment="Right"/>
+								<textElement textAlignment="Right">
+									<font fontName="SansSerif" size="8"/>
+								</textElement>
 								<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
@@ -191,30 +212,128 @@
 				</jr:table>
 			</componentElement>
 			<staticText>
-				<reportElement positionType="Float" x="0" y="250" width="380" height="30" uuid="a6eb31ee-9523-4733-af83-7971e5d807d5"/>
+				<reportElement positionType="Float" x="40" y="316" width="380" height="18" uuid="a6eb31ee-9523-4733-af83-7971e5d807d5"/>
 				<textElement>
-					<font size="14" isBold="true" isUnderline="true"/>
+					<font fontName="SansSerif" size="10" isBold="true" isUnderline="true"/>
 				</textElement>
 				<text><![CDATA[Details pro Kostenstelle]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="150" width="380" height="30" uuid="e41db729-2c18-45d1-b07b-be7c164a45bb"/>
+				<reportElement x="40" y="250" width="380" height="18" uuid="e41db729-2c18-45d1-b07b-be7c164a45bb"/>
 				<textElement>
-					<font size="14" isBold="true" isUnderline="true"/>
+					<font fontName="SansSerif" size="10" isBold="true" isUnderline="true"/>
 				</textElement>
 				<text><![CDATA[Details Profile der Workplace 4 CAD Maschinen]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="0" y="15" width="280" height="15" uuid="35b3ee99-d0bb-4b56-874a-d9204957e70e"/>
+				<reportElement x="40" y="71" width="280" height="10" uuid="35b3ee99-d0bb-4b56-874a-d9204957e70e"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$P{pMWVAdresseStrasse}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="0" y="30" width="280" height="15" uuid="d9f67ee6-ccca-4f13-b8b5-b60d99c6ac8f"/>
+				<reportElement x="40" y="82" width="280" height="10" uuid="d9f67ee6-ccca-4f13-b8b5-b60d99c6ac8f"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$P{pMWVAdresseOrt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="120" width="170" height="10" uuid="acf28c30-6713-487b-a207-6b269ce9f874"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Basel, den <Periode, letzter Tag>"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="183" width="150" height="20" uuid="d2b905c0-cfe2-454e-8beb-ab0769556af2"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rechnung Nr. XXXXX]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="394" y="173" width="150" height="10" uuid="5c29f285-326c-49c9-af4e-a05e09b425f5"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pMWVIban}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="394" y="163" width="150" height="10" uuid="04ea4b85-3253-4489-982c-74cde75085a7"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pMWVBankname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="394" y="153" width="150" height="10" uuid="57756662-0231-4b6d-a9cb-0fb7b56c0c8e"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pMWVPostkontoNr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="394" y="142" width="150" height="10" uuid="0aa270b4-90f7-42de-8631-d58132626c70"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pMWVZahlungskonditionen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="394" y="131" width="150" height="10" uuid="e24358db-a645-4a5b-a04a-5e561896be32"/>
+				<textElement>
+					<font fontName="SansSerif" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pMWVMwstNummer}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="222" width="130" height="12" uuid="64a54f6c-13b9-4d91-87db-1f5100a90911"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IT: Gruner Workspace for CAD - ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="170" y="222" width="150" height="12" uuid="f3d2a0ff-5194-476d-8bee-1c2b31b41715"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["neuer Parameter? <Monat Jahr>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="119" width="64" height="12" uuid="8bd62495-a17c-4d44-b96b-f0a378b122b2"/>
+				<textElement>
+					<font fontName="SansSerif" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pMWVProjektReferenz}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="394" y="119" width="86" height="12" uuid="7f7ae5a6-aa5a-44af-8a19-1fad1c71797f"/>
+				<textElement>
+					<font fontName="SansSerif" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pMWVProjektNummer}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
 	<pageFooter>
-		<band height="54" splitType="Stretch"/>
+		<band height="68" splitType="Stretch">
+			<textField>
+				<reportElement x="40" y="27" width="68" height="10" uuid="f5569dcb-88a9-4811-9e91-3f770c32e7d5"/>
+				<textElement>
+					<font fontName="SansSerif" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Gruner AG"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="37" width="350" height="10" uuid="6bfb723a-d766-4098-98fc-0c18fc5f2cdc"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Gellertstrasse 55, CH-4020 Basel, T +41 61 317 61 61, F +41 61 317 XX XX, www.gruner.ch"]]></textFieldExpression>
+			</textField>
+		</band>
 	</pageFooter>
 </jasperReport>
