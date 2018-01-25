@@ -43,15 +43,24 @@ public class ButtonActions implements ActionListener{
 				LOG.info("File Chooser canceled by user.");
 			}
 		}else if(e.getActionCommand().equals(ActionCommands.EXPORT.toString())){
+			
+			Exporter exporter = new Exporter();
+			File fileXML = new File("output/XML_MietWV_WP4CAD_12.xml");
+			File filePDF = new File("output/Rechnung_MietWV_WP4CAD_12.pdf");
+			
+			exporter.createXML();
+			exporter.createZipFile(filePDF, fileXML);
+			
 			LOG.info("Export wird gestartet.");
 			if(tableModelInvoiceWV != null && tableModelInvoiceWV.getRowCount() > 0) {
-				Exporter exporter = new Exporter();
+				//Exporter exporter = new Exporter();
 				for (InvoiceWV inv : tableModelInvoiceWV.getAllTableObjects()) {
 					exporter.createMietWVPdf(inv);
 				};
 			}else {
 				//TODO Message das keine Daten exportiert werden können.
 			}
+		
 			
 		}else if(e.getActionCommand().equals(ActionCommands.CLOSE.toString())) {
 			MainFrame.frame.dispose();
