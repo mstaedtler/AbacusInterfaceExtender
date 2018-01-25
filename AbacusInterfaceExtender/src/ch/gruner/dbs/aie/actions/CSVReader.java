@@ -26,6 +26,9 @@ public class CSVReader {
          
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
         	LOG.info("Lese file: " + csvFile);
+        	//Skip first line (Header)
+        	line = br.readLine();
+        	line = null;
             while ((line = br.readLine()) != null) {
                 // use comma as separator
                 String[] vmLine = line.split(cvsSplitBy);
