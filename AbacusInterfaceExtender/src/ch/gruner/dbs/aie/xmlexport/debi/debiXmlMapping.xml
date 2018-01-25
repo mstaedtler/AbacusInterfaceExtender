@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<!DOCTYPE mapping PUBLIC "-//EXOLAB/Castor Mapping DTD Version 1.0//EN"
+                         "http://castor.org/mapping.dtd">
+<mapping>
+	<class name="ch.bsi.pwc.eezyinterface.export.objects.AbaConnectContainer">
+		<map-to xml="AbaConnectContainer" />
+
+		<field name="TaskCount" type="java.lang.Integer">
+			<bind-xml name="TaskCount" node="element" />
+		</field>
+
+		<field name="Tasks" type="ch.bsi.pwc.eezyinterface.export.objects.Task"
+			collection="arraylist">
+			<bind-xml name="Task" node="element" />
+		</field>
+	</class>
+
+	<class name="ch.bsi.pwc.eezyinterface.export.objects.Task">
+
+		<field name="Parameter" type="ch.bsi.pwc.eezyinterface.export.objects.Parameter">
+			<bind-xml name="Parameter" node="element" />
+		</field>
+
+		<field name="Transactions" type="ch.bsi.pwc.eezyinterface.export.objects.Transaction"
+			collection="arraylist">
+			<bind-xml name="Transaction" node="element" />
+		</field>
+	</class>
+
+	<class name="ch.bsi.pwc.eezyinterface.export.objects.Parameter">
+		<field name="Application" type="java.lang.String">
+			<bind-xml name="Application" node="element" />
+		</field>
+
+		<field name="Id" type="java.lang.String">
+			<bind-xml name="Id" node="element" />
+		</field>
+
+		<field name="MapId" type="java.lang.String">
+			<bind-xml name="MapId" node="element" />
+		</field>
+
+		<field name="Version" type="java.lang.String">
+			<bind-xml name="Version" node="element" />
+		</field>
+	</class>
+
+	<class name="ch.bsi.pwc.eezyinterface.export.objects.Transaction">
+
+		<field name="Documents" type="ch.bsi.pwc.eezyinterface.export.objects.Document"
+		     collection="arraylist">
+			<bind-xml name="Document" node="element" />
+		</field>
+
+	</class>
+
+	<class name="ch.bsi.pwc.eezyinterface.export.objects.Document">
+
+		<field name="Mode" type="java.lang.String">
+			<bind-xml name="mode" node="attribute" />
+		</field>
+
+        <field name="Reference" type="java.lang.String">
+            <bind-xml name="Reference" node="element" />
+        </field>
+        
+        <field name="DocumentCode" type="java.lang.String">
+            <bind-xml name="DocumentCode" node="element" />
+        </field>
+        
+        <field name="Text" type="java.lang.String">
+            <bind-xml name="Text" node="element" />
+        </field>
+        
+        <field name="CustomerNumber" type="java.lang.Integer">
+            <bind-xml name="CustomerNumber" node="element" />
+        </field>
+        
+        <field name="Number" type="java.lang.Long">
+            <bind-xml name="Number" node="element" />
+        </field>
+        
+        <field name="AccountReceivableDate" type="java.lang.String">
+            <bind-xml name="AccountReceivableDate" node="element" />
+        </field>
+        
+        <field name="GeneralLedgerDate" type="java.lang.String">
+            <bind-xml name="GeneralLedgerDate" node="element" />
+        </field>
+        
+        <field name="Currency" type="java.lang.String">
+            <bind-xml name="Currency" node="element" />
+        </field>
+        
+        <field name="Amount" type="java.lang.Double">
+            <bind-xml name="Amount" node="element" />
+        </field>
+        
+        <field name="KeyAmount" type="java.lang.Double">
+            <bind-xml name="KeyAmount" node="element" />
+        </field>
+        
+        <!--  >field name="ReminderProcedure" type="java.lang.String">
+            <bind-xml name="ReminderProcedure" node="element" />
+        </field-->
+        
+        <field name="PaymentOrderProcedure" type="java.lang.Integer">
+            <bind-xml name="PaymentOrderProcedure" node="element" />
+        </field>
+        
+        <field name="PaymentReferenceLine" type="java.lang.String">
+            <bind-xml name="PaymentReferenceLine" node="element" />
+        </field>
+        
+        <field name="CollectiveAccount" type="java.lang.Integer">
+            <bind-xml name="CollectiveAccount" node="element" />
+        </field>
+        
+        <field name="CollectiveCostCentre1" type="java.lang.Integer">
+            <bind-xml name="CollectiveCostCentre1" node="element" />
+        </field>
+        
+        <field name="AddressData" type="ch.bsi.pwc.eezyinterface.export.objects.AddressData">
+            <bind-xml name="AddressData" node="element" />
+        </field>
+        
+        <field name="PaymentTerm" type="ch.bsi.pwc.eezyinterface.export.objects.PaymentTerm">
+            <bind-xml name="PaymentTerm" node="element" />
+        </field>
+        
+        <field name="LineItems"
+            type="ch.bsi.pwc.eezyinterface.export.objects.LineItem"
+            collection="arraylist">
+            <bind-xml name="LineItem" node="element" />
+        </field>
+        
+       
+
+	</class>
+
+    <class name="ch.bsi.pwc.eezyinterface.export.objects.AddressData">
+    
+        <field name="Mode" type="java.lang.String">
+            <bind-xml name="mode" node="attribute" />
+        </field>
+        
+        <field name="CodeName" type="java.lang.String">
+            <bind-xml name="CodeName" node="element" />
+        </field>
+        
+        <field name="Name" type="java.lang.String" required="true" >
+            <bind-xml name="Name" node="element" />
+        </field>
+        
+        <field name="FirstName" type="java.lang.String">
+            <bind-xml name="FirstName" node="element" />
+        </field>
+        
+        <field name="Line1" type="java.lang.String">
+            <bind-xml name="Line1" node="element" />
+        </field>
+        
+        <field name="Line2" type="java.lang.String">
+            <bind-xml name="Line2" node="element" />
+        </field>
+        
+        <field name="Line3" type="java.lang.String">
+            <bind-xml name="Line3" node="element" />
+        </field>
+        
+        <field name="Line4" type="java.lang.String">
+            <bind-xml name="Line4" node="element" />
+        </field>
+        
+        <field name="Country" type="java.lang.String">
+            <bind-xml name="Country" node="element" />
+        </field>
+        
+        <field name="Zip" type="java.lang.String">
+            <bind-xml name="ZIP" node="element" />
+        </field>
+        
+        <field name="City" type="java.lang.String">
+            <bind-xml name="City" node="element" />
+        </field>
+        
+        <field name="Language" type="java.lang.String">
+            <bind-xml name="Language" node="element" />
+        </field>
+        
+    </class>
+
+    <class name="ch.bsi.pwc.eezyinterface.export.objects.PaymentTerm">
+        
+        <field name="Mode" type="java.lang.String">
+            <bind-xml name="mode" node="attribute" />
+        </field>
+        
+        <field name="Number" type="java.lang.Integer">
+            <bind-xml name="Number" node="element" />
+        </field>
+        
+        <field name="CopyFromTable" type="java.lang.Boolean">
+            <bind-xml name="CopyFromTable" node="element" />
+        </field>
+        
+        <field name="Type" type="java.lang.Integer">
+            <bind-xml name="Type" node="element" />
+        </field>
+        
+        <field name="DeadlineAsDate" type="java.lang.String">
+            <bind-xml name="DeadlineAsDate" node="element" />
+        </field>
+        
+    </class>
+
+
+	<class name="ch.bsi.pwc.eezyinterface.export.objects.LineItem">
+
+		<field name="Mode" type="java.lang.String">
+			<bind-xml name="mode" node="attribute" />
+		</field>
+
+        <field name="Number" type="java.lang.Integer">
+            <bind-xml name="Number" node="element" />
+        </field>
+        
+        <field name="Amount" type="java.lang.Double">
+            <bind-xml name="Amount" node="element" />
+        </field>
+        
+        <field name="KeyAmount" type="java.lang.Double">
+            <bind-xml name="KeyAmount" node="element" />
+        </field>
+        
+        <field name="CreditAccount" type="java.lang.Integer">
+			<bind-xml name="CreditAccount" node="element" />
+		</field>
+
+		<field name="CreditCostCentre1" type="java.lang.Integer">
+			<bind-xml name="CreditCostCentre1" node="element" />
+		</field>
+
+		<field name="TaxCode" type="java.lang.String">
+			<bind-xml name="TaxCode" node="element" />
+		</field>
+
+        <field name="TaxDateValidFrom" type="java.lang.String">
+            <bind-xml name="TaxDateValidFrom" node="element" />
+        </field>
+
+		<field name="ExternalReference" type="java.lang.String">
+			<bind-xml name="ExternalReference" node="element" />
+		</field>
+
+	</class>
+
+</mapping>
