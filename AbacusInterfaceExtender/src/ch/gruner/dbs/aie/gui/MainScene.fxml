@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.gruner.dbs.aie.controller.MainSceneController">
+   <center>
+      <AnchorPane prefHeight="600.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <ButtonBar layoutX="6.0" layoutY="546.0" prefHeight="40.0" prefWidth="980.0">
+              <buttons>
+                <Button minWidth="64.0" mnemonicParsing="false" prefHeight="25.0" text="Info" />
+                  <Button mnemonicParsing="false" onAction="#eventClose" text="Schliessen" />
+              </buttons>
+            </ButtonBar>
+            <TabPane layoutX="14.0" layoutY="14.0" prefHeight="533.0" prefWidth="982.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="WV Miete">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="txtFieldPath" editable="false" layoutX="135.0" layoutY="14.0" prefHeight="25.0" prefWidth="336.0" />
+                              <Label layoutX="14.0" layoutY="18.0" prefHeight="17.0" prefWidth="111.0" text="Importdatei wählen" />
+                              <Button layoutX="481.0" layoutY="14.0" mnemonicParsing="false" onAction="#eventMWVSelectPath" text="Pfad auswählen" />
+                              <Button layoutX="891.0" layoutY="14.0" mnemonicParsing="false" onAction="#eventMWVExport" text="Exportieren" />
+                              <Separator layoutY="58.0" prefHeight="0.0" prefWidth="976.0" />
+                              <ScrollPane layoutX="-1.0" layoutY="61.0" prefHeight="441.0" prefWidth="983.0">
+                                 <content>
+                                    <TableView fx:id="invoiceTable" prefHeight="438.0" prefWidth="980.0">
+                                      <columns>
+                                        <TableColumn fx:id="gbColumn" prefWidth="75.0" text="GB" />
+                                        <TableColumn fx:id="firmaColumn" prefWidth="200.0" text="Firma" />
+                                        <TableColumn fx:id="whrColumn" prefWidth="75.0" text="Währung" />
+                                        <TableColumn fx:id="betragColumn" prefWidth="100.0" text="Betrag" />
+                                        <TableColumn fx:id="mwstSatzColumn" prefWidth="100.0" text="Mwst. Satz" />
+                                        <TableColumn fx:id="mwstBetragColumn" prefWidth="100.0" text="Mwst. Betrag" />
+                                        <TableColumn fx:id="betragAllInclColumn" prefWidth="120.0" text="Betrag incl. Mwst." />
+                                      </columns>
+                                    </TableView>
+                                 </content>
+                              </ScrollPane>
+                              <DatePicker fx:id="datePicker" layoutX="732.0" layoutY="14.0" prefHeight="25.0" prefWidth="145.0" />
+                              <Label layoutX="589.0" layoutY="18.0" prefHeight="17.0" prefWidth="139.0" text="Rechnungsdatum wählen" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="WV IT Kosten">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

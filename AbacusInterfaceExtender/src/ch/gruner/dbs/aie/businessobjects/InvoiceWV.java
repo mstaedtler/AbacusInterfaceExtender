@@ -4,6 +4,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import javafx.beans.property.DoubleProperty;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleDoubleProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
+
 public class InvoiceWV {
 
 	public enum Währung{
@@ -12,10 +19,32 @@ public class InvoiceWV {
 	
 	public InvoiceWV(List<WVImportBooking> importBookings, Integer gbNummer) {
 		this.importBookings = importBookings;
-		this.gbNummer = gbNummer;
+		this.totalInvoiceAmountProp = new SimpleDoubleProperty(0.0d);
+		this.totalInvoiceAmountInclMwst = new SimpleDoubleProperty(0.0d);
+		this.mwstBetrag = new SimpleDoubleProperty(0.0d);
+		this.mwstSatz = new SimpleDoubleProperty(7.7d);
+		this.gbNummerProp = new SimpleIntegerProperty(gbNummer);
+		//this.gbNummer = gbNummer;
 		init();
 		initStammdaten();
+		//erst nach initStammdaten, da Adresse erst dort gesetzt wird.
+		this.firmaNameProp = new SimpleStringProperty(getAdresse().getName());
+		this.whrProp = new SimpleStringProperty(währung.toString());
+		
+		
+		
 	}
+	
+	//Properties for Table
+	
+	private final IntegerProperty gbNummerProp;
+	private final DoubleProperty totalInvoiceAmountProp;
+	private final StringProperty firmaNameProp;
+	private final StringProperty whrProp;
+	private final DoubleProperty mwstSatz;
+	private final DoubleProperty mwstBetrag;
+	private final DoubleProperty totalInvoiceAmountInclMwst;
+	
 
 	private List<WVImportBooking> importBookings;
 	private Debitorenadresse adresse;
@@ -24,14 +53,14 @@ public class InvoiceWV {
 	private HashMap<Integer, HashMap<String, Double>> lineItems;
 	private List<DetailsByCostCenter> bookingDetailsByCostCenter;
 	private List<DetailsByProfile> bookingDetailsByProfile;
-	private Double totalInvoiceAmount = 0.0d;
-	private Double mwstSatz = 8.0d;
-	private Double mwstBetrag;
-	private Double totalInvoiceAmountInclMwst;
+//	private Double totalInvoiceAmount = 0.0d;
+//	private Double mwstSatz;
+//	private Double mwstBetrag;
+//	private Double totalInvoiceAmountInclMwst;
 	private Währung währung;
 	private Double umrechnungskurs;
 	
-	private Integer gbNummer;
+//	private Integer gbNummer;
 	private Integer invoiceNumber;
 	private boolean isExport = false;
 	
@@ -57,13 +86,14 @@ public class InvoiceWV {
 		iban 					= "CH83 0077 0016 0509 2614 1";
 		umrechnungskurs 		= 1.0d;
 		währung 				= Währung.CHF;
+		mwstSatz.set(7.7d);
 		
 		
 		
 		//Adressnummer und Währung Abhängig vom GB setzen
 		//TODO Währung und Kurs hinzufügen und bei Betragsberechnungen berücksichtigen
 		//TODO Mwst. dynamisch setzen
-		switch (gbNummer) {
+		switch (gbNummerProp.get()) {
 		case 11:
 			adresse = new Debitorenadresse("Gruner AG", "Gellertstrasse 55", "4020 Basel");
 			break;
@@ -95,30 +125,35 @@ public class InvoiceWV {
 			adresse = new Debitorenadresse("Gruner GmbH, Wien", "Otto-Bauer-Gasse 6/10", "AT-1060 Wien");
 			währung = Währung.EUR;
 			umrechnungskurs = 1.15d;
+			mwstSatz.set(19.0d);
 			mwstNummer = "DE180945107";
 			break;
 		case 81:
 			adresse = new Debitorenadresse("Gruner GmbH", "Dufourstrasse 28", "DE-04107 Leipzig");
 			währung = Währung.EUR;
 			umrechnungskurs = 1.15d;
+			mwstSatz.set(19.0d);
 			mwstNummer = "DE180945107";
 			break;
 		case 83:
 			adresse = new Debitorenadresse("Gruner GmbH, Stuttgart", "Zettachring 8", "DE-70567 Stuttgart");
 			währung = Währung.EUR;
 			umrechnungskurs = 1.15d;
+			mwstSatz.set(19.0d);
 			mwstNummer = "DE180945107";
 			break;
 		case 92:
 			adresse = new Debitorenadresse("Gruner GmbH, Köln", "Kaiser-Wilhelm-Ring 27-29", "DE-50672 Köln");
 			währung = Währung.EUR;
 			umrechnungskurs = 1.15d;
+			mwstSatz.set(19.0d);
 			mwstNummer = "DE180945107";
 			break;
 		case 93:
 			adresse = new Debitorenadresse("Gruner GmbH, Hamburg", "Raboisen 16", "DE-20095 Hamburg");
 			währung = Währung.EUR;
 			umrechnungskurs = 1.15d;
+			mwstSatz.set(19.0d);
 			mwstNummer = "DE180945107";
 			break;
 		default:
@@ -190,13 +225,17 @@ public class InvoiceWV {
 			}
 		}
 		
+		Double amount = 0.0d;
+		
 		for (String profile : mapByProfile.keySet()) {
 			DetailsByProfile detByProfile = new DetailsByProfile();
 			detByProfile.setAmount(mapByProfile.get(profile));
 			detByProfile.setProfile(profile);
-			totalInvoiceAmount = totalInvoiceAmount + mapByProfile.get(profile);
+//			totalInvoiceAmount = totalInvoiceAmount + mapByProfile.get(profile);
+			amount = amount + mapByProfile.get(profile);
 			bookingDetailsByProfile.add(detByProfile);
 		}
+		totalInvoiceAmountProp.set(amount);
 	}
 	
 	
@@ -240,26 +279,27 @@ public class InvoiceWV {
 		return bookingDetailsByProfile;
 	}
 
-	public Double getTotalInvoiceAmount() {
-		return totalInvoiceAmount;
-	}
+	
 
 	public Double getMwstSatz() {
-		return mwstSatz;
+		return mwstSatz.get();
 	}
 
 	public void setMwstSatz(Double mwstSatz) {
-		this.mwstSatz = mwstSatz;
+		this.mwstSatz.set(mwstSatz);;
 	}
 	
 	public Double getMwstBetrag() {
-		mwstBetrag = (getTotalInvoiceAmount() * getMwstSatz())/100;
-		return mwstBetrag;
+		Double betrag = (getTotalInvoiceAmount() * getMwstSatz())/100;
+		mwstBetrag.set(betrag);
+//		mwstBetrag = (getTotalInvoiceAmount() * getMwstSatz())/100;
+		return mwstBetrag.get();
 	}
 
 	public Double getTotalInvoiceAmountInclMwst() {
-		totalInvoiceAmountInclMwst = getTotalInvoiceAmount()+((getTotalInvoiceAmount() * getMwstSatz())/100);
-		return totalInvoiceAmountInclMwst;
+		Double betrag = getTotalInvoiceAmount()+((getTotalInvoiceAmount() * getMwstSatz())/100);
+		totalInvoiceAmountInclMwst.set(betrag);
+		return totalInvoiceAmountInclMwst.get();
 	}
 
 	public boolean isExport() {
@@ -269,14 +309,6 @@ public class InvoiceWV {
 	public void setExport(boolean isExport) {
 		this.isExport = isExport;
 		
-	}
-
-	public Integer getGbNummer() {
-		return gbNummer;
-	}
-
-	public void setGbNummer(Integer gbNummer) {
-		this.gbNummer = gbNummer;
 	}
 
 	public Integer getInvoiceNumber() {
@@ -289,7 +321,7 @@ public class InvoiceWV {
 	
 	@Override
 	public String toString() {
-		return "Adressse: " + adresse + " Betrag: "+ totalInvoiceAmount + " Mwst: " + getMwstBetrag() + " TotalBetrag: " + getTotalInvoiceAmountInclMwst();
+		return "Adressse: " + adresse + " Betrag: "+ totalInvoiceAmountProp + " Mwst: " + getMwstBetrag() + " TotalBetrag: " + getTotalInvoiceAmountInclMwst();
 	}
 
 	public String getMwstNummer() {
@@ -331,7 +363,56 @@ public class InvoiceWV {
 	public Währung getWährung() {
 		return währung;
 	}
-
 	
+	public String getFirma() {
+		return firmaNameProp.get();
+	}
+	
+	public void setFirma(String firma) {
+		this.firmaNameProp.set(firma);
+	}
+	
+	public Integer getGbNummer() {
+		return gbNummerProp.get();
+	}
+
+	public void setGbNummer(Integer gbNummer) {
+		this.gbNummerProp.set(gbNummer);
+	}
+	
+	public Double getTotalInvoiceAmount() {
+		return totalInvoiceAmountProp.get();
+	}
+
+//Getter/Setter für Properties	
+	
+	
+	public StringProperty firmaProperty() {
+		return firmaNameProp;
+	}
+	
+	public IntegerProperty gbNrProperty() {
+		return gbNummerProp;
+	}
+	
+	public DoubleProperty totalInvoiceAmountProperty() {
+		return totalInvoiceAmountProp;
+	}
+
+	public StringProperty währungProperty() {
+		return whrProp;
+	}
+	
+	public DoubleProperty totalInvoiceAmountInclMwstProperty() {
+		return totalInvoiceAmountInclMwst;
+	}
+	
+	public DoubleProperty mwstSatzProperty() {
+		return mwstSatz;
+	}
+	
+	public DoubleProperty mwstBetragProperty() {
+		return mwstBetrag;
+	}
 
 }

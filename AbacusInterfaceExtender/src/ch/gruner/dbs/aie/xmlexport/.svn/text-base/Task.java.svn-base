@@ -1,0 +1,32 @@
+package ch.bsi.pwc.eezyinterface.export.objects;
+
+import java.util.ArrayList;
+
+public class Task {
+	
+	private Parameter parameter;
+	private ArrayList<Transaction> transactions;
+	
+	public Task() {}
+	
+	public Task(Parameter parameter, ArrayList<Transaction> transactions) {
+		this.parameter = parameter;
+		this.transactions = transactions;
+	}
+	
+	public Parameter getParameter() {
+		return parameter;
+	}
+	public void setParameter(Parameter parameter) {
+		this.parameter = parameter;
+	}
+	public ArrayList<Transaction> getTransactions() {
+		return transactions;
+	}
+	public void setTransactions(ArrayList<Transaction> transactions) {
+		this.transactions = transactions;
+	}
+	
+	
+
+}
