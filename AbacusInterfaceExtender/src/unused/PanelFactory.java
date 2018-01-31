@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ch.gruner.dbs.aie.gui;
+package unused;
 
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;

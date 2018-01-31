@@ -1,6 +1,7 @@
 package ch.gruner.dbs.aie.controller;
 
 import java.io.File;
+import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -30,11 +31,11 @@ public class MainSceneController {
     private Main mainApp;
     private ObservableList<InvoiceWV> invoiceData = FXCollections.observableArrayList();
 	
-	@FXML 
-	TextField txtFieldPath;
+	@FXML TextField txtFieldPath;
+	@FXML TextField txtFieldKurs;
+	@FXML TextField txtFieldRgNr;
+	@FXML DatePicker datePicker;
 	
-	@FXML
-	DatePicker datePicker;
 	
 	@FXML
     public TableView<InvoiceWV> invoiceTable;
@@ -60,6 +61,9 @@ public class MainSceneController {
      */
     @FXML
     private void initialize() {
+//    	DecimalFormat df = new DecimalFormat("#'###.##");
+//    	df
+    	
     	gbColumn.setCellValueFactory(cellData -> cellData.getValue().gbNrProperty().asObject());
     	firmaColumn.setCellValueFactory(cellData -> cellData.getValue().firmaProperty());
     	whrColumn.setCellValueFactory(cellData -> cellData.getValue().währungProperty());
@@ -76,10 +80,10 @@ public class MainSceneController {
     	
     	Exporter exporter = new Exporter();
 		
-//    	File fileXML = new File("output/XML_MietWV_WP4CAD_12.xml");
-//		File filePDF = new File("output/Rechnung_MietWV_WP4CAD_12.pdf");
-//		exporter.createXML();
-//		exporter.createZipFile(filePDF, fileXML);
+    	File fileXML = new File("output/XML_MietWV_WP4CAD_12.xml");
+		File filePDF = new File("output/Rechnung_MietWV_WP4CAD_12.pdf");
+		exporter.createXML();
+		exporter.createZipFile(filePDF, fileXML);
 		
 		LOG.info("Export wird gestartet.");
 		
@@ -102,14 +106,13 @@ public class MainSceneController {
     
 	@FXML 
 	protected void eventMWVSelectPath(ActionEvent event) {
-		System.out.println("FXMLTestController.eventSelectPath()");
 		FileChooser fileChooser = new FileChooser();
 		fileChooser.setTitle("Open Resource File");
 		fileChooser.setInitialDirectory(new File("input"));
 		File selFile = fileChooser.showOpenDialog(mainApp.getPrimaryStage());
 		if(selFile != null) {
 			txtFieldPath.setText(selFile.getAbsolutePath());
-			//LOG.info("Datei ausgewählt: " + file.getPath());
+			LOG.info("Datei ausgewählt: " + selFile.getPath());
             fillMietWVPreviewTable(selFile);
 		}
 	}
@@ -131,17 +134,14 @@ public class MainSceneController {
 			} else {
 					innerList = bookingByGb.get(gb);
 			}
-		innerList.add(wvBooking);
+			innerList.add(wvBooking);
 			bookingByGb.put(gb, innerList);
 		}
 
-		
-//		tableModelInvoiceWV.resetModel();
+//		invoiceData.clear();
 		for (Integer gbNummer : bookingByGb.keySet()) {
 			InvoiceWV invoice = new InvoiceWV(bookingByGb.get(gbNummer), gbNummer);
-			System.out.println("FXMLTestController.fillMietWVPreviewTable(): " + invoice);
 			invoiceData.add(invoice);
-//			tableModelInvoiceWV.addObjectToTable(invoice);
 		}
 	
 	
@@ -149,8 +149,9 @@ public class MainSceneController {
 	
 	public void setMainApp(Main mainApp) {
         this.mainApp = mainApp;
-        invoiceTable.setItems(invoiceData);
         // Add observable list data to the table
+        invoiceTable.setItems(invoiceData);
+       
         //personTable.setItems(mainApp.getPersonData());
     }
 	

@@ -1,5 +1,7 @@
 package ch.gruner.dbs.aie.businessobjects;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -291,15 +293,14 @@ public class InvoiceWV {
 	
 	public Double getMwstBetrag() {
 		Double betrag = (getTotalInvoiceAmount() * getMwstSatz())/100;
-		mwstBetrag.set(betrag);
-//		mwstBetrag = (getTotalInvoiceAmount() * getMwstSatz())/100;
-		return mwstBetrag.get();
+		return betrag;
 	}
 
 	public Double getTotalInvoiceAmountInclMwst() {
 		Double betrag = getTotalInvoiceAmount()+((getTotalInvoiceAmount() * getMwstSatz())/100);
-		totalInvoiceAmountInclMwst.set(betrag);
-		return totalInvoiceAmountInclMwst.get();
+		BigDecimal d = new BigDecimal(betrag);
+		d = d.setScale(2, RoundingMode.HALF_UP);
+		return d.doubleValue();
 	}
 
 	public boolean isExport() {
@@ -404,6 +405,7 @@ public class InvoiceWV {
 	}
 	
 	public DoubleProperty totalInvoiceAmountInclMwstProperty() {
+		totalInvoiceAmountInclMwst.set(getTotalInvoiceAmountInclMwst());
 		return totalInvoiceAmountInclMwst;
 	}
 	
@@ -412,6 +414,7 @@ public class InvoiceWV {
 	}
 	
 	public DoubleProperty mwstBetragProperty() {
+		mwstBetrag.set(getMwstBetrag());
 		return mwstBetrag;
 	}
 

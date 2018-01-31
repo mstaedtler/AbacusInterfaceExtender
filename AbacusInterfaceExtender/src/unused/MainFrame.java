@@ -21,7 +21,6 @@ import javax.swing.UIManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import ch.gruner.dbs.aie.gui.PanelFactory;
 import ch.gruner.dbs.aie.model.TableModelInvoicesWV;
 
 public class MainFrame extends JPanel{

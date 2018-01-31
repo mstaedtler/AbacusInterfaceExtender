@@ -13,27 +13,16 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-    public static Stage primaryStage;
+    private Stage primaryStage;
     private BorderPane rootLayout;
    
 
     @Override
     public void start(Stage primaryStage) {
         this.primaryStage = primaryStage;
-        this.primaryStage.setTitle("AddressApp");
+        this.primaryStage.setTitle("Gruner Interface Tool by DBS");
 
-//        StackPane root = new StackPane();       
-//        root.getChildren().add(new Label("Hello World"));
-//        Button btn = new Button("Test");
-//        root.getChildren().add(btn);
-//        btn.setOnAction(value);
-//        Scene scene = new Scene(root, 200, 200);
-//        primaryStage.setTitle("Hello World Example");        
-//        primaryStage.setScene(scene);        
-//        primaryStage.show();
-        
         initRootLayout();
-
 //        showPersonOverview();
     }
 
