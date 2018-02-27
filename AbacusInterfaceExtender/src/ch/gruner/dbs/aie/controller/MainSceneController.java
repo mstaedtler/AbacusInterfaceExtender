@@ -1,7 +1,6 @@
 package ch.gruner.dbs.aie.controller;
 
 import java.io.File;
-import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -139,9 +138,21 @@ public class MainSceneController {
 		}
 
 //		invoiceData.clear();
+		Integer invNumberCounter;
+		if(!txtFieldRgNr.getText().isEmpty()) {
+			invNumberCounter = Integer.parseInt(txtFieldRgNr.getText());
+		}else {
+			invNumberCounter = 0;
+		}
+		Double kurs = 1.0d;
+		if(!txtFieldRgNr.getText().isEmpty()) {
+			kurs = Double.parseDouble(txtFieldKurs.getText());
+		}
+		
 		for (Integer gbNummer : bookingByGb.keySet()) {
-			InvoiceWV invoice = new InvoiceWV(bookingByGb.get(gbNummer), gbNummer);
+			InvoiceWV invoice = new InvoiceWV(bookingByGb.get(gbNummer), gbNummer, invNumberCounter, kurs, datePicker.getValue());
 			invoiceData.add(invoice);
+			invNumberCounter++;
 		}
 	
 	

@@ -62,6 +62,7 @@
 		</queryString>
 		<field name="profile" class="java.lang.String"/>
 		<field name="amount" class="java.lang.Double"/>
+		<field name="whr" class="java.lang.String"/>
 	</subDataset>
 	<subDataset name="pMWVDetailsByCostCenter" uuid="949b9e93-3894-46bd-81bc-cf0700ff51d5">
 		<queryString>
@@ -75,7 +76,6 @@
 	<parameter name="pMWVDetailsByCostCenter" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
 	<parameter name="pMWVAdresseStrasse" class="java.lang.String"/>
 	<parameter name="pMWVAdresseOrt" class="java.lang.String"/>
-	<parameter name="Parameter1" class="java.lang.String"/>
 	<parameter name="pMWVIban" class="java.lang.String"/>
 	<parameter name="pMWVBankname" class="java.lang.String"/>
 	<parameter name="pMWVPostkontoNr" class="java.lang.String"/>
@@ -83,6 +83,9 @@
 	<parameter name="pMWVMwstNummer" class="java.lang.String"/>
 	<parameter name="pMWVProjektReferenz" class="java.lang.String"/>
 	<parameter name="pMWVProjektNummer" class="java.lang.Integer"/>
+	<parameter name="pMWVRechnungsNummer" class="java.lang.Integer"/>
+	<parameter name="pMWVRechnungsPeriode" class="java.lang.String"/>
+	<parameter name="pMWVRechnungsDatum" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -123,6 +126,27 @@
 									<font fontName="SansSerif" size="8"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{profile}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="1415f421-40ad-427b-8310-519ff875e7b9">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="20" uuid="89a10b71-e988-46e6-a038-3c3bcd356056"/>
+								<textElement>
+									<font size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Währung]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="15">
+							<textField>
+								<reportElement x="0" y="0" width="40" height="15" uuid="0e425773-0c9c-483c-b1c3-1c671708f3b1"/>
+								<textElement>
+									<font size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{whr}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
@@ -240,18 +264,18 @@
 				<textFieldExpression><![CDATA[$P{pMWVAdresseOrt}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="120" width="170" height="10" uuid="acf28c30-6713-487b-a207-6b269ce9f874"/>
+				<reportElement x="40" y="120" width="50" height="10" uuid="acf28c30-6713-487b-a207-6b269ce9f874"/>
 				<textElement>
 					<font fontName="SansSerif" size="7"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Basel, den <Periode, letzter Tag>"]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Basel, den "]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="40" y="183" width="150" height="20" uuid="d2b905c0-cfe2-454e-8beb-ab0769556af2"/>
+				<reportElement x="40" y="183" width="80" height="20" uuid="d2b905c0-cfe2-454e-8beb-ab0769556af2"/>
 				<textElement>
 					<font fontName="SansSerif" size="12" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Rechnung Nr. XXXXX]]></text>
+				<text><![CDATA[Rechnung Nr.]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="394" y="173" width="150" height="10" uuid="5c29f285-326c-49c9-af4e-a05e09b425f5"/>
@@ -289,18 +313,18 @@
 				<textFieldExpression><![CDATA[$P{pMWVMwstNummer}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="40" y="222" width="130" height="12" uuid="64a54f6c-13b9-4d91-87db-1f5100a90911"/>
+				<reportElement x="40" y="222" width="120" height="12" uuid="64a54f6c-13b9-4d91-87db-1f5100a90911"/>
 				<textElement>
 					<font fontName="SansSerif" size="8" isBold="true"/>
 				</textElement>
 				<text><![CDATA[IT: Gruner Workspace for CAD - ]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="170" y="222" width="150" height="12" uuid="f3d2a0ff-5194-476d-8bee-1c2b31b41715"/>
+				<reportElement x="160" y="222" width="160" height="12" uuid="f3d2a0ff-5194-476d-8bee-1c2b31b41715"/>
 				<textElement>
 					<font fontName="SansSerif" size="8" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA["neuer Parameter? <Monat Jahr>"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{pMWVRechnungsPeriode}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="480" y="119" width="64" height="12" uuid="8bd62495-a17c-4d44-b96b-f0a378b122b2"/>
@@ -315,6 +339,20 @@
 					<font fontName="SansSerif" size="7" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{pMWVProjektNummer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="120" width="90" height="10" uuid="6abedde7-83a3-40eb-b6ad-417e6d3eba00"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pMWVRechnungsDatum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="183" width="160" height="20" uuid="a8fe837f-37e7-401d-87aa-bda76eaf62d1"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pMWVRechnungsNummer}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
@@ -332,7 +370,7 @@
 				<textElement>
 					<font fontName="SansSerif" size="7"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Gellertstrasse 55, CH-4020 Basel, T +41 61 317 61 61, F +41 61 317 XX XX, www.gruner.ch"]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Gellertstrasse 55, CH-4020 Basel, T +41 61 317 61 61, F +41 61 312 44 34, www.gruner.ch"]]></textFieldExpression>
 			</textField>
 		</band>
 	</pageFooter>

@@ -67,6 +67,11 @@ public class Exporter {
             parameters.put("pMWVProjektReferenz", 	 		invoice.getProjektReferenz());
             parameters.put("pMWVProjektNummer", 	 		invoice.getProjektNummer());
             
+            parameters.put("pMWVRechnungsNummer", 	 		invoice.getInvoiceNumber());
+            parameters.put("pMWVRechnungsPeriode", 	 		invoice.getRgPeriode());
+            parameters.put("pMWVRechnungsDatum", 	 		invoice.getRgDatumString());
+//            parameters.put("pMWVWährung", 	 				invoice.getRgDatumString());
+            
             
 
             /* Using compiled version(.jasper) of Jasper report to generate PDF */

@@ -2,9 +2,12 @@ package ch.gruner.dbs.aie.businessobjects;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.IntegerProperty;
@@ -19,7 +22,10 @@ public class InvoiceWV {
 		CHF, EUR
 	}
 	
-	public InvoiceWV(List<WVImportBooking> importBookings, Integer gbNummer) {
+	public InvoiceWV(List<WVImportBooking> importBookings, Integer gbNummer, Integer invoiceNumber, Double umrechnungskurs, LocalDate rgDatum) {
+		this.rgDatum = rgDatum;
+		this.invoiceNumber = invoiceNumber;
+		this.umrechnungskurs = umrechnungskurs;
 		this.importBookings = importBookings;
 		this.totalInvoiceAmountProp = new SimpleDoubleProperty(0.0d);
 		this.totalInvoiceAmountInclMwst = new SimpleDoubleProperty(0.0d);
@@ -28,12 +34,10 @@ public class InvoiceWV {
 		this.gbNummerProp = new SimpleIntegerProperty(gbNummer);
 		//this.gbNummer = gbNummer;
 		init();
-		initStammdaten();
-		//erst nach initStammdaten, da Adresse erst dort gesetzt wird.
-		this.firmaNameProp = new SimpleStringProperty(getAdresse().getName());
+//		initStammdaten();
+		//erst nach initStammdaten, da Adresse erst dort gesetzt wird
 		this.whrProp = new SimpleStringProperty(währung.toString());
-		
-		
+		this.firmaNameProp = new SimpleStringProperty(getAdresse().getName());
 		
 	}
 	
@@ -47,7 +51,9 @@ public class InvoiceWV {
 	private final DoubleProperty mwstBetrag;
 	private final DoubleProperty totalInvoiceAmountInclMwst;
 	
-
+	private LocalDate rgDatum;
+	private String rgDatumString;
+	private String rgPeriode;
 	private List<WVImportBooking> importBookings;
 	private Debitorenadresse adresse;
 	private String projektReferenz;
@@ -164,7 +170,7 @@ public class InvoiceWV {
 	}
 	
 	private void init() {
-		
+		initStammdaten();
 		if (lineItems == null) {
 			lineItems = new HashMap<>();
 			if (importBookings != null) {
@@ -230,9 +236,10 @@ public class InvoiceWV {
 		Double amount = 0.0d;
 		
 		for (String profile : mapByProfile.keySet()) {
-			DetailsByProfile detByProfile = new DetailsByProfile();
+			DetailsByProfile detByProfile = new DetailsByProfile(währung.toString());
 			detByProfile.setAmount(mapByProfile.get(profile));
 			detByProfile.setProfile(profile);
+//			detByProfile.setWhr(währung.toString());
 //			totalInvoiceAmount = totalInvoiceAmount + mapByProfile.get(profile);
 			amount = amount + mapByProfile.get(profile);
 			bookingDetailsByProfile.add(detByProfile);
@@ -417,5 +424,23 @@ public class InvoiceWV {
 		mwstBetrag.set(getMwstBetrag());
 		return mwstBetrag;
 	}
+
+	public LocalDate getRgDatum() {
+		return rgDatum;
+	}
+
+	public String getRgDatumString() {
+		DateTimeFormatter formater = DateTimeFormatter.ofPattern("dd.MM.yyyy", Locale.GERMAN);
+		rgDatumString = getRgDatum().format(formater);
+		return rgDatumString;
+	}
+
+	public String getRgPeriode() {
+		DateTimeFormatter formater = DateTimeFormatter.ofPattern("MMMM yyyy", Locale.GERMAN);
+		rgPeriode = getRgDatum().format(formater);
+		return rgPeriode;
+	}
+	
+	
 
 }
