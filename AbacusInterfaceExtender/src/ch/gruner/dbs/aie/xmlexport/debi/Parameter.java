@@ -1,4 +1,4 @@
-package ch.gruner.dbs.aie.xmlexport;
+package ch.gruner.dbs.aie.xmlexport.debi;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;

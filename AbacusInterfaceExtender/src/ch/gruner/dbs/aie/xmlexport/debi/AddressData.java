@@ -1,4 +1,4 @@
-package ch.gruner.dbs.aie.xmlexport;
+package ch.gruner.dbs.aie.xmlexport.debi;
 
 import org.apache.commons.lang3.StringUtils;
 
