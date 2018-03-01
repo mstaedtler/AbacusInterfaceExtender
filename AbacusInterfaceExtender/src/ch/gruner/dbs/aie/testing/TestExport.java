@@ -1,4 +1,4 @@
-package unused;
+package ch.gruner.dbs.aie.testing;
 
 import java.io.File;
 import java.util.ArrayList;
