@@ -14,11 +14,12 @@
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.gruner.dbs.aie.controller.MainSceneController">
+<BorderPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.gruner.dbs.aie.controller.MainSceneController">
    <center>
       <AnchorPane prefHeight="750.0" prefWidth="1128.0" BorderPane.alignment="CENTER">
          <children>
@@ -56,6 +57,30 @@
                               <Label layoutX="330.0" layoutY="65.0" prefHeight="17.0" prefWidth="163.0" text="Umrechnungskurs EUR / CHF" />
                            </children>
                         </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="DATEV FIBU">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="22.0" text="Buchungsdatum" />
+                              <DatePicker fx:id="datePickerDATEVFibu" layoutX="110.0" layoutY="18.0" />
+                              <Label layoutX="14.0" layoutY="101.0" text="Importdatei" />
+                              <TextField fx:id="txtImportPathDATEVFibu" editable="false" layoutX="214.0" layoutY="97.0" prefHeight="25.0" prefWidth="455.0" />
+                              <Separator layoutX="14.0" layoutY="134.0" prefWidth="1100.0" />
+                              <Label layoutX="311.0" layoutY="22.0" text="Umrechnungskurs EUR / CHF" />
+                              <TextField fx:id="txtFieldKursDATEVFibu" layoutX="477.0" layoutY="18.0" prefHeight="25.0" prefWidth="190.0" />
+                              <Button layoutX="681.0" layoutY="97.0" mnemonicParsing="false" onAction="#eventCreatPreviewDATEVFibu" text="Vorschau erzeugen" />
+                              <ScrollPane layoutX="14.0" layoutY="152.0" prefHeight="505.0" prefWidth="655.0">
+                                 <content>
+                                    <TextArea fx:id="txtAreaDATEVFibu" editable="false" prefHeight="502.0" prefWidth="653.0" />
+                                 </content>
+                              </ScrollPane>
+                              <Button layoutX="564.0" layoutY="673.0" mnemonicParsing="false" onAction="#eventExportDATEVFibu" prefHeight="25.0" prefWidth="105.0" text="Exportieren" />
+                              <Button layoutX="110.0" layoutY="97.0" mnemonicParsing="false" onAction="#eventSelectPathDATEVFibu" prefHeight="25.0" prefWidth="95.0" text="Datei wählen" />
+                              <Label layoutX="14.0" layoutY="62.0" prefHeight="17.0" prefWidth="83.0" text="Buchungstext" />
+                              <TextField fx:id="txtFieldTextDATEVFibu" layoutX="110.0" layoutY="58.0" prefHeight="25.0" prefWidth="558.0" />
+                           </children></AnchorPane>
                   </content>
                 </Tab>
                 <Tab text="WV IT Kosten">

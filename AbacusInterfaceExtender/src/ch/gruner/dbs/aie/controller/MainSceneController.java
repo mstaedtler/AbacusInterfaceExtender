@@ -1,9 +1,15 @@
 package ch.gruner.dbs.aie.controller;
 
 import java.io.File;
+import java.io.StringWriter;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -11,6 +17,7 @@ import org.apache.logging.log4j.Logger;
 import ch.gruner.dbs.aie.businessobjects.InvoiceWV;
 import ch.gruner.dbs.aie.businessobjects.WVImportBooking;
 import ch.gruner.dbs.aie.gui.Main;
+import ch.gruner.dbs.aie.xmlexport.fibu.AbaConnectContainer;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -19,6 +26,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
 
@@ -29,12 +37,26 @@ public class MainSceneController {
 	// Reference to the main application.
     private Main mainApp;
     private ObservableList<InvoiceWV> invoiceData = FXCollections.observableArrayList();
+    private File importFileMWV;
+    private File importFileDatevFibu;
+    private boolean datevFibuPreview = true;
 	
+    /*Field Definition for MWV Tab*/
+    
 	@FXML TextField txtFieldPath;
 	@FXML TextField txtFieldKurs;
 	@FXML TextField txtFieldRgNr;
 	@FXML DatePicker datePicker;
 	
+	/*Field Definition for DATEV FIBU Tab*/
+	@FXML TextField txtImportPathDATEVFibu;
+	@FXML TextField txtFieldKursDATEVFibu;
+	@FXML TextArea txtAreaDATEVFibu;
+	@FXML TextField txtFieldTextDATEVFibu;
+	@FXML DatePicker datePickerDATEVFibu;
+	
+	
+	/*Table Definition for MWV Tab*/
 	
 	@FXML
     public TableView<InvoiceWV> invoiceTable;
@@ -60,9 +82,8 @@ public class MainSceneController {
      */
     @FXML
     private void initialize() {
-//    	DecimalFormat df = new DecimalFormat("#'###.##");
-//    	df
     	
+    	/*Init for MWV Tab*/
     	gbColumn.setCellValueFactory(cellData -> cellData.getValue().gbNrProperty().asObject());
     	firmaColumn.setCellValueFactory(cellData -> cellData.getValue().firmaProperty());
     	whrColumn.setCellValueFactory(cellData -> cellData.getValue().währungProperty());
@@ -70,8 +91,11 @@ public class MainSceneController {
     	mwstSatzColumn.setCellValueFactory(cellData -> cellData.getValue().mwstSatzProperty().asObject());
     	mwstBetragColumn.setCellValueFactory(cellData -> cellData.getValue().mwstBetragProperty().asObject());
     	betragAllInclColumn.setCellValueFactory(cellData -> cellData.getValue().totalInvoiceAmountInclMwstProperty().asObject());
-    	datePicker.setValue(LocalDate.now());    	
-//    	totalInvoiceAmountInclMwstColumn.setCellValueFactory(cellData -> cellData.getValue().getTotalInvoiceAmountInclMwst());
+    	datePicker.setValue(LocalDate.now());  	
+    	/*Init for DATEV FIBU Tab*/
+    	datePickerDATEVFibu.setValue(LocalDate.now());
+    	txtFieldKursDATEVFibu.setText("1.2036801");
+    	txtFieldTextDATEVFibu.setText("Abschluss");
     }
     
     @FXML 
@@ -108,15 +132,15 @@ public class MainSceneController {
 		FileChooser fileChooser = new FileChooser();
 		fileChooser.setTitle("Open Resource File");
 		fileChooser.setInitialDirectory(new File("input"));
-		File selFile = fileChooser.showOpenDialog(mainApp.getPrimaryStage());
-		if(selFile != null) {
-			txtFieldPath.setText(selFile.getAbsolutePath());
-			LOG.info("Datei ausgewählt: " + selFile.getPath());
-            fillMietWVPreviewTable(selFile);
+		importFileMWV = fileChooser.showOpenDialog(mainApp.getPrimaryStage());
+		if(importFileMWV != null) {
+			txtFieldPath.setText(importFileMWV.getAbsolutePath());
+			LOG.info("Datei ausgewählt: " + importFileMWV.getPath());
+            fillMietWVPreviewTable(importFileMWV);
 		}
 	}
-
-
+	
+	
 	private void fillMietWVPreviewTable(File inputFile) {
 		//"input/vmAccounting_20170930.csv"
 		CSVReader csvReader = new CSVReader();
@@ -158,6 +182,73 @@ public class MainSceneController {
 	
 	}
 	
+	/**
+	 * 
+	 **/
+	@FXML
+	public void eventSelectPathDATEVFibu() {
+		FileChooser fileChooser = new FileChooser();
+		fileChooser.setTitle("Open Resource File");
+		fileChooser.setInitialDirectory(new File("input"));
+		importFileDatevFibu = fileChooser.showOpenDialog(mainApp.getPrimaryStage());
+		if(importFileDatevFibu != null) {
+			txtImportPathDATEVFibu.setText(importFileDatevFibu.getAbsolutePath());
+			LOG.info("Datei ausgewählt: " + importFileDatevFibu.getPath());
+		}
+	}
+	
+	/**
+	 * 
+	 **/
+	@FXML
+	public void eventCreatPreviewDATEVFibu() {
+		CSVReader csvReader = new CSVReader();
+		String buchungsText = txtFieldTextDATEVFibu.getText();
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+		String buchungsDatum = datePickerDATEVFibu.getValue().format(dtf);
+		Double kurs = Double.parseDouble(txtFieldKursDATEVFibu.getText());
+
+		AbaConnectContainer abaConnectContainer = csvReader.readDatevDiffBuchungen(importFileDatevFibu.getAbsolutePath(), buchungsText, buchungsDatum, kurs);
+		txtAreaDATEVFibu.setText("");
+		try {
+			JAXBContext jaxbContext = JAXBContext.newInstance(AbaConnectContainer.class);
+//			StringWriter writer = new StringWriter();
+//		    writer.append("<?xml version='1.0' encoding='UTF-8'?>");
+			
+			Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+			jaxbMarshaller.setProperty(Marshaller.JAXB_FRAGMENT, Boolean.TRUE);
+			jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+			jaxbMarshaller.setProperty("com.sun.xml.internal.bind.xmlHeaders", "<?xml version='1.0' encoding='UTF-8'?>");
+			
+			if(!datevFibuPreview) {
+				File file = new File("output/DATEV_FIBU.xml");
+				jaxbMarshaller.marshal(abaConnectContainer, file);
+			}
+			
+			
+//			jaxbMarshaller.marshal(abaConnectContainer, System.out);
+			StringWriter sw = new StringWriter();
+			jaxbMarshaller.marshal(abaConnectContainer, sw);
+			txtAreaDATEVFibu.appendText(sw.toString());
+
+
+			
+		} catch (JAXBException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * 
+	 **/
+	@FXML
+	public void eventExportDATEVFibu() {
+		datevFibuPreview = false;
+		eventCreatPreviewDATEVFibu();
+		datevFibuPreview = true;
+	}
+
+	
 	public void setMainApp(Main mainApp) {
         this.mainApp = mainApp;
         // Add observable list data to the table
@@ -173,5 +264,21 @@ public class MainSceneController {
     public ObservableList<InvoiceWV> getInvoiceData() {
         return invoiceData;
     }
+
+	/**
+	 * @return the importFileMWV
+	 */
+	public File getImportFileMWV() {
+		return importFileMWV;
+	}
+
+	/**
+	 * @return the importFileDatevFibu
+	 */
+	public File getImportFileDatevFibu() {
+		return importFileDatevFibu;
+	}
+    
+    
 	
 }

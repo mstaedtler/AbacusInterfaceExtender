@@ -50,11 +50,11 @@ public class TestExport {
 		ci.setExchangeRateData(erd);
 		//Standardwerte CollectiveInformation
 		ci.setTaxAccount("0");
-		ci.setIntercompanyId("0");
-		ci.setBookingLevel2("0");
-		ci.setBookingLevel3("0");		
+		ci.setIntercompanyId("0");	
+		ci.setSingleCount("0");
 		
 		SingleInformation si = new SingleInformation("SAVE", "Normal", "D", "2018-01-31", 132290.69d, "900000", "0", "Abschluss");
+		si.setAmountData(amountData);
 		
 		Entry entry = new Entry("SAVE", ci, si);
 		ArrayList<Entry> entries = new ArrayList<>();
@@ -84,6 +84,10 @@ public class TestExport {
 			jaxbMarshaller.marshal(abaConnectContainer, file);
 			jaxbMarshaller.marshal(abaConnectContainer, System.out);
 
+//			JTextArea ta = new JTextArea();
+//			OutputStream outputStream = null; 
+//			ta.setText(outputStream.toString());
+			
 		} catch (JAXBException e) {
 			e.printStackTrace();
 		}
