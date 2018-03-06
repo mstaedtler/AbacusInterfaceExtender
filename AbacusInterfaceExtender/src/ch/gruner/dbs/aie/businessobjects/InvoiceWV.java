@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
+import ch.gruner.dbs.aie.util.MathFunctions;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleDoubleProperty;
@@ -104,6 +105,7 @@ public class InvoiceWV {
 		switch (gbNummerProp.get()) {
 		case 11:
 			adresse = new Debitorenadresse("Gruner AG", "Gellertstrasse 55", "4020 Basel");
+			mwstSatz.set(0.0d);
 			break;
 		case 12:
 			adresse = new Debitorenadresse("Gruner Böhringer AG", "Mühlegasse 10", "4104 Oberwil");
@@ -133,35 +135,35 @@ public class InvoiceWV {
 			adresse = new Debitorenadresse("Gruner GmbH, Wien", "Otto-Bauer-Gasse 6/10", "AT-1060 Wien");
 			währung = Währung.EUR;
 			umrechnungskurs = 1.15d;
-			mwstSatz.set(19.0d);
+			mwstSatz.set(0.0d);
 			mwstNummer = "DE180945107";
 			break;
 		case 81:
 			adresse = new Debitorenadresse("Gruner GmbH", "Dufourstrasse 28", "DE-04107 Leipzig");
 			währung = Währung.EUR;
 			umrechnungskurs = 1.15d;
-			mwstSatz.set(19.0d);
+			mwstSatz.set(0.0d);
 			mwstNummer = "DE180945107";
 			break;
 		case 83:
 			adresse = new Debitorenadresse("Gruner GmbH, Stuttgart", "Zettachring 8", "DE-70567 Stuttgart");
 			währung = Währung.EUR;
 			umrechnungskurs = 1.15d;
-			mwstSatz.set(19.0d);
+			mwstSatz.set(0.0d);
 			mwstNummer = "DE180945107";
 			break;
 		case 92:
 			adresse = new Debitorenadresse("Gruner GmbH, Köln", "Kaiser-Wilhelm-Ring 27-29", "DE-50672 Köln");
 			währung = Währung.EUR;
 			umrechnungskurs = 1.15d;
-			mwstSatz.set(19.0d);
+			mwstSatz.set(0.0d);
 			mwstNummer = "DE180945107";
 			break;
 		case 93:
 			adresse = new Debitorenadresse("Gruner GmbH, Hamburg", "Raboisen 16", "DE-20095 Hamburg");
 			währung = Währung.EUR;
 			umrechnungskurs = 1.15d;
-			mwstSatz.set(19.0d);
+			mwstSatz.set(0.0d);
 			mwstNummer = "DE180945107";
 			break;
 		default:
@@ -211,7 +213,7 @@ public class InvoiceWV {
 				amount = amount + innerMap.get(profile);
 				//detByCC.addAmount(innerMap.get(profile));
 			}
-			detByCC.setAmount(amount);
+			detByCC.setAmount(MathFunctions.round((amount / umrechnungskurs), 2));
 			bookingDetailsByCostCenter.add(detByCC);
 		}
 		
@@ -229,7 +231,7 @@ public class InvoiceWV {
 					amount = 0.0d;
 				}
 				amount = amount + innerMap.get(profile); 
-				mapByProfile.put(profile, amount);
+				mapByProfile.put(profile, MathFunctions.round((amount / umrechnungskurs), 2));
 			}
 		}
 		
@@ -244,7 +246,8 @@ public class InvoiceWV {
 			amount = amount + mapByProfile.get(profile);
 			bookingDetailsByProfile.add(detByProfile);
 		}
-		totalInvoiceAmountProp.set(amount);
+//		Double amountInOrgCurr = MathFunctions.round((amount / umrechnungskurs), 2);
+		totalInvoiceAmountProp.set(MathFunctions.round(amount, 2));
 	}
 	
 	
@@ -300,14 +303,12 @@ public class InvoiceWV {
 	
 	public Double getMwstBetrag() {
 		Double betrag = (getTotalInvoiceAmount() * getMwstSatz())/100;
-		return betrag;
+		return MathFunctions.round(betrag, 2);
 	}
 
 	public Double getTotalInvoiceAmountInclMwst() {
-		Double betrag = getTotalInvoiceAmount()+((getTotalInvoiceAmount() * getMwstSatz())/100);
-		BigDecimal d = new BigDecimal(betrag);
-		d = d.setScale(2, RoundingMode.HALF_UP);
-		return d.doubleValue();
+		Double betrag = getTotalInvoiceAmount()+((getTotalInvoiceAmount() * getMwstSatz())/100);	
+		return MathFunctions.round(betrag, 2);
 	}
 
 	public boolean isExport() {
