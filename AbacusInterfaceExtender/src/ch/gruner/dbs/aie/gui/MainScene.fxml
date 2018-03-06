@@ -18,8 +18,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
 
-<BorderPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.gruner.dbs.aie.controller.MainSceneController">
+<BorderPane prefHeight="821.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.gruner.dbs.aie.controller.MainSceneController">
    <center>
       <AnchorPane prefHeight="750.0" prefWidth="1128.0" BorderPane.alignment="CENTER">
          <children>
@@ -27,65 +28,75 @@
               <tabs>
                 <Tab text="WV Miete">
                   <content>
-                    <AnchorPane prefHeight="711.0" prefWidth="1128.0">
+                    <AnchorPane prefHeight="724.0" prefWidth="850.0">
                            <children>
-                              <TextField fx:id="txtFieldPath" editable="false" layoutX="135.0" layoutY="14.0" prefHeight="25.0" prefWidth="668.0" />
-                              <Label layoutX="14.0" layoutY="18.0" prefHeight="17.0" prefWidth="111.0" text="Importdatei wählen" />
-                              <Button layoutX="814.0" layoutY="14.0" mnemonicParsing="false" onAction="#eventMWVSelectPath" text="Pfad auswählen" />
-                              <Button layoutX="1033.0" layoutY="61.0" mnemonicParsing="false" onAction="#eventMWVExport" text="Exportieren" />
+                              <TextField fx:id="txtFieldPath" editable="false" layoutX="263.0" layoutY="49.0" prefHeight="25.0" prefWidth="569.0" />
+                              <Label layoutX="14.0" layoutY="53.0" prefHeight="17.0" prefWidth="111.0" text="Importdatei wählen" />
+                              <Button layoutX="152.0" layoutY="49.0" mnemonicParsing="false" onAction="#eventMWVSelectPath" text="Pfad auswählen" />
+                              <Button layoutX="754.0" layoutY="665.0" mnemonicParsing="false" onAction="#eventMWVExport" text="Exportieren" />
                               <Separator layoutX="9.0" layoutY="118.0" prefHeight="0.0" prefWidth="1110.0" />
-                              <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="10.0" layoutY="150.0" prefHeight="500.0" prefWidth="1100.0">
+                              <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="10.0" layoutY="150.0" prefHeight="500.0" prefWidth="821.0">
                                  <content>
-                                    <TableView fx:id="invoiceTable" prefHeight="495.0" prefWidth="1095.0">
+                                    <TableView fx:id="invoiceTable" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="690.0">
                                       <columns>
                                         <TableColumn fx:id="gbColumn" prefWidth="75.0" text="GB" />
-                                        <TableColumn fx:id="firmaColumn" prefWidth="200.0" text="Firma" />
-                                        <TableColumn fx:id="whrColumn" prefWidth="75.0" text="Währung" />
-                                        <TableColumn fx:id="betragColumn" prefWidth="100.0" text="Betrag" />
-                                        <TableColumn fx:id="mwstSatzColumn" prefWidth="100.0" text="Mwst. Satz" />
-                                        <TableColumn fx:id="mwstBetragColumn" prefWidth="100.0" text="Mwst. Betrag" />
-                                        <TableColumn fx:id="betragAllInclColumn" prefWidth="120.0" text="Betrag incl. Mwst." />
+                                        <TableColumn fx:id="firmaColumn" prefWidth="215.0" text="Firma" />
+                                        <TableColumn fx:id="whrColumn" text="Währung" />
+                                        <TableColumn fx:id="betragColumn" prefWidth="94.0" text="Betrag" />
+                                        <TableColumn fx:id="mwstSatzColumn" prefWidth="91.0" text="Mwst. Satz" />
+                                        <TableColumn fx:id="mwstBetragColumn" prefWidth="120.0" text="Mwst. Betrag" />
+                                        <TableColumn fx:id="betragAllInclColumn" prefWidth="143.0" text="Betrag incl. Mwst." />
                                       </columns>
                                     </TableView>
                                  </content>
                               </ScrollPane>
-                              <DatePicker fx:id="datePicker" layoutX="768.0" layoutY="61.0" prefHeight="25.0" prefWidth="145.0" />
-                              <Label layoutX="615.0" layoutY="65.0" prefHeight="17.0" prefWidth="139.0" text="Rechnungsdatum wählen" />
-                              <Label layoutX="14.0" layoutY="65.0" text="Start - RG.Nr wählen" />
-                              <TextField fx:id="txtFieldRgNr" layoutX="135.0" layoutY="61.0" prefHeight="25.0" prefWidth="186.0" />
-                              <TextField fx:id="txtFieldKurs" layoutX="493.0" layoutY="61.0" prefHeight="25.0" prefWidth="110.0" />
-                              <Label layoutX="330.0" layoutY="65.0" prefHeight="17.0" prefWidth="163.0" text="Umrechnungskurs EUR / CHF" />
+                              <DatePicker fx:id="datePicker" layoutX="152.0" layoutY="10.0" prefHeight="25.0" prefWidth="145.0" />
+                              <Label layoutX="13.0" layoutY="14.0" prefHeight="17.0" prefWidth="139.0" text="Rechnungsdatum wählen" />
+                              <Label layoutX="587.0" layoutY="14.0" text="Start - RG.Nr wählen" />
+                              <TextField fx:id="txtFieldRgNr" layoutX="710.0" layoutY="10.0" prefHeight="25.0" prefWidth="121.0" />
+                              <TextField fx:id="txtFieldKurs" layoutX="469.0" layoutY="10.0" prefHeight="25.0" prefWidth="110.0" />
+                              <Label layoutX="303.0" layoutY="14.0" prefHeight="17.0" prefWidth="163.0" text="Umrechnungskurs EUR / CHF" />
+                              <Button layoutX="614.0" layoutY="665.0" mnemonicParsing="false" onAction="#eventCreatPreviewMWV" prefHeight="25.0" prefWidth="134.0" text="Vorschau erstellen" />
                            </children>
                         </AnchorPane>
                   </content>
                 </Tab>
                 <Tab text="DATEV FIBU">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="721.0" prefWidth="846.0">
                            <children>
                               <Label layoutX="14.0" layoutY="22.0" text="Buchungsdatum" />
                               <DatePicker fx:id="datePickerDATEVFibu" layoutX="110.0" layoutY="18.0" />
                               <Label layoutX="14.0" layoutY="101.0" text="Importdatei" />
-                              <TextField fx:id="txtImportPathDATEVFibu" editable="false" layoutX="214.0" layoutY="97.0" prefHeight="25.0" prefWidth="455.0" />
+                              <TextField fx:id="txtImportPathDATEVFibu" editable="false" layoutX="214.0" layoutY="97.0" prefHeight="25.0" prefWidth="619.0" />
                               <Separator layoutX="14.0" layoutY="134.0" prefWidth="1100.0" />
                               <Label layoutX="311.0" layoutY="22.0" text="Umrechnungskurs EUR / CHF" />
                               <TextField fx:id="txtFieldKursDATEVFibu" layoutX="477.0" layoutY="18.0" prefHeight="25.0" prefWidth="190.0" />
-                              <Button layoutX="681.0" layoutY="97.0" mnemonicParsing="false" onAction="#eventCreatPreviewDATEVFibu" text="Vorschau erzeugen" />
-                              <ScrollPane layoutX="14.0" layoutY="152.0" prefHeight="505.0" prefWidth="655.0">
+                              <Button layoutX="593.0" layoutY="631.0" mnemonicParsing="false" onAction="#eventCreatPreviewDATEVFibu" text="Vorschau erzeugen" />
+                              <ScrollPane layoutX="14.0" layoutY="152.0" prefHeight="463.0" prefWidth="818.0">
                                  <content>
-                                    <TextArea fx:id="txtAreaDATEVFibu" editable="false" prefHeight="502.0" prefWidth="653.0" />
+                                    <TextArea fx:id="txtAreaDATEVFibu" editable="false" prefHeight="459.0" prefWidth="815.0" />
                                  </content>
                               </ScrollPane>
-                              <Button layoutX="564.0" layoutY="673.0" mnemonicParsing="false" onAction="#eventExportDATEVFibu" prefHeight="25.0" prefWidth="105.0" text="Exportieren" />
+                              <Button layoutX="727.0" layoutY="631.0" mnemonicParsing="false" onAction="#eventExportDATEVFibu" prefHeight="25.0" prefWidth="105.0" text="Exportieren" />
                               <Button layoutX="110.0" layoutY="97.0" mnemonicParsing="false" onAction="#eventSelectPathDATEVFibu" prefHeight="25.0" prefWidth="95.0" text="Datei wählen" />
                               <Label layoutX="14.0" layoutY="62.0" prefHeight="17.0" prefWidth="83.0" text="Buchungstext" />
                               <TextField fx:id="txtFieldTextDATEVFibu" layoutX="110.0" layoutY="58.0" prefHeight="25.0" prefWidth="558.0" />
+                              <Label layoutX="676.0" layoutY="62.0" text="* max. 60 Zeichen" />
+                              <Label layoutX="676.0" layoutY="15.0" prefHeight="39.0" prefWidth="154.0" text="* Bitte passenden Buchkurs aus Abacus eintragen" wrapText="true" />
                            </children></AnchorPane>
                   </content>
                 </Tab>
                 <Tab text="WV IT Kosten">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER" layoutX="114.0" layoutY="136.0" prefHeight="156.0" prefWidth="625.0" text="Work in Progress">
+                                 <font>
+                                    <Font size="48.0" />
+                                 </font>
+                              </Label>
+                           </children></AnchorPane>
                   </content>
                 </Tab>
               </tabs>
@@ -115,9 +126,9 @@
       </MenuBar>
    </top>
    <bottom>
-      <ButtonBar prefHeight="20.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+      <ButtonBar prefHeight="20.0" prefWidth="800.0" BorderPane.alignment="CENTER">
         <buttons>
-          <Button minWidth="64.0" mnemonicParsing="false" prefHeight="25.0" text="Info" />
+          <Button minWidth="64.0" mnemonicParsing="false" onAction="#eventInfo" prefHeight="25.0" text="Info" />
            <Button minWidth="43.0" mnemonicParsing="false" onAction="#eventClose" prefHeight="25.0" text="Schliessen" />
         </buttons>
          <BorderPane.margin>

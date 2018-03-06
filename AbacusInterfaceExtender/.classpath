@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_144"/>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry excluding="ressources/" kind="src" path="src"/>
 	<classpathentry kind="src" path="config"/>
+	<classpathentry kind="src" path="input"/>
+	<classpathentry kind="src" path="log"/>
+	<classpathentry kind="src" path="ressources"/>
+	<classpathentry kind="src" path="output"/>
 	<classpathentry kind="lib" path="lib/log4j-api-2.9.1.jar"/>
 	<classpathentry kind="lib" path="lib/log4j-core-2.9.1.jar"/>
 	<classpathentry kind="lib" path="lib/dom4j-2.1.0.jar"/>

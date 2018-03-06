@@ -64,14 +64,18 @@ public class Exporter {
             
             parameters.put("pMWVZahlungskonditionen",		invoice.getZahlungskonditionen());
             parameters.put("pMWVMwstNummer", 	 			invoice.getMwstNummer());
+            parameters.put("pMWVMwstSatz", 	 				invoice.getMwstSatz());
+            parameters.put("pMWVWaehrung",	 	 			invoice.getWährung().toString());
             parameters.put("pMWVProjektReferenz", 	 		invoice.getProjektReferenz());
             parameters.put("pMWVProjektNummer", 	 		invoice.getProjektNummer());
             
             parameters.put("pMWVRechnungsNummer", 	 		invoice.getInvoiceNumber());
             parameters.put("pMWVRechnungsPeriode", 	 		invoice.getRgPeriode());
             parameters.put("pMWVRechnungsDatum", 	 		invoice.getRgDatumString());
-//            parameters.put("pMWVWährung", 	 				invoice.getRgDatumString());
-            
+
+            parameters.put("pMWVTotalBetragMwst",			invoice.getMwstBetrag());
+            parameters.put("pMWVTotalBetragNetto",			invoice.getTotalInvoiceAmount());
+            parameters.put("pMWVTotalBetragBrutto",			invoice.getTotalInvoiceAmountInclMwst());							
             
 
             /* Using compiled version(.jasper) of Jasper report to generate PDF */

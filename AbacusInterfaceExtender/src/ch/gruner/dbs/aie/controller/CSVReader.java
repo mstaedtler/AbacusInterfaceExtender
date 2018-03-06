@@ -10,6 +10,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import ch.gruner.dbs.aie.businessobjects.WVImportBooking;
+import ch.gruner.dbs.aie.util.MathFunctions;
 import ch.gruner.dbs.aie.xmlexport.fibu.AbaConnectContainer;
 import ch.gruner.dbs.aie.xmlexport.fibu.AmountData;
 import ch.gruner.dbs.aie.xmlexport.fibu.CollectiveInformation;
@@ -24,7 +25,7 @@ public class CSVReader {
 
 	private static Logger LOG = LogManager.getLogger(CSVReader.class);
     
-	public AbaConnectContainer readDatevDiffBuchungen(String inputFilepath, String buchungstext, String buchungsDatum, Double kurs){
+	public AbaConnectContainer readDatevDiffBuchungen(String inputFilepath, String buchungstext, String buchungsDatum, Double kurs) {
 		
 		String line = "";
         String cvsSplitBy = ", ";
@@ -63,7 +64,8 @@ public class CSVReader {
                 if(flagEurKonto == 1) {
                 	ExchangeRateData erd = new ExchangeRateData("SAVE", "EUR", "CHF", kurs);
                 	ci.setExchangeRateData(erd);
-                	AmountData amountData = new AmountData("SAVE", "EUR", betrag / kurs);
+                	Double calcAmount = betrag / kurs;
+                	AmountData amountData = new AmountData("SAVE", "EUR", MathFunctions.round(calcAmount, 2));
                 	ci.setAmountData(amountData);
                 	si.setAmountData(amountData);
                 }else {
@@ -86,29 +88,11 @@ public class CSVReader {
         } catch (IOException e) {      	
         	e.printStackTrace();
         }
-        
-        
-		
-		//Pflichtwerte CollectiveInformation
-		
-		
-		//Standardwerte CollectiveInformation
-		
-		
-//		SingleInformation si = new SingleInformation("SAVE", "Normal", "D", "2018-01-31", 132290.69d, "900000", "0", "Abschluss");
-		
-		
-		
-		
-		
-		
-		
-		
+
 		Parameter param = new Parameter("FIBU", "XML Buchungen", "AbaDefault", "2015.00");		
 		Task task = new Task(param, transactions);		
 		tasks.add(task);		
-		AbaConnectContainer abaConnectContainer = new AbaConnectContainer(1, tasks);
-        
+		AbaConnectContainer abaConnectContainer = new AbaConnectContainer(1, tasks);   
         
 		return abaConnectContainer;
 	}

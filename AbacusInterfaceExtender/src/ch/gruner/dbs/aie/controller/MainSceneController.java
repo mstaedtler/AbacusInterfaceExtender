@@ -1,6 +1,7 @@
 package ch.gruner.dbs.aie.controller;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.StringWriter;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -17,6 +18,7 @@ import org.apache.logging.log4j.Logger;
 import ch.gruner.dbs.aie.businessobjects.InvoiceWV;
 import ch.gruner.dbs.aie.businessobjects.WVImportBooking;
 import ch.gruner.dbs.aie.gui.Main;
+import ch.gruner.dbs.aie.util.DialogHelper;
 import ch.gruner.dbs.aie.xmlexport.fibu.AbaConnectContainer;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
@@ -127,6 +129,12 @@ public class MainSceneController {
         System.exit(0);
     }
     
+    @FXML 
+   	protected void eventInfo(ActionEvent event) {
+    	Exception ex = new FileNotFoundException("Could not find file blabla.txt");
+    	DialogHelper.showExceptionDialog(ex, "Datei konnte nicht gefunden werden.");
+    }
+    
 	@FXML 
 	protected void eventMWVSelectPath(ActionEvent event) {
 		FileChooser fileChooser = new FileChooser();
@@ -136,10 +144,17 @@ public class MainSceneController {
 		if(importFileMWV != null) {
 			txtFieldPath.setText(importFileMWV.getAbsolutePath());
 			LOG.info("Datei ausgewählt: " + importFileMWV.getPath());
-            fillMietWVPreviewTable(importFileMWV);
-		}
+        }
 	}
 	
+	@FXML
+	public void eventCreatPreviewMWV() {
+		if(importFileMWV != null) {
+			invoiceData.clear();
+			fillMietWVPreviewTable(importFileMWV);
+		}
+		
+	}
 	
 	private void fillMietWVPreviewTable(File inputFile) {
 		//"input/vmAccounting_20170930.csv"
