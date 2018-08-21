@@ -3,19 +3,20 @@ package ch.gruner.dbs.aie.controller;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVRecord;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import ch.gruner.dbs.aie.businessobjects.WVImportBooking;
-import ch.gruner.dbs.aie.util.MathFunctions;
 import ch.gruner.dbs.aie.xmlexport.fibu.AbaConnectContainer;
 import ch.gruner.dbs.aie.xmlexport.fibu.AmountData;
 import ch.gruner.dbs.aie.xmlexport.fibu.CollectiveInformation;
 import ch.gruner.dbs.aie.xmlexport.fibu.Entry;
-import ch.gruner.dbs.aie.xmlexport.fibu.ExchangeRateData;
 import ch.gruner.dbs.aie.xmlexport.fibu.Parameter;
 import ch.gruner.dbs.aie.xmlexport.fibu.SingleInformation;
 import ch.gruner.dbs.aie.xmlexport.fibu.Task;
@@ -27,67 +28,95 @@ public class CSVReader {
     
 	public AbaConnectContainer readDatevDiffBuchungen(String inputFilepath, String buchungstext, String buchungsDatum, Double kurs) {
 		
-		String line = "";
-        String cvsSplitBy = ", ";
-        
         ArrayList<Transaction> transactions = new ArrayList<>();
         ArrayList<Task> tasks = new ArrayList<>();
-   
-        try (BufferedReader br = new BufferedReader(new FileReader(inputFilepath))) {
+        try {
+        	//char delimiter = ',';
+        	//char quotes = '"';
+        	//String[] HEADERS = {"GB","KST","FLAG_KTO_EUR","MAPPING_KTO","KTO_ABACUS","KTO_ABACUS_NAME","BETRAG_ABACUS","BETRAG_DATEV","BETRAG_DIFF"};
+        	Reader in = new FileReader(inputFilepath);
+        	Iterable<CSVRecord> records = CSVFormat.DEFAULT
+//        										   .withHeader(HEADERS) 
+												   .withFirstRecordAsHeader()
+//												   .withDelimiter(delimiter)
+//												   .withQuote(quotes)
+//												   .withQuoteMode(QuoteMode.MINIMAL)
+												   .parse(in);
+        	
+        	
+/*
+ * This is working.
+ * */       
+//            Iterable<CSVRecord> records = CSVFormat.DEFAULT
+//            									   .withHeader(HEADERS) 
+//            									   .withFirstRecordAsHeader()
+//            									   .withDelimiter(delimiter)
+//            									   .withQuote(quotes)
+//            									   .withQuoteMode(QuoteMode.MINIMAL)
+//            									   .parse(in);
+            
+        	
         	LOG.info("Lese file: " + inputFilepath);
-        	//Skip first line (Header)
-        	line = br.readLine();
-        	line = null;
         	int transactionId = 1;
-        	while ((line = br.readLine()) != null) {
-                // use comma as separator
-                String[] vmLine = line.split(cvsSplitBy);
-                int flagEurKonto = Integer.parseInt(vmLine[2]);
-                Double betrag = Double.parseDouble(vmLine[8]);
-                //﻿GB, KST, Flag EUR, Mapping Konto, KTO, KTONAME, Betrag Abacus, Betrag DATEV, Dif. Buchug
-                CollectiveInformation ci = new CollectiveInformation("SAVE",
-																	 "A",
-																	 "S",
-																	 "Normal",
-																	 "D",
-																	 "4020",
-																	 vmLine[0],
-																	 "CHF",
-																	 buchungsDatum,
-																	 betrag,															
-																	 vmLine[3],															
-																	 vmLine[1],															 
-																	 buchungstext,															 
-																	 "F"
-																	);
-                SingleInformation si = new SingleInformation("SAVE", "Normal", "D", buchungsDatum, betrag, "900000", "0", buchungstext);
-                if(flagEurKonto == 1) {
-                	ExchangeRateData erd = new ExchangeRateData("SAVE", "EUR", "CHF", kurs);
-                	ci.setExchangeRateData(erd);
-                	Double calcAmount = betrag / kurs;
-                	AmountData amountData = new AmountData("SAVE", "EUR", MathFunctions.round(calcAmount, 2));
-                	ci.setAmountData(amountData);
-                	si.setAmountData(amountData);
-                }else {
-                	AmountData amountData = new AmountData("SAVE", "CHF", betrag);
-                	ci.setAmountData(amountData);
-                	si.setAmountData(amountData);
+        	for (CSVRecord record : records) {
+        		String division = record.get(0); //Has to be the number. Not working with Headername.
+        		//int flagEurKonto = Integer.parseInt(record.get("FLAG_KTO_EUR"));
+                Double betrag = Double.parseDouble(record.get("BETRAG_DIFF"));
+                String bookinLevel1 = "0";
+                String account = record.get("MAPPING_KTO");
+                if(Integer.parseInt(account) >= 300000) {
+                	bookinLevel1 = record.get("KST");
                 }
-                ci.setTaxAccount("0");
-        		ci.setIntercompanyId("0");	
-        		ci.setSingleCount("0");
-        		ArrayList<Entry> entries = new ArrayList<>();
-        		Entry entry = new Entry("SAVE", ci, si);
-        		entries.add(entry);
-        		Transaction transaction = new Transaction(transactionId, entries);
-        		transactionId ++;
-        		transactions.add(transaction);
+                if(betrag != 0.00d) {
                 
-        	}
-        	br.close();
+	                CollectiveInformation ci = new CollectiveInformation("SAVE",
+																		 "A",
+																		 "S",
+																		 "Normal",
+																		 "D",
+																		 "4020",
+																		 division,
+																		 "CHF",
+																		 buchungsDatum,
+																		 betrag,															
+																		 account,															
+																		 bookinLevel1,														 
+																		 buchungstext,													 
+																		 "F"
+																		);
+	                SingleInformation si = new SingleInformation("SAVE", "Normal", "D", buchungsDatum, betrag, "900000", "0", buchungstext);
+	                AmountData amountData = new AmountData("SAVE", "CHF", betrag);
+	            	ci.setAmountData(amountData);
+	            	si.setAmountData(amountData); 
+	//                if(flagEurKonto == 1) {
+	//                	ExchangeRateData erd = new ExchangeRateData("SAVE", "EUR", "CHF", kurs);
+	//                	ci.setExchangeRateData(erd);
+	//                	Double calcAmount = betrag / kurs;
+	//                	AmountData amountData = new AmountData("SAVE", "EUR", MathFunctions.round(calcAmount, 2));
+	//                	ci.setAmountData(amountData);
+	//                	si.setAmountData(amountData);
+	//                }else {
+	//                	AmountData amountData = new AmountData("SAVE", "CHF", betrag);
+	//                	ci.setAmountData(amountData);
+	//                	si.setAmountData(amountData);
+	//                }
+	                ci.setTaxAccount("0");
+	        		ci.setIntercompanyId("0");	
+	        		ci.setSingleCount("0");
+	        		ArrayList<Entry> entries = new ArrayList<>();
+	        		Entry entry = new Entry("SAVE", ci, si);
+	        		entries.add(entry);
+	        		Transaction transaction = new Transaction(transactionId, entries);
+	        		transactionId ++;
+	        		transactions.add(transaction);
+                }
+        }
+//        	br.close();
         } catch (IOException e) {      	
         	e.printStackTrace();
-        }
+        } catch (Exception e) {
+        	e.printStackTrace();
+		}
 
 		Parameter param = new Parameter("FIBU", "XML Buchungen", "AbaDefault", "2015.00");		
 		Task task = new Task(param, transactions);		
